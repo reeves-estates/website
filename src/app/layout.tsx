@@ -31,9 +31,11 @@ const neueMachina = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Reeves Estates — Houston's Trusted Estate Specialists",
+  title: "Reeves Estates | Houston Estate Sales, Buyouts & Liquidations",
   description:
-    "Every piece cared for. Every detail honored. From first call to final close. White-glove estate handling for Houston's finest families.",
+    "Houston's trusted full-service estate specialists. Cash buyouts, estate sales, living estates, and liquidations. Serving River Oaks and greater Houston for three generations. Call today.",
+  keywords:
+    "Houston estate sales, estate liquidation Houston, cash estate buyout Houston, River Oaks estate sales, living estate Houston, estate executor Houston, antique estate sale Houston, Houston estate specialists",
 };
 
 export default function RootLayout({

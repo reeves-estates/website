@@ -29,7 +29,7 @@ export default function HowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="py-24 lg:py-32 bg-cream-dark/50 border-y border-bronze/10"
+      className="py-32 lg:py-44 bg-cream-dark/50 border-y border-bronze/10"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-16 fade-in-section">
@@ -39,17 +39,17 @@ export default function HowItWorks() {
           <div className="w-16 h-[1px] bg-bronze mx-auto" />
         </div>
 
-        <div className="fade-in-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+        <div className="fade-in-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
           {steps.map((step, i) => (
             <div key={i} className="relative">
               <div className="text-center lg:text-left">
-                <span className="inline-block font-heading text-5xl md:text-6xl font-light text-bronze/30 leading-none">
+                <span className="inline-block font-heading text-4xl md:text-5xl font-light text-bronze/30 leading-none">
                   {step.num}
                 </span>
-                <h3 className="font-heading text-xl md:text-2xl font-medium text-charcoal mt-3 mb-3">
+                <h3 className="font-heading text-2xl md:text-3xl font-medium text-charcoal mt-3 mb-3">
                   {step.title}
                 </h3>
-                <p className="font-body text-sm leading-relaxed text-charcoal/65">
+                <p className="font-body text-base leading-relaxed text-charcoal/65">
                   {step.description}
                 </p>
               </div>

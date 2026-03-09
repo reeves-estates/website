@@ -7,10 +7,10 @@ export default function TrustBar() {
 
   return (
     <section className="bg-cream border-y border-bronze/20">
-      <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0">
+      <div className="max-w-6xl mx-auto px-6 py-10 md:py-12 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0">
         {items.map((item, i) => (
           <div key={i} className="flex items-center">
-            <span className="font-heading text-sm md:text-base tracking-widest text-charcoal/70 text-center">
+            <span className="font-heading text-[1.2rem] md:text-[1.35rem] font-semibold tracking-[0.2em] uppercase text-charcoal/80 text-center whitespace-nowrap">
               {item}
             </span>
             {i < items.length - 1 && (

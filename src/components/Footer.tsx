@@ -59,6 +59,15 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Neighbourhoods */}
+      <div className="border-t border-cream/10">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-6 text-center">
+          <p className="text-sm text-bronze italic" style={{ fontFamily: "var(--font-libre-baskerville)" }}>
+            Serving River Oaks &middot; Midtown &middot; Houston High-Rises &middot; and surrounding communities
+          </p>
+        </div>
+      </div>
+
       {/* Bottom bar */}
       <div className="border-t border-cream/10">
         <div className="max-w-6xl mx-auto px-6 lg:px-12 py-4">

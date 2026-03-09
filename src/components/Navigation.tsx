@@ -8,6 +8,7 @@ const navLinks = [
   { label: "About Reeves", href: "#about" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
+  { label: "FAQs", href: "#faq" },
 ];
 
 export default function Navigation() {

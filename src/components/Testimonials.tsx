@@ -37,9 +37,9 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="bg-cream p-8 border-t-2 border-bronze/50"
+              className="bg-cream p-10 md:p-12 border-t-2 border-bronze/50"
             >
-              <p className="font-body text-sm md:text-base leading-relaxed text-charcoal/75 italic mb-6">
+              <p className="font-body text-base md:text-lg leading-relaxed text-charcoal/75 italic mb-6">
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div>
