@@ -101,21 +101,21 @@ export default function Hero() {
           Reeves Estates
         </h1>
         <div className="hero-fade-in w-[60px] h-[1px] bg-bronze mx-auto mb-6" />
-        <p className="hero-fade-in-delay text-[1.25rem] md:text-[1.5rem] text-white italic leading-relaxed mb-14" style={{ fontFamily: "var(--font-libre-baskerville)" }}>
+        <p className="hero-fade-in-delay text-[1.1rem] md:text-[1.5rem] text-white italic leading-relaxed mb-14 px-2" style={{ fontFamily: "var(--font-libre-baskerville)" }}>
           Cash offers. White-glove service. Nothing left behind.
         </p>
 
         {/* Two-line rotating display */}
-        <div className="hero-fade-in-delay mb-12">
-          <h2 className="font-heading text-[2.2rem] md:text-[3.6rem] lg:text-[4.8rem] font-light text-cream tracking-wide leading-[0.8] mb-3">
+        <div className="hero-fade-in-delay mb-12 overflow-hidden">
+          <h2 className="font-heading text-[1.6rem] md:text-[3.6rem] lg:text-[4.8rem] font-light text-cream tracking-wide leading-[1] md:leading-[0.8] mb-3 whitespace-nowrap">
             Your single source for
           </h2>
           <div
-            className="h-[2.8rem] md:h-[4.4rem] lg:h-[5.6rem] flex items-center justify-center"
+            className="h-[2.2rem] md:h-[4.4rem] lg:h-[5.6rem] flex items-center justify-center overflow-hidden"
             aria-live="polite"
           >
             <span
-              className="text-[2.2rem] md:text-[3.6rem] lg:text-[4.8rem] italic inline-flex leading-[0.8]"
+              className="text-[1.4rem] md:text-[3.6rem] lg:text-[4.8rem] italic inline-flex leading-[0.8]"
               style={{ fontFamily: "var(--font-libre-baskerville)", color: "#B8956A" }}
             >
               {currentPhrase.split("").map((char, i) => (
