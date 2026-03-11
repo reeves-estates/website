@@ -31,6 +31,7 @@ export default function Hero() {
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [phase, setPhase] = useState<AnimPhase>("entering");
   const [visibleCount, setVisibleCount] = useState(0);
+  const [fontLoaded, setFontLoaded] = useState(false);
 
   const currentPhrase = rotatingPhrases[phraseIndex];
 
@@ -40,6 +41,13 @@ export default function Hero() {
       setCurrentImage((prev) => (prev + 1) % images.length);
     }, 5000);
     return () => clearInterval(interval);
+  }, []);
+
+  // Wait for Libre Baskerville to load before showing animated text
+  useEffect(() => {
+    document.fonts.ready.then(() => {
+      setFontLoaded(true);
+    });
   }, []);
 
   // Letter-by-letter entry
@@ -106,7 +114,7 @@ export default function Hero() {
         </p>
 
         {/* Two-line rotating display */}
-        <div className="hero-fade-in-delay mb-12 w-full max-w-4xl mx-auto overflow-hidden text-center">
+        <div className={`hero-fade-in-delay mb-12 w-full max-w-4xl mx-auto overflow-hidden text-center transition-opacity duration-500 ${fontLoaded ? "opacity-100" : "opacity-0"}`}>
           <h2 className="font-heading text-2xl md:text-4xl lg:text-5xl font-light text-cream tracking-wide leading-tight mb-0">
             Your single source for
           </h2>
