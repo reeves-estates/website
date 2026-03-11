@@ -107,7 +107,7 @@ export default function Hero() {
 
         {/* Two-line rotating display */}
         <div className="hero-fade-in-delay mb-12 w-full max-w-4xl mx-auto overflow-hidden text-center">
-          <h2 className="font-heading text-2xl md:text-4xl lg:text-5xl font-light text-cream tracking-wide leading-tight mb-3">
+          <h2 className="font-heading text-2xl md:text-4xl lg:text-5xl font-light text-cream tracking-wide leading-tight mb-0">
             Your single source for
           </h2>
           <div
