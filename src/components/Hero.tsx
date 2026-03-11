@@ -111,11 +111,11 @@ export default function Hero() {
             Your single source for
           </h2>
           <div
-            className="h-10 md:h-14 lg:h-16 flex items-center justify-center overflow-hidden"
+            className="py-2 md:py-3 flex items-center justify-center"
             aria-live="polite"
           >
             <span
-              className="text-2xl md:text-4xl lg:text-5xl italic inline-flex leading-normal"
+              className="text-2xl md:text-4xl lg:text-5xl italic inline-flex leading-relaxed"
               style={{ fontFamily: "var(--font-libre-baskerville)", color: "#B8956A" }}
             >
               {currentPhrase.split("").map((char, i) => (
