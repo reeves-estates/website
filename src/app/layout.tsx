@@ -59,6 +59,8 @@ export default function RootLayout({
                 "url": "https://reevesestates.com",
                 "telephone": "+17135235577",
                 "email": "reevesestatesales@gmail.com",
+                "priceRange": "$$",
+                "image": "https://reevesestates.com/images/hero/Hero-1.webp",
                 "address": {
                   "@type": "PostalAddress",
                   "streetAddress": "Corner of Taft & Fairview",
