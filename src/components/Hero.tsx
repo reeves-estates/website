@@ -1,14 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const images = [
-  "https://i.imgur.com/Wt0DQOX.jpeg",
-  "https://i.imgur.com/lkE8s1f.jpeg",
-  "https://i.imgur.com/W6UML0q.jpeg",
-  "https://i.imgur.com/nf6tdE2.jpeg",
-  "https://i.imgur.com/5ASp6ne.jpeg",
-  "https://i.imgur.com/SeslhEC.jpeg",
+  "/images/hero/hero-1.webp",
+  "/images/hero/hero-2.webp",
+  "/images/hero/hero-3.webp",
+  "/images/hero/hero-4.webp",
+  "/images/hero/hero-5.webp",
+  "/images/hero/hero-6.webp",
 ];
 
 export default function Hero() {
@@ -26,12 +27,15 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image carousel */}
       {images.map((src, i) => (
-        <img
+        <Image
           key={src}
           src={src}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out"
+          fill
+          className="object-cover transition-opacity duration-[1500ms] ease-in-out"
           style={{ opacity: i === currentImage ? 1 : 0 }}
+          priority={i === 0}
+          sizes="100vw"
         />
       ))}
 
