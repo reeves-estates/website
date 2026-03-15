@@ -150,7 +150,7 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-16 fade-in-section">
           <h2 className="font-heading text-3xl md:text-5xl font-light text-charcoal mb-4">
-            Frequently Asked Questions
+            Your Questions, Answered
           </h2>
           <div className="w-16 h-[1px] bg-bronze mx-auto" />
         </div>

@@ -38,7 +38,7 @@ export default function Hero() {
       ))}
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-charcoal/50" />
+      <div className="absolute inset-0" style={{ backgroundColor: "rgba(17, 17, 17, 0.45)" }} />
 
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <h1

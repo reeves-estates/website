@@ -1,7 +1,7 @@
 export default function TrustBar() {
   const items = [
     "Three Generations of Expertise",
-    "Fine Art \u00B7 Antiques \u00B7 Objects of Distinction",
+    "Fine Art \u00B7 Antiques \u00B7 Mid-Century Modern",
     "Discreet. Thorough. Trusted.",
   ];
 

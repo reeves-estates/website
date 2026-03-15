@@ -17,9 +17,7 @@ export default function Footer() {
               Reeves Estates
             </span>
             <span className="block w-12 h-[1px] bg-bronze mb-4" />
-            <p className="font-body text-xs leading-relaxed text-cream/40 mb-2">
-              Every piece cared for. Every detail honored.
-              <br />
+            <p className="font-body text-xs leading-relaxed text-cream/40 italic mb-2">
               From first call to final close.
             </p>
             <p className="font-body text-xs text-cream/30 italic">

@@ -52,6 +52,8 @@ export default function Contact() {
               className="font-heading text-lg md:text-xl text-bronze hover:text-bronze-dark transition-colors whitespace-nowrap"
             >
               Corner of Taft &amp; Fairview
+              <br />
+              Midtown Houston
             </a>
           </div>
         </div>
