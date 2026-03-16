@@ -18,10 +18,10 @@ export default function Contact() {
               Phone
             </span>
             <a
-              href="tel:7135235577"
+              href="tel:7138991701"
               className="font-heading text-lg md:text-xl text-bronze hover:text-bronze-dark transition-colors whitespace-nowrap"
             >
-              713-523-5577
+              713-899-1701
             </a>
           </div>
 
