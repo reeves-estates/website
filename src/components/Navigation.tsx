@@ -23,7 +23,7 @@ export default function Navigation() {
             <img
               src="/images/reeves-estates-logotype.svg"
               alt="Reeves Estates"
-              className="h-4 md:h-5 w-auto"
+              style={{ height: '20px', width: 'auto' }}
             />
           </a>
 
