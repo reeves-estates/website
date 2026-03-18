@@ -19,12 +19,12 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex flex-col items-start">
-            <span
-              className="text-xl md:text-2xl font-semibold tracking-[0.3em] text-charcoal"
-            >
-              Reeves Estates
-            </span>
+          <a href="#" className="flex items-center">
+            <img
+              src="/images/reeves-estates-logotype.svg"
+              alt="Reeves Estates"
+              className="h-4 md:h-5 w-auto"
+            />
           </a>
 
           {/* Desktop links */}
