@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import RoundedTooltipDemo from "@/components/ui/rounded-tooltip";
+import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
 
 const navLinks = [
   { label: "How It Works", href: "#how-it-works" },
@@ -26,31 +27,50 @@ export default function Navigation() {
           </a>
 
           {/* Desktop links */}
-          <div className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="font-body text-sm tracking-wide text-charcoal/70 hover:text-bronze transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-            <a
-              href="tel:8324749547"
-              className="font-body text-base font-extrabold tracking-wide hover:text-bronze-dark transition-colors"
-              style={{ color: "#B8956A" }}
-            >
-              Call or Text 832-474-9547
-            </a>
-            <RoundedTooltipDemo />
-            <a
-              href="#about"
-              className="font-body text-sm tracking-wide text-charcoal/70 hover:text-bronze transition-colors"
-            >
-              About Reeves
-            </a>
-          </div>
+          <TooltipProvider>
+            <div className="hidden lg:flex items-center gap-4">
+              {navLinks.map((link) => (
+                <Tooltip key={link.href}>
+                  <TooltipTrigger asChild>
+                    <a href={link.href}>
+                      <Button variant="outline" className="border-bronze text-bronze hover:bg-bronze hover:text-white transition-colors duration-300">
+                        {link.label}
+                      </Button>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent className="rounded-full bg-charcoal text-cream border-bronze">
+                    <p>Go to {link.label}</p>
+                  </TooltipContent>
+                </Tooltip>
+              ))}
+              
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a href="#about">
+                    <Button variant="outline" className="border-bronze text-bronze hover:bg-bronze hover:text-white transition-colors duration-300">
+                      About Reeves
+                    </Button>
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent className="rounded-full bg-charcoal text-cream border-bronze">
+                  <p>Learn more About Reeves</p>
+                </TooltipContent>
+              </Tooltip>
+
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a href="tel:8324749547">
+                    <Button className="bg-[#B8956A] hover:bg-[#A6865F] text-white font-extrabold tracking-wide transition-colors duration-300 rounded-md px-4 py-2">
+                      Call or Text 832-474-9547
+                    </Button>
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent className="rounded-full bg-charcoal text-cream border-bronze">
+                  <p>Reach out to us directly!</p>
+                </TooltipContent>
+              </Tooltip>
+            </div>
+          </TooltipProvider>
 
           {/* Mobile toggle */}
           <button
