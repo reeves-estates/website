@@ -34,9 +34,8 @@ export default function Navigation() {
                   <TooltipTrigger asChild>
                     <a href={link.href}>
                       <Button
-                        variant="outline"
+                        variant="ghost"
                         className="text-charcoal/70 rounded-[5px] transition-all duration-150"
-                        style={{ border: "1px solid rgba(28, 28, 28, 0.08)" }}
                         onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(184, 149, 106, 0.06)")}
                         onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
                       >
@@ -54,9 +53,8 @@ export default function Navigation() {
                 <TooltipTrigger asChild>
                   <a href="#about">
                     <Button
-                      variant="outline"
+                      variant="ghost"
                       className="text-charcoal/70 rounded-[5px] transition-all duration-150"
-                      style={{ border: "1px solid rgba(28, 28, 28, 0.08)" }}
                       onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(184, 149, 106, 0.06)")}
                       onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
                     >
@@ -73,7 +71,7 @@ export default function Navigation() {
                 <TooltipTrigger asChild>
                   <a href="tel:8324749547">
                     <Button className="bg-[#B8956A] hover:bg-[#A6865F] text-white font-extrabold tracking-wide transition-colors duration-300 rounded-md px-4 py-2">
-                      Call or Text 832-474-9547
+                      Get in Touch
                     </Button>
                   </a>
                 </TooltipTrigger>
@@ -133,15 +131,7 @@ export default function Navigation() {
               className="flex-1 text-center py-2.5 font-body text-sm font-bold tracking-widest uppercase text-white rounded transition-colors hover:opacity-90"
               style={{ backgroundColor: "#B8956A" }}
             >
-              Call
-            </a>
-            <a
-              href="sms:8324749547"
-              onClick={() => setMobileOpen(false)}
-              className="flex-1 text-center py-2.5 font-body text-sm font-bold tracking-widest uppercase text-white rounded transition-colors hover:opacity-90"
-              style={{ backgroundColor: "#B8956A" }}
-            >
-              Text
+              Get in Touch
             </a>
           </div>
           <a

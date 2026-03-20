@@ -59,13 +59,13 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="tel:8324749547"
-              className="px-8 py-3.5 bg-bronze text-cream font-body text-sm tracking-widest uppercase hover:bg-bronze-dark transition-colors"
+              className="px-8 py-3.5 bg-bronze text-cream font-body text-sm tracking-widest uppercase hover:bg-bronze-dark transition-colors rounded-md"
             >
-              Call Now &nbsp;832-474-9547
+              Get in Touch
             </a>
             <a
               href="mailto:reevesestatesales@gmail.com?subject=Consultation%20Request%20%E2%80%94%20Reeves%20Estates"
-              className="px-8 py-3.5 border border-cream/40 text-cream font-body text-sm tracking-widest uppercase hover:border-bronze hover:text-bronze transition-colors"
+              className="px-8 py-3.5 text-cream font-body text-sm tracking-widest uppercase hover:text-bronze transition-colors rounded-md"
             >
               Book a Consultation
             </a>
