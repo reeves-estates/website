@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import RoundedTooltipDemo from "@/components/ui/rounded-tooltip";
 
 const navLinks = [
   { label: "How It Works", href: "#how-it-works" },
@@ -41,7 +42,8 @@ export default function Navigation() {
               style={{ color: "#B8956A" }}
             >
               Call or Text 832-474-9547
-</a>
+            </a>
+            <RoundedTooltipDemo />
             <a
               href="#about"
               className="font-body text-sm tracking-wide text-charcoal/70 hover:text-bronze transition-colors"
