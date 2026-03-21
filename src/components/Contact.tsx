@@ -56,6 +56,22 @@ export default function Contact() {
               Midtown Houston
             </a>
           </div>
+
+          <div className="hidden md:block w-[1px] h-12 bg-bronze/20 flex-shrink-0" />
+
+          <div className="flex-1 text-center px-4">
+            <span className="font-body text-xs tracking-widest uppercase text-charcoal/70 block mb-2">
+              Schedule
+            </span>
+            <button
+              data-cal-link="reevesestates-biwok7/secret"
+              data-cal-namespace="estate-consultation"
+              data-cal-config='{"layout":"month_view"}'
+              className="font-heading text-lg md:text-xl text-bronze hover:text-bronze-dark transition-colors cursor-pointer whitespace-nowrap"
+            >
+              Book a Consultation
+            </button>
+          </div>
         </div>
       </div>
     </section>
