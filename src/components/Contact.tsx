@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section id="contact" className="py-24 lg:py-32 bg-cream">
-      <div className="max-w-5xl mx-auto px-6 lg:px-12">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-16 fade-in-section">
           <h2 className="font-heading text-3xl md:text-5xl font-light text-charcoal mb-4">
             Get in Touch
@@ -13,7 +13,7 @@ export default function Contact() {
         </div>
 
         <div className="fade-in-section grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-0">
-          <div className="text-center px-4">
+          <div className="text-center px-6">
             <span className="font-body text-xs tracking-widest uppercase text-charcoal/70 block mb-2">
               Phone
             </span>
@@ -25,7 +25,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="text-center px-4 md:border-l md:border-bronze/20">
+          <div className="text-center px-6 md:border-l md:border-bronze/20">
             <span className="font-body text-xs tracking-widest uppercase text-charcoal/70 block mb-2">
               Email
             </span>
@@ -37,7 +37,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="text-center px-4 md:border-l md:border-bronze/20">
+          <div className="text-center px-6 md:border-l md:border-bronze/20">
             <span className="font-body text-xs tracking-widest uppercase text-charcoal/70 block mb-2">
               Visit
             </span>
@@ -45,7 +45,7 @@ export default function Contact() {
               href="https://www.google.com/maps?ll=29.747749,-95.38554&z=12&t=m&hl=en&gl=US&mapclient=embed&cid=7976129577028108421"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-heading text-lg md:text-xl text-bronze hover:text-bronze-dark transition-colors whitespace-nowrap"
+              className="font-heading text-lg md:text-xl text-bronze hover:text-bronze-dark transition-colors"
             >
               Corner of Taft &amp; Fairview
               <br />
@@ -53,7 +53,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="text-center px-4 md:border-l md:border-bronze/20">
+          <div className="text-center px-6 md:border-l md:border-bronze/20">
             <span className="font-body text-xs tracking-widest uppercase text-charcoal/70 block mb-2">
               Schedule
             </span>
