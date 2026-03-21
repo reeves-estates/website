@@ -12,8 +12,8 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="fade-in-section flex flex-col md:flex-row items-center justify-center gap-12 md:gap-0">
-          <div className="flex-1 text-center px-4">
+        <div className="fade-in-section grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-0">
+          <div className="text-center px-4">
             <span className="font-body text-xs tracking-widest uppercase text-charcoal/70 block mb-2">
               Phone
             </span>
@@ -25,9 +25,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="hidden md:block w-[1px] h-12 bg-bronze/20 flex-shrink-0" />
-
-          <div className="flex-1 text-center px-4">
+          <div className="text-center px-4 md:border-l md:border-bronze/20">
             <span className="font-body text-xs tracking-widest uppercase text-charcoal/70 block mb-2">
               Email
             </span>
@@ -39,9 +37,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="hidden md:block w-[1px] h-12 bg-bronze/20 flex-shrink-0" />
-
-          <div className="flex-1 text-center px-4">
+          <div className="text-center px-4 md:border-l md:border-bronze/20">
             <span className="font-body text-xs tracking-widest uppercase text-charcoal/70 block mb-2">
               Visit
             </span>
@@ -57,9 +53,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="hidden md:block w-[1px] h-12 bg-bronze/20 flex-shrink-0" />
-
-          <div className="flex-1 text-center px-4">
+          <div className="text-center px-4 md:border-l md:border-bronze/20">
             <span className="font-body text-xs tracking-widest uppercase text-charcoal/70 block mb-2">
               Schedule
             </span>
