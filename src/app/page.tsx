@@ -1,5 +1,5 @@
 "use client";
-
+// trigger Vercel preview build
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
