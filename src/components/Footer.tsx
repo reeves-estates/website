@@ -13,9 +13,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Left */}
           <div>
-            <span className="font-heading text-lg tracking-[0.25em] text-cream font-semibold block mb-1">
-              Reeves Estates
-            </span>
+            <img
+              src="/images/RE-momo.svg"
+              alt="Reeves Estates"
+              className="h-7 w-auto mb-4 brightness-0 invert opacity-80"
+            />
             <span className="block w-12 h-[1px] bg-bronze mb-4" />
             <p className="font-body text-xs leading-relaxed text-cream/40 italic mb-2">
               From first call to final close.
