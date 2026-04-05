@@ -19,9 +19,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
-            <img src="/images/monogram.svg" alt="Reeves Estates" className="h-9 w-auto" />
-            <img src="/images/wordmark.svg" alt="Reeves Estates" className="hidden sm:block h-5 w-auto" />
+          <a href="#" className="flex items-center">
+            <img src="/images/RE-momo.svg" alt="Reeves Estates" className="h-9 w-auto" />
           </a>
 
           {/* Desktop links */}
