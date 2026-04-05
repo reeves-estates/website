@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
 
 const navLinks = [
   { label: "How It Works", href: "#how-it-works" },
@@ -19,40 +21,60 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
-            <img src="/images/monogram.svg" alt="Reeves Estates" className="h-9 w-auto" />
-            <img src="/images/wordmark.svg" alt="Reeves Estates" className="hidden sm:block h-5 w-auto" />
+          <a href="#" className="flex items-center">
+            <img src="/images/RE-momo.svg" alt="Reeves Estates" className="h-5 sm:h-7 w-auto" />
           </a>
 
           {/* Desktop links */}
-          <div className="hidden 2xl:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="font-body text-sm tracking-wide text-charcoal/70 hover:text-bronze transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-            <a
-              href="tel:8324749547"
-              className="font-body text-base font-extrabold tracking-wide hover:text-bronze-dark transition-colors"
-              style={{ color: "#B8956A" }}
-            >
-              Call or Text 832-474-9547
-</a>
-            <a
-              href="#about"
-              className="font-body text-sm tracking-wide text-charcoal/70 hover:text-bronze transition-colors"
-            >
-              About Reeves
-            </a>
-          </div>
+          <TooltipProvider>
+            <div className="hidden lg:flex items-center gap-4">
+              {navLinks.map((link) => (
+                <Tooltip key={link.href}>
+                  <TooltipTrigger asChild>
+                    <a href={link.href}>
+                      <Button
+                        variant="ghost"
+                        className="text-charcoal/70 rounded-[5px] transition-all duration-150"
+                        onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(184, 149, 106, 0.06)")}
+                        onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+                      >
+                        {link.label}
+                      </Button>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent className="rounded-full bg-charcoal text-cream border-bronze">
+                    <p>Go to {link.label}</p>
+                  </TooltipContent>
+                </Tooltip>
+              ))}
+
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a href="#about">
+                    <Button
+                      variant="ghost"
+                      className="text-charcoal/70 rounded-[5px] transition-all duration-150"
+                      onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(184, 149, 106, 0.06)")}
+                      onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+                    >
+                      About Reeves
+                    </Button>
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent className="rounded-full bg-charcoal text-cream border-bronze">
+                  <p>Learn more About Reeves</p>
+                </TooltipContent>
+              </Tooltip>
+
+              <span className="font-body text-base font-bold tracking-wide" style={{ color: "#B8956A" }}>
+                832-474-9547
+              </span>
+            </div>
+          </TooltipProvider>
 
           {/* Mobile toggle */}
           <button
-            className="2xl:hidden flex flex-col gap-1.5 p-2"
+            className="lg:hidden flex flex-col gap-1.5 p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -77,7 +99,7 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       <div
-        className={`2xl:hidden overflow-hidden transition-all duration-300 bg-cream/95 backdrop-blur-md ${
+        className={`lg:hidden overflow-hidden transition-all duration-300 bg-cream/95 backdrop-blur-md ${
           mobileOpen ? "max-h-96" : "max-h-0"
         }`}
       >

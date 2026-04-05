@@ -3,12 +3,12 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "/images/hero/Hero-1.webp",
-  "/images/hero/Hero-2.webp",
-  "/images/hero/Hero-3.webp",
-  "/images/hero/Hero-4.webp",
-  "/images/hero/Hero-5.webp",
-  "/images/hero/Hero-6.webp",
+  "/images/hero/hero-1.webp",
+  "/images/hero/hero-2.webp",
+  "/images/hero/hero-3.webp",
+  "/images/hero/hero-4.webp",
+  "/images/hero/hero-5.webp",
+  "/images/hero/hero-6.webp",
 ];
 
 export default function Hero() {
@@ -57,17 +57,22 @@ export default function Hero() {
 
         <div className="hero-fade-in-delay-2 flex flex-col items-center gap-6">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            {/* Mobile: tap-to-call button */}
             <a
               href="tel:8324749547"
-              className="px-8 py-3.5 bg-bronze text-cream font-body text-sm tracking-widest uppercase hover:bg-bronze-dark transition-colors"
+              className="lg:hidden px-8 py-3.5 bg-bronze text-cream font-body text-sm tracking-widest uppercase hover:bg-bronze-dark transition-colors rounded-md"
             >
-              Call Now &nbsp;832-474-9547
+              Call Now 832-474-9547
             </a>
+            {/* Desktop: plain display text */}
+            <span className="hidden lg:block font-body text-3xl font-semibold text-white tracking-normal">
+              832-474-9547
+            </span>
             <a
-              href="mailto:midtownmodern@gmail.com?subject=Consultation%20Request%20%E2%80%94%20Reeves%20Estates"
-              className="px-8 py-3.5 border border-cream/40 text-cream font-body text-sm tracking-widest uppercase hover:border-bronze hover:text-bronze transition-colors"
+              href="mailto:midtownmodern@gmail.com?subject=Schedule%20an%20estate%20sale%20consultation"
+              className="px-8 py-3.5 border border-cream/40 text-cream font-body text-sm tracking-widest uppercase hover:text-bronze transition-colors rounded-md"
             >
-              Book a Consultation
+              Schedule a Consultation
             </a>
           </div>
 
@@ -94,6 +99,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
+
     </section>
   );
 }
