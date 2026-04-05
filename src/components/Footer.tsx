@@ -16,7 +16,7 @@ export default function Footer() {
             <img
               src="/images/RE-momo.svg"
               alt="Reeves Estates"
-              className="h-7 w-auto brightness-0 invert opacity-80 mb-4"
+              className="h-[17px] sm:h-7 w-auto brightness-0 invert opacity-80 mb-4"
             />
             <p className="font-body text-xs leading-relaxed text-cream/40 italic mb-2">
               From first call to final close.

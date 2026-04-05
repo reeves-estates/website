@@ -69,7 +69,7 @@ export default function Hero() {
               832-474-9547
             </span>
             <a
-              href="mailto:midtownmodern@gmail.com"
+              href="mailto:midtownmodern@gmail.com?subject=Schedule%20an%20estate%20sale%20consultation"
               className="px-8 py-3.5 border border-cream/40 text-cream font-body text-sm tracking-widest uppercase hover:text-bronze transition-colors rounded-md"
             >
               Schedule a Consultation
