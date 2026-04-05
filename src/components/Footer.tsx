@@ -13,10 +13,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Left */}
           <div>
-            <img 
-              src="/images/wordmark.svg" 
-              alt="Reeves Estates" 
-              className="h-5 w-auto brightness-0 invert opacity-80 mb-4" 
+            <img
+              src="/images/RE-momo.svg"
+              alt="Reeves Estates"
+              className="h-7 w-auto brightness-0 invert opacity-80 mb-4"
             />
             <p className="font-body text-xs leading-relaxed text-cream/40 italic mb-2">
               From first call to final close.

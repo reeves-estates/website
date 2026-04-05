@@ -32,10 +32,10 @@ export default function Contact() {
               Email
             </span>
             <a
-              href="mailto:reevesestatesales@gmail.com"
+              href="mailto:midtownmodern@gmail.com"
               className="font-heading text-lg md:text-xl text-bronze hover:text-bronze-dark transition-colors"
             >
-              reevesestatesales@gmail.com
+              midtownmodern@gmail.com
             </a>
           </div>
 
@@ -55,19 +55,6 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="text-center px-8 md:border-l md:border-bronze/20">
-            <span className="font-body text-xs tracking-widest uppercase text-charcoal/70 block mb-2">
-              Schedule
-            </span>
-            <button
-              data-cal-link="reevesestates-biwok7/secret"
-              data-cal-namespace="estate-consultation"
-              data-cal-config='{"layout":"month_view"}'
-              className="font-heading text-lg md:text-xl text-bronze hover:text-bronze-dark transition-colors cursor-pointer whitespace-nowrap"
-            >
-              Book a Consultation
-            </button>
-          </div>
         </div>
       </div>
     </section>

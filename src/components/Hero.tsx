@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import CalEmbed from "@/components/CalEmbed";
 
 const images = [
   "/images/hero/hero-1.webp",
@@ -69,14 +68,12 @@ export default function Hero() {
             <span className="hidden lg:block font-body text-3xl font-semibold text-white tracking-normal">
               832-474-9547
             </span>
-            <button
-              data-cal-link="reevesestates-biwok7/secret"
-              data-cal-namespace="estate-consultation"
-              data-cal-config='{"layout":"month_view"}'
-              className="px-8 py-3.5 border border-cream/40 text-cream font-body text-sm tracking-widest uppercase hover:text-bronze transition-colors rounded-md cursor-pointer"
+            <a
+              href="mailto:midtownmodern@gmail.com"
+              className="px-8 py-3.5 border border-cream/40 text-cream font-body text-sm tracking-widest uppercase hover:text-bronze transition-colors rounded-md"
             >
               Schedule a Consultation
-            </button>
+            </a>
           </div>
 
           <a
@@ -103,7 +100,6 @@ export default function Hero() {
         </div>
       </div>
 
-      <CalEmbed />
     </section>
   );
 }
