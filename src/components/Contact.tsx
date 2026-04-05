@@ -32,10 +32,10 @@ export default function Contact() {
               Email
             </span>
             <a
-              href="mailto:reevesestatesales@gmail.com"
+              href="mailto:midtownmodern@gmail.com"
               className="font-heading text-lg md:text-xl text-bronze hover:text-bronze-dark transition-colors whitespace-nowrap"
             >
-              reevesestatesales@gmail.com
+              midtownmodern@gmail.com
             </a>
           </div>
 

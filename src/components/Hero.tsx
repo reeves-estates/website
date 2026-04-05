@@ -64,7 +64,7 @@ export default function Hero() {
               Call Now &nbsp;832-474-9547
             </a>
             <a
-              href="mailto:reevesestatesales@gmail.com?subject=Consultation%20Request%20%E2%80%94%20Reeves%20Estates"
+              href="mailto:midtownmodern@gmail.com?subject=Consultation%20Request%20%E2%80%94%20Reeves%20Estates"
               className="px-8 py-3.5 border border-cream/40 text-cream font-body text-sm tracking-widest uppercase hover:border-bronze hover:text-bronze transition-colors"
             >
               Book a Consultation

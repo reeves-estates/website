@@ -77,7 +77,7 @@ export default function RootLayout({
                 "description": "Houston's trusted full-service estate specialists. Cash buyouts, estate sales, living estates, and liquidations. Serving River Oaks and greater Houston for three generations.",
                 "url": "https://reevesestates.com",
                 "telephone": "+18324749547",
-                "email": "reevesestatesales@gmail.com",
+                "email": "midtownmodern@gmail.com",
                 "priceRange": "$$",
                 "image": "https://reevesestates.com/images/hero/Hero-1.webp",
                 "address": {
