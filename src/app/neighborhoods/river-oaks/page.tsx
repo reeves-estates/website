@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Estate Sales in River Oaks, Houston",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 export default function RiverOaksPage() {
   return (
     <div className="bg-cream min-h-screen">
-
+      <Navigation />
       {/* Header */}
       <div className="bg-charcoal py-24 lg:py-32">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
@@ -203,17 +204,9 @@ export default function RiverOaksPage() {
               Send an Email
             </a>
           </div>
-          <div className="mt-12 pt-8 border-t border-cream/10">
-            <Link
-              href="/"
-              className="font-body text-xs tracking-widest uppercase text-cream/30 hover:text-bronze transition-colors"
-            >
-              ← Back to Reeves Estates
-            </Link>
-          </div>
         </div>
       </div>
-
+      <Footer />
     </div>
   );
 }
