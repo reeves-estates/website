@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
 
 const navLinks = [
-  { label: "How It Works", href: "#how-it-works" },
+  { label: "How It Works", href: "/#how-it-works" },
   { label: "Our Services", href: "/services" },
-  { label: "FAQs", href: "#faq" },
-  { label: "Testimonials", href: "#testimonials" },
+  { label: "FAQs", href: "/#faq" },
+  { label: "Testimonials", href: "/#testimonials" },
 ];
 
 export default function Navigation() {
@@ -50,7 +50,7 @@ export default function Navigation() {
 
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <a href="#about">
+                  <a href="/#about">
                     <Button
                       variant="ghost"
                       className="text-charcoal/70 rounded-[5px] transition-all duration-150"
@@ -133,7 +133,7 @@ export default function Navigation() {
             </a>
           </div>
           <a
-            href="#about"
+            href="/#about"
             onClick={() => setMobileOpen(false)}
             className="font-body text-sm tracking-wide text-charcoal/70 hover:text-bronze transition-colors"
           >
