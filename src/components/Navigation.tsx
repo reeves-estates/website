@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
 
 const navLinks = [
-  { label: "How It Works", href: "#how-it-works" },
+  { label: "How It Works", href: "/#how-it-works" },
   { label: "Our Services", href: "/services" },
-  { label: "FAQs", href: "#faq" },
-  { label: "Testimonials", href: "#testimonials" },
+  { label: "FAQs", href: "/#faq" },
+  { label: "Testimonials", href: "/#testimonials" },
 ];
 
 export default function Navigation() {
@@ -21,7 +21,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img src="/images/RE-momo.svg" alt="Reeves Estates" className="h-5 sm:h-7 w-auto" />
           </a>
 
@@ -50,7 +50,7 @@ export default function Navigation() {
 
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <a href="#about">
+                  <a href="/#about">
                     <Button
                       variant="ghost"
                       className="text-charcoal/70 rounded-[5px] transition-all duration-150"
@@ -133,7 +133,7 @@ export default function Navigation() {
             </a>
           </div>
           <a
-            href="#about"
+            href="/#about"
             onClick={() => setMobileOpen(false)}
             className="font-body text-sm tracking-wide text-charcoal/70 hover:text-bronze transition-colors"
           >
