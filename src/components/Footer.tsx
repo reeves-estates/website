@@ -55,7 +55,7 @@ export default function Footer() {
               <a href="/neighborhoods/river-oaks" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">
                 River Oaks
               </a>
-              <span className="font-body text-sm text-cream/25">Memorial</span>
+              <a href="/neighborhoods/memorial" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">Memorial</a>
               <span className="font-body text-sm text-cream/25">Tanglewood</span>
               <span className="font-body text-sm text-cream/25">West University Place</span>
               <span className="font-body text-sm text-cream/25">Bellaire</span>
