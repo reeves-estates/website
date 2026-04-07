@@ -9,7 +9,9 @@ export default function ContentLayout({
   return (
     <>
       <Navigation />
-      {children}
+      <main className="pt-20">
+        {children}
+      </main>
       <Footer />
     </>
   );
