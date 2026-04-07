@@ -57,8 +57,8 @@ export default function Footer() {
               </a>
               <a href="/neighborhoods/memorial" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">Memorial</a>
               <a href="/neighborhoods/tanglewood" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">Tanglewood</a>
-              <span className="font-body text-sm text-cream/25">West University Place</span>
-              <span className="font-body text-sm text-cream/25">Bellaire</span>
+              <a href="/neighborhoods/west-university" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">West University Place</a>
+              <a href="/neighborhoods/bellaire" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">Bellaire</a>
             </div>
           </div>
         </div>
