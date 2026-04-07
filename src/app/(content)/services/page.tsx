@@ -153,7 +153,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Services */}
-      <div className="max-w-4xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
+      <div className="max-w-4xl mx-auto px-6 lg:px-12 py-12 lg:py-16">
         <div className="flex flex-col divide-y divide-bronze/15">
           {services.map((service) => (
             <div key={service.id} id={service.id} className="py-14 lg:py-16">
