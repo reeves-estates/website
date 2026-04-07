@@ -13,7 +13,7 @@ export default function About() {
           >
             <div>
               <div className="w-10 h-[1px] bg-bronze mb-8" />
-              <blockquote className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-cream/90 leading-snug italic">
+              <blockquote className="font-body text-2xl md:text-3xl lg:text-4xl font-light text-cream/90 leading-snug italic">
                 &ldquo;We have spent three generations learning what things are
                 worth — and what they mean to the families who treasured
                 them.&rdquo;
