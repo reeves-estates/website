@@ -137,7 +137,7 @@ export default function ServicesPage() {
           </p>
           <h1
             className="text-4xl md:text-6xl text-cream mb-6"
-            style={{ fontFamily: "var(--font-hatton)", fontWeight: 500, lineHeight: 0.95, letterSpacing: "-0.020em" }}
+            style={{ fontFamily: "var(--font-hatton)", fontWeight: 500, lineHeight: 1.0, letterSpacing: "-0.020em" }}
           >
             Houston Estate Sale Services
           </h1>
