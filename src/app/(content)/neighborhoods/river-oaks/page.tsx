@@ -17,18 +17,18 @@ export default function RiverOaksPage() {
   return (
     <div className="bg-cream min-h-screen">
       {/* Header */}
-      <div className="bg-charcoal py-24 lg:py-32">
+      <div className="bg-charcoal py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
           <p className="font-body text-xs tracking-widest uppercase text-bronze mb-4">
             Reeves Estates · Houston, TX
           </p>
           <h1
-            className="text-4xl md:text-6xl text-cream mb-6"
+            className="text-4xl md:text-6xl text-cream mb-4"
             style={{ fontFamily: "var(--font-hatton)", fontWeight: 500, lineHeight: 0.95, letterSpacing: "-0.020em" }}
           >
             Estate Sales in River Oaks
           </h1>
-          <div className="w-16 h-[1px] bg-bronze mx-auto mb-8" />
+          <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
             Reeves has served River Oaks families for decades. We understand
             the neighborhood, the collections it holds, and the care those
@@ -38,12 +38,12 @@ export default function RiverOaksPage() {
       </div>
 
       {/* Body */}
-      <div className="max-w-4xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
-        <div className="flex flex-col gap-16">
+      <div className="max-w-4xl mx-auto px-6 lg:px-12 py-10 lg:py-14">
+        <div className="flex flex-col gap-10">
 
           {/* Section 1 */}
           <div>
-            <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-6">
+            <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
               A neighborhood that demands a different standard
             </h2>
             <div className="flex flex-col gap-4">
@@ -71,7 +71,7 @@ export default function RiverOaksPage() {
 
           {/* Section 2 */}
           <div>
-            <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-6">
+            <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
               How we work with River Oaks estates
             </h2>
             <div className="flex flex-col gap-4">
@@ -100,7 +100,7 @@ export default function RiverOaksPage() {
 
           {/* Section 3 */}
           <div>
-            <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-6">
+            <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
               Cash buyouts for River Oaks families who need certainty
             </h2>
             <div className="flex flex-col gap-4">
@@ -126,7 +126,7 @@ export default function RiverOaksPage() {
 
           {/* Section 4 */}
           <div>
-            <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-6">
+            <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
               Fine art and antiques — handled properly
             </h2>
             <div className="flex flex-col gap-4">
@@ -148,7 +148,7 @@ export default function RiverOaksPage() {
           </div>
 
           {/* Neighborhoods nearby */}
-          <div className="border-t border-bronze/15 pt-12">
+          <div className="border-t border-bronze/15 pt-8">
             <p className="font-body text-xs tracking-widest uppercase text-bronze mb-4">
               Also serving nearby
             </p>
@@ -176,14 +176,14 @@ export default function RiverOaksPage() {
       </div>
 
       {/* CTA */}
-      <div className="bg-charcoal py-20">
+      <div className="bg-charcoal py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2
             className="font-heading text-3xl md:text-4xl font-light text-cream mb-4"
           >
             Let&rsquo;s talk about your estate.
           </h2>
-          <p className="font-body text-sm text-cream/60 mb-10">
+          <p className="font-body text-sm text-cream/60 mb-6">
             No pressure, no obligation. Just an honest conversation about what
             you have and what your options are.
           </p>

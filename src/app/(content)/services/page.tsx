@@ -130,18 +130,18 @@ export default function ServicesPage() {
   return (
     <div className="bg-cream min-h-screen">
       {/* Header */}
-      <div className="bg-charcoal py-24 lg:py-32">
+      <div className="bg-charcoal py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
           <p className="font-body text-xs tracking-widest uppercase text-bronze mb-4">
             Reeves Estates · Houston, TX
           </p>
           <h1
-            className="text-4xl md:text-6xl text-cream mb-6"
+            className="text-4xl md:text-6xl text-cream mb-4"
             style={{ fontFamily: "var(--font-hatton)", fontWeight: 500, lineHeight: 1.0, letterSpacing: "-0.020em" }}
           >
             Houston Estate Sale Services
           </h1>
-          <div className="w-16 h-[1px] bg-bronze mx-auto mb-8" />
+          <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p
             className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto"
           >
@@ -156,7 +156,7 @@ export default function ServicesPage() {
       <div className="max-w-4xl mx-auto px-6 lg:px-12 py-12 lg:py-16">
         <div className="flex flex-col divide-y divide-bronze/15">
           {services.map((service) => (
-            <div key={service.id} id={service.id} className="py-14 lg:py-16">
+            <div key={service.id} id={service.id} className="py-10 lg:py-12">
               <p className="font-body text-xs tracking-widest uppercase text-bronze mb-3">
                 {service.keywords[0]}
               </p>
@@ -166,7 +166,7 @@ export default function ServicesPage() {
                 {service.title}
               </h2>
               <p
-                className="font-body text-lg text-charcoal/60 italic mb-8"
+                className="font-body text-lg text-charcoal/60 italic mb-4"
               >
                 {service.tagline}
               </p>
@@ -183,14 +183,14 @@ export default function ServicesPage() {
       </div>
 
       {/* CTA */}
-      <div className="bg-charcoal py-20">
+      <div className="bg-charcoal py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2
             className="font-heading text-3xl md:text-4xl font-light text-cream mb-4"
           >
             Every estate is different.
           </h2>
-          <p className="font-body text-sm text-cream/60 mb-10">
+          <p className="font-body text-sm text-cream/60 mb-6">
             Call us for a no-obligation conversation about your situation.
             We&rsquo;ll tell you honestly what we can do and what it will cost.
           </p>
