@@ -47,14 +47,18 @@ export default function Footer() {
           </div>
 
           {/* Right */}
-          <div className="flex flex-col justify-between">
-            <div>
-              <span className="font-body text-xs tracking-widest uppercase text-cream/30 block mb-4">
-                Serving Houston
-              </span>
-              <p className="font-body text-sm text-cream/50 italic">
-                Serving Houston families across three generations.
-              </p>
+          <div>
+            <span className="font-body text-xs tracking-widest uppercase text-cream/30 block mb-4">
+              Neighborhoods
+            </span>
+            <div className="flex flex-col gap-2">
+              <a href="/neighborhoods/river-oaks" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">
+                River Oaks
+              </a>
+              <span className="font-body text-sm text-cream/25">Memorial</span>
+              <span className="font-body text-sm text-cream/25">Tanglewood</span>
+              <span className="font-body text-sm text-cream/25">West University Place</span>
+              <span className="font-body text-sm text-cream/25">Bellaire</span>
             </div>
           </div>
         </div>
