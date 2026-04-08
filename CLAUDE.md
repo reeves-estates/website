@@ -146,7 +146,7 @@ Never add extra padding or margin "for breathing room" without explicit instruct
 ## Contact Info
 
 - **Phone:** 832-474-9547
-- **Email:** reevesestatesales@gmail.com
+- **Email:** midtownmodern@gmail.com
 - **Location:** Houston, TX
 
 ## Active Branches & Known Issues

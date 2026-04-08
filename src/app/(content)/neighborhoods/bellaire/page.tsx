@@ -187,7 +187,7 @@ export default function BellairePage() {
               Call 832-474-9547
             </a>
             <a
-              href="mailto:reevesestatesales@gmail.com?subject=Bellaire%20estate%20inquiry"
+              href="mailto:midtownmodern@gmail.com?subject=Bellaire%20estate%20inquiry"
               className="px-8 py-3.5 border border-cream/30 text-cream font-body text-sm tracking-widest uppercase hover:border-bronze hover:text-bronze transition-colors"
             >
               Send an Email
