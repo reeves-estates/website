@@ -78,6 +78,14 @@ export default function Services() {
           ))}
         </div>
 
+        <div className="text-center mt-10">
+          <a
+            href="/services"
+            className="inline-block font-compact text-sm tracking-widest uppercase px-10 py-4 border border-bronze text-bronze hover:bg-bronze hover:text-cream transition-colors"
+          >
+            View all services in detail →
+          </a>
+        </div>
       </div>
     </section>
   );
