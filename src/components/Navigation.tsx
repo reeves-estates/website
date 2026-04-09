@@ -34,7 +34,7 @@ export default function Navigation() {
                     <a href={link.href}>
                       <Button
                         variant="ghost"
-                        className="text-charcoal/70 rounded-[5px] transition-all duration-150"
+                        className="text-charcoal/70 rounded-[5px] transition-all duration-150 text-base font-semibold"
                         onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(184, 149, 106, 0.06)")}
                         onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
                       >

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | Reeves Estates",
   },
   description:
-    "Houston's trusted full-service estate specialists. Cash buyouts, estate sales, living estates, and liquidations. Serving River Oaks and greater Houston for three generations. Call today.",
+    "Reeves Estates — Houston's full-service estate handling specialists. Cash buyouts, estate sales, appraisals, and liquidations. Serving River Oaks and greater Houston for three generations.",
   keywords:
     "Houston estate sales, estate liquidation Houston, cash estate buyout Houston, River Oaks estate sales, living estate Houston, estate executor Houston, antique estate sale Houston, Houston estate specialists",
   alternates: {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Reeves Estates",
     title: "Reeves Estates | Houston Estate Sales, Buyouts & Liquidations",
     description:
-      "Houston's trusted full-service estate specialists. Cash buyouts, estate sales, living estates, and liquidations. Serving River Oaks and greater Houston.",
+      "Reeves Estates — Houston's full-service estate handling specialists. Cash buyouts, estate sales, appraisals, and liquidations. Serving River Oaks and greater Houston.",
   },
   verification: {
     google: "0ZvlKynvzOy89HqbicAAppPNQ_u5lx48RIRmIfkUoIo",
@@ -67,7 +67,7 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "Reeves Estates",
-                "description": "Houston's trusted full-service estate specialists. Cash buyouts, estate sales, living estates, and liquidations. Serving River Oaks and greater Houston for three generations.",
+                "description": "Reeves Estates — Houston's full-service estate handling specialists. Cash buyouts, estate sales, appraisals, and liquidations. Serving River Oaks and greater Houston for three generations.",
                 "url": "https://reevesestates.com",
                 "telephone": "+18324749547",
                 "email": "midtownmodern@gmail.com",
@@ -75,9 +75,10 @@ export default function RootLayout({
                 "image": "https://reevesestates.com/images/hero/Hero-1.webp",
                 "address": {
                   "@type": "PostalAddress",
-                  "streetAddress": "Corner of Taft & Fairview",
+                  "streetAddress": "2415 Taft St",
                   "addressLocality": "Houston",
                   "addressRegion": "TX",
+                  "postalCode": "77006",
                   "addressCountry": "US"
                 },
                 "geo": {

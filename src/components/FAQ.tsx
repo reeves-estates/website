@@ -148,7 +148,7 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-24 lg:py-32 bg-cream">
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
-        <div className="text-center mb-16 fade-in-section">
+        <div className="text-center mb-8 md:mb-16 fade-in-section">
           <h2 className="font-heading text-3xl md:text-5xl font-light text-charcoal mb-4">
             Your Questions, Answered
           </h2>

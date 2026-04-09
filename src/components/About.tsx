@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <section id="about" className="py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="about" className="py-12 lg:py-32">
+      <div className="max-w-4xl mx-auto px-6 lg:px-12">
         <div className="fade-in-section grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-0 overflow-hidden">
           {/* Left — Pull quote */}
           <div
@@ -25,10 +25,13 @@ export default function About() {
           {/* Right — Body text */}
           <div className="p-12 lg:p-16 bg-cream border border-bronze/10 flex items-center">
             <div>
-              <h2 className="font-heading text-3xl md:text-4xl font-light text-charcoal mb-6">
+              <p className="font-body text-xs tracking-widest uppercase text-bronze mb-3">
+                Houston&rsquo;s full-service estate handling specialists
+              </p>
+              <h2 className="font-heading text-3xl md:text-4xl text-charcoal mb-6">
                 About Reeves
               </h2>
-              <div className="space-y-4 font-body text-sm md:text-base leading-relaxed text-charcoal/75">
+              <div className="space-y-4 font-body text-base leading-relaxed text-charcoal/75">
                 <p>
                   For more than fifty years, Reeves has occupied the corner of
                   Taft and Fairview in Houston&rsquo;s Midtown — a family

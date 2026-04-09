@@ -66,7 +66,7 @@ export default function Footer() {
           {/* Neighborhoods */}
           <div>
             <span className="font-body text-xs tracking-widest uppercase text-cream/30 block mb-4">
-              Neighborhoods
+              Where We Work
             </span>
             <div className="flex flex-col gap-2">
               <a href="/neighborhoods/river-oaks" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">
