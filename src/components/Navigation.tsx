@@ -27,7 +27,7 @@ export default function Navigation() {
 
           {/* Desktop links */}
           <TooltipProvider>
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden lg:flex items-baseline gap-4">
               {navLinks.map((link) => (
                 <Tooltip key={link.href}>
                   <TooltipTrigger asChild>
