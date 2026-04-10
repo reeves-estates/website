@@ -150,21 +150,24 @@ export default function MemorialPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                "River Oaks",
-                "Tanglewood",
-                "Memorial Villages",
-                "Spring Valley",
-                "Hedwig Village",
-                "West University Place",
-                "Hunters Creek",
-              ].map((n) => (
-                <span
-                  key={n}
-                  className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1"
-                >
-                  {n}
-                </span>
-              ))}
+                { name: "River Oaks", href: "/neighborhoods/river-oaks" },
+                { name: "Tanglewood", href: "/neighborhoods/tanglewood" },
+                { name: "Memorial Villages" },
+                { name: "Spring Valley" },
+                { name: "Hedwig Village" },
+                { name: "West University Place", href: "/neighborhoods/west-university" },
+                { name: "Hunters Creek" },
+              ].map((n) =>
+                n.href ? (
+                  <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
+                    {n.name}
+                  </a>
+                ) : (
+                  <span key={n.name} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1">
+                    {n.name}
+                  </span>
+                )
+              )}
             </div>
           </div>
 

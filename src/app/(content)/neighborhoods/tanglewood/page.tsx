@@ -150,21 +150,24 @@ export default function TanglewoodPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                "River Oaks",
-                "Memorial",
-                "Briargrove",
-                "West University Place",
-                "Galleria",
-                "Upper Kirby",
-                "Briargrove Park",
-              ].map((n) => (
-                <span
-                  key={n}
-                  className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1"
-                >
-                  {n}
-                </span>
-              ))}
+                { name: "River Oaks", href: "/neighborhoods/river-oaks" },
+                { name: "Memorial", href: "/neighborhoods/memorial" },
+                { name: "Briargrove" },
+                { name: "West University Place", href: "/neighborhoods/west-university" },
+                { name: "Galleria" },
+                { name: "Upper Kirby" },
+                { name: "Briargrove Park" },
+              ].map((n) =>
+                n.href ? (
+                  <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
+                    {n.name}
+                  </a>
+                ) : (
+                  <span key={n.name} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1">
+                    {n.name}
+                  </span>
+                )
+              )}
             </div>
           </div>
 
