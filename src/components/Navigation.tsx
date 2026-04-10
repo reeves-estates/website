@@ -34,7 +34,7 @@ export default function Navigation() {
                     <a href={link.href}>
                       <Button
                         variant="ghost"
-                        className="font-compact text-charcoal/70 rounded-[5px] transition-all duration-150 text-base font-semibold"
+                        className="font-body uppercase text-charcoal/70 rounded-[5px] transition-all duration-150 text-base font-semibold"
                         onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(184, 149, 106, 0.06)")}
                         onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
                       >
@@ -53,7 +53,7 @@ export default function Navigation() {
                   <a href="/#about">
                     <Button
                       variant="ghost"
-                      className="font-compact text-charcoal/70 rounded-[5px] transition-all duration-150 text-base font-semibold"
+                      className="font-body uppercase text-charcoal/70 rounded-[5px] transition-all duration-150 text-base font-semibold"
                       onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(184, 149, 106, 0.06)")}
                       onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
                     >
@@ -109,7 +109,7 @@ export default function Navigation() {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="font-compact text-sm tracking-wide text-charcoal/70 hover:text-bronze transition-colors"
+              className="font-body uppercase text-sm tracking-wide text-charcoal/70 hover:text-bronze transition-colors"
             >
               {link.label}
             </a>
