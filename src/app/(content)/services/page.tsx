@@ -188,11 +188,12 @@ export default function ServicesPage() {
           <h2
             className="font-heading text-3xl md:text-4xl font-light text-cream mb-4"
           >
-            Every estate is different.
+            Your Estate. Uniquely Yours.
           </h2>
-          <p className="font-body text-sm text-cream/60 mb-6">
-            Call us for a no-obligation conversation about your situation.
-            We&rsquo;ll tell you honestly what we can do and what it will cost.
+          <p className="font-body text-base text-cream/65 mb-6 leading-relaxed">
+            Every family comes to this differently. We listen first, and we
+            take the time to understand what matters before we say a word
+            about what&rsquo;s possible.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
