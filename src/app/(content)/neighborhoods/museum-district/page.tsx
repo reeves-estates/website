@@ -30,9 +30,9 @@ export default function MuseumDistrictPage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            Few Houston neighborhoods attract collectors the way the Museum
-            District does. We understand the collections that form here — and
-            how to handle them well.
+            The Museum District attracts people who live with art. We handle
+            what they&rsquo;ve collected with the same seriousness they
+            brought to collecting it.
           </p>
         </div>
       </div>
@@ -126,24 +126,18 @@ export default function MuseumDistrictPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
+                { name: "River Oaks", href: "/neighborhoods/river-oaks" },
+                { name: "Tanglewood", href: "/neighborhoods/tanglewood" },
+                { name: "Memorial", href: "/neighborhoods/memorial" },
+                { name: "West University Place", href: "/neighborhoods/west-university" },
+                { name: "Bellaire", href: "/neighborhoods/bellaire" },
                 { name: "Midtown", href: "/neighborhoods/midtown" },
                 { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
-                { name: "West University Place", href: "/neighborhoods/west-university" },
-                { name: "River Oaks", href: "/neighborhoods/river-oaks" },
-                { name: "Montrose" },
-                { name: "Rice Village" },
-                { name: "Greenway Plaza" },
-              ].map((n) =>
-                n.href ? (
-                  <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
-                    {n.name}
-                  </a>
-                ) : (
-                  <span key={n.name} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1">
-                    {n.name}
-                  </span>
-                )
-              )}
+              ].map((n) => (
+                <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
+                  {n.name}
+                </a>
+              ))}
             </div>
           </div>
 

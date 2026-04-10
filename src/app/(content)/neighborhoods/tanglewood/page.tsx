@@ -31,9 +31,9 @@ export default function TanglewoodPage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            Tanglewood is one of Houston&rsquo;s most storied addresses.
-            The estates here reflect that — and so does the care we bring
-            to handling them.
+            Tanglewood has a particular character — quiet, considered,
+            established. The estates here reflect that. So does the way
+            we work.
           </p>
         </div>
       </div>
@@ -152,22 +152,16 @@ export default function TanglewoodPage() {
               {[
                 { name: "River Oaks", href: "/neighborhoods/river-oaks" },
                 { name: "Memorial", href: "/neighborhoods/memorial" },
-                { name: "Briargrove" },
                 { name: "West University Place", href: "/neighborhoods/west-university" },
-                { name: "Galleria" },
+                { name: "Bellaire", href: "/neighborhoods/bellaire" },
+                { name: "Museum District", href: "/neighborhoods/museum-district" },
+                { name: "Midtown", href: "/neighborhoods/midtown" },
                 { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
-                { name: "Briargrove Park" },
-              ].map((n) =>
-                n.href ? (
-                  <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
-                    {n.name}
-                  </a>
-                ) : (
-                  <span key={n.name} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1">
-                    {n.name}
-                  </span>
-                )
-              )}
+              ].map((n) => (
+                <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
+                  {n.name}
+                </a>
+              ))}
             </div>
           </div>
 

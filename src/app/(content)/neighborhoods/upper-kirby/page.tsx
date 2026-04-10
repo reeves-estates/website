@@ -30,9 +30,9 @@ export default function UpperKirbyPage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            Upper Kirby sits at the crossroads of some of Houston&rsquo;s most
-            established neighborhoods. The estates here reflect decades of
-            considered living — and they deserve to be handled accordingly.
+            Upper Kirby is well-placed and well-considered. The estates here
+            reflect decades of intentional living — and deserve to be
+            handled that way.
           </p>
         </div>
       </div>
@@ -127,23 +127,17 @@ export default function UpperKirbyPage() {
             <div className="flex flex-wrap gap-3">
               {[
                 { name: "River Oaks", href: "/neighborhoods/river-oaks" },
+                { name: "Tanglewood", href: "/neighborhoods/tanglewood" },
+                { name: "Memorial", href: "/neighborhoods/memorial" },
                 { name: "West University Place", href: "/neighborhoods/west-university" },
+                { name: "Bellaire", href: "/neighborhoods/bellaire" },
                 { name: "Museum District", href: "/neighborhoods/museum-district" },
                 { name: "Midtown", href: "/neighborhoods/midtown" },
-                { name: "Montrose" },
-                { name: "Greenway Plaza" },
-                { name: "Rice Village" },
-              ].map((n) =>
-                n.href ? (
-                  <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
-                    {n.name}
-                  </a>
-                ) : (
-                  <span key={n.name} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1">
-                    {n.name}
-                  </span>
-                )
-              )}
+              ].map((n) => (
+                <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
+                  {n.name}
+                </a>
+              ))}
             </div>
           </div>
 

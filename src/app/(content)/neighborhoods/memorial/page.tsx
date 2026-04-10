@@ -31,9 +31,9 @@ export default function MemorialPage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            Memorial families have trusted Reeves for generations. We know
-            the neighborhood, the collections it holds, and what it takes
-            to handle them well.
+            Memorial is a neighborhood of substance. The families we work with
+            here have accumulated carefully, over time. We approach every
+            engagement the same way.
           </p>
         </div>
       </div>
@@ -152,22 +152,16 @@ export default function MemorialPage() {
               {[
                 { name: "River Oaks", href: "/neighborhoods/river-oaks" },
                 { name: "Tanglewood", href: "/neighborhoods/tanglewood" },
-                { name: "Memorial Villages" },
-                { name: "Spring Valley" },
-                { name: "Hedwig Village" },
                 { name: "West University Place", href: "/neighborhoods/west-university" },
-                { name: "Hunters Creek" },
-              ].map((n) =>
-                n.href ? (
-                  <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
-                    {n.name}
-                  </a>
-                ) : (
-                  <span key={n.name} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1">
-                    {n.name}
-                  </span>
-                )
-              )}
+                { name: "Bellaire", href: "/neighborhoods/bellaire" },
+                { name: "Museum District", href: "/neighborhoods/museum-district" },
+                { name: "Midtown", href: "/neighborhoods/midtown" },
+                { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
+              ].map((n) => (
+                <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
+                  {n.name}
+                </a>
+              ))}
             </div>
           </div>
 

@@ -31,9 +31,8 @@ export default function WestUniversityPage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            West University families have built lasting homes and meaningful
-            collections. When it&rsquo;s time to settle an estate, we handle
-            every detail with the care that history deserves.
+            West U families tend to know exactly what they have. We bring the
+            same standard of care and clarity to every engagement here.
           </p>
         </div>
       </div>
@@ -147,23 +146,17 @@ export default function WestUniversityPage() {
             <div className="flex flex-wrap gap-3">
               {[
                 { name: "River Oaks", href: "/neighborhoods/river-oaks" },
+                { name: "Tanglewood", href: "/neighborhoods/tanglewood" },
+                { name: "Memorial", href: "/neighborhoods/memorial" },
                 { name: "Bellaire", href: "/neighborhoods/bellaire" },
-                { name: "Southside Place" },
                 { name: "Museum District", href: "/neighborhoods/museum-district" },
+                { name: "Midtown", href: "/neighborhoods/midtown" },
                 { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
-                { name: "Greenway Plaza" },
-                { name: "Rice Village" },
-              ].map((n) =>
-                n.href ? (
-                  <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
-                    {n.name}
-                  </a>
-                ) : (
-                  <span key={n.name} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1">
-                    {n.name}
-                  </span>
-                )
-              )}
+              ].map((n) => (
+                <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
+                  {n.name}
+                </a>
+              ))}
             </div>
           </div>
 

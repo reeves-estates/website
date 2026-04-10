@@ -30,9 +30,8 @@ export default function RiverOaksPage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            Reeves has served River Oaks families for decades. We understand
-            the neighborhood, the collections it holds, and the care those
-            collections deserve.
+            River Oaks estates tend to arrive with history behind them. We know
+            how to read a collection — and how to handle one.
           </p>
         </div>
       </div>
@@ -161,17 +160,11 @@ export default function RiverOaksPage() {
                 { name: "Museum District", href: "/neighborhoods/museum-district" },
                 { name: "Midtown", href: "/neighborhoods/midtown" },
                 { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
-              ].map((n) =>
-                n.href ? (
-                  <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
-                    {n.name}
-                  </a>
-                ) : (
-                  <span key={n.name} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1">
-                    {n.name}
-                  </span>
-                )
-              )}
+              ].map((n) => (
+                <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
+                  {n.name}
+                </a>
+              ))}
             </div>
           </div>
 
