@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
 
 const navLinks = [
@@ -31,15 +30,11 @@ export default function Navigation() {
               {navLinks.map((link) => (
                 <Tooltip key={link.href}>
                   <TooltipTrigger asChild>
-                    <a href={link.href}>
-                      <Button
-                        variant="ghost"
-                        className="font-body uppercase text-charcoal/70 rounded-[5px] transition-all duration-150 text-sm font-semibold"
-                        onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(184, 149, 106, 0.06)")}
-                        onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
-                      >
-                        {link.label}
-                      </Button>
+                    <a
+                      href={link.href}
+                      className="font-body uppercase text-sm font-semibold text-charcoal/70 hover:text-bronze transition-colors px-2 py-1 rounded-[5px]"
+                    >
+                      {link.label}
                     </a>
                   </TooltipTrigger>
                   <TooltipContent className="rounded-full bg-charcoal text-cream border-bronze">
@@ -50,15 +45,11 @@ export default function Navigation() {
 
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <a href="/#about">
-                    <Button
-                      variant="ghost"
-                      className="font-body uppercase text-charcoal/70 rounded-[5px] transition-all duration-150 text-sm font-semibold"
-                      onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(184, 149, 106, 0.06)")}
-                      onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
-                    >
-                      About Reeves
-                    </Button>
+                  <a
+                    href="/#about"
+                    className="font-body uppercase text-sm font-semibold text-charcoal/70 hover:text-bronze transition-colors px-2 py-1 rounded-[5px]"
+                  >
+                    About Reeves
                   </a>
                 </TooltipTrigger>
                 <TooltipContent className="rounded-full bg-charcoal text-cream border-bronze">
@@ -66,7 +57,7 @@ export default function Navigation() {
                 </TooltipContent>
               </Tooltip>
 
-              <span className="font-compact text-base font-bold tracking-wide" style={{ color: "#B8956A" }}>
+              <span className="font-compact text-lg font-bold tracking-wide" style={{ color: "#B8956A" }}>
                 832-474-9547
               </span>
             </div>
