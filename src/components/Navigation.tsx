@@ -57,7 +57,7 @@ export default function Navigation() {
                 </TooltipContent>
               </Tooltip>
 
-              <a href="tel:8324749547" className="font-compact text-sm font-bold tracking-wide border border-bronze px-3 py-1.5" style={{ color: "#B8956A" }}>
+              <a href="tel:8324749547" className="font-compact text-base font-bold tracking-wide border border-bronze px-3 py-1.5 text-charcoal">
                 832-474-9547
               </a>
             </div>
@@ -109,7 +109,7 @@ export default function Navigation() {
             <a
               href="tel:8324749547"
               onClick={() => setMobileOpen(false)}
-              className="flex-1 text-center py-2.5 font-compact text-sm font-bold tracking-widest uppercase text-white rounded transition-colors hover:opacity-90"
+              className="flex-1 text-center py-3 font-compact text-base font-bold tracking-widest uppercase text-white rounded transition-colors hover:opacity-90"
               style={{ backgroundColor: "#B8956A" }}
             >
               Call
@@ -117,7 +117,7 @@ export default function Navigation() {
             <a
               href="sms:8324749547"
               onClick={() => setMobileOpen(false)}
-              className="flex-1 text-center py-2.5 font-compact text-sm font-bold tracking-widest uppercase text-white rounded transition-colors hover:opacity-90"
+              className="flex-1 text-center py-3 font-compact text-base font-bold tracking-widest uppercase text-white rounded transition-colors hover:opacity-90"
               style={{ backgroundColor: "#B8956A" }}
             >
               Text
