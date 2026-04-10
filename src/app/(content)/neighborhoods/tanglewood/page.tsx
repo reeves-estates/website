@@ -20,7 +20,7 @@ export default function TanglewoodPage() {
       {/* Header */}
       <div className="bg-charcoal py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
-          <p className="font-body text-xs tracking-widest uppercase text-bronze mb-4">
+          <p className="font-compact text-xs tracking-widest uppercase text-bronze mb-4">
             Reeves Estates · Houston, TX
           </p>
           <h1
@@ -145,7 +145,7 @@ export default function TanglewoodPage() {
 
           {/* Neighborhoods nearby */}
           <div className="border-t border-bronze/15 pt-8">
-            <p className="font-body text-xs tracking-widest uppercase text-bronze mb-4">
+            <p className="font-compact text-xs tracking-widest uppercase text-bronze mb-4">
               Also serving nearby
             </p>
             <div className="flex flex-wrap gap-3">
@@ -160,7 +160,7 @@ export default function TanglewoodPage() {
               ].map((n) => (
                 <span
                   key={n}
-                  className="font-body text-sm text-charcoal/60 border border-bronze/20 px-3 py-1"
+                  className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1"
                 >
                   {n}
                 </span>
@@ -184,15 +184,15 @@ export default function TanglewoodPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="tel:8324749547"
-              className="px-8 py-3.5 bg-bronze text-cream font-body text-sm tracking-widest uppercase hover:opacity-90 transition-opacity"
+              className="px-8 py-3.5 bg-bronze text-cream font-compact text-sm tracking-widest uppercase hover:opacity-90 transition-opacity"
             >
               Call 832-474-9547
             </a>
             <a
               href="mailto:midtownmodern@gmail.com?subject=Tanglewood%20estate%20inquiry"
-              className="px-8 py-3.5 border border-cream/30 text-cream font-body text-sm tracking-widest uppercase hover:border-bronze hover:text-bronze transition-colors"
+              className="px-8 py-3.5 border border-cream/30 text-cream font-compact text-sm tracking-widest uppercase hover:border-bronze hover:text-bronze transition-colors"
             >
-              Send an Email
+              Email us
             </a>
           </div>
         </div>
