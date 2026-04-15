@@ -146,7 +146,7 @@ function AccordionItem({ item }: { item: FAQItem }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="pt-10 pb-24 lg:pt-12 lg:pb-32 bg-cream">
+    <section id="faq" className="scroll-mt-20 pt-10 pb-24 lg:pt-12 lg:pb-32 bg-cream">
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-8 md:mb-16 fade-in-section">
           <h2 className="font-heading text-3xl md:text-5xl font-light text-charcoal mb-4">
