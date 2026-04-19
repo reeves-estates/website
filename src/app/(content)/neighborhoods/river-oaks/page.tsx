@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PhoneLink from "@/components/PhoneLink";
 
 export const metadata: Metadata = {
   title: "Estate Sales in River Oaks, Houston",
@@ -184,12 +185,7 @@ export default function RiverOaksPage() {
             you have and what your options are.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="tel:8324749547"
-              className="px-8 py-3.5 bg-bronze text-cream font-compact text-sm tracking-widest uppercase hover:opacity-90 transition-opacity"
-            >
-              Call 832-474-9547
-            </a>
+            <PhoneLink className="px-8 py-3.5 bg-bronze text-cream font-compact text-sm tracking-widest uppercase hover:opacity-90 transition-opacity">Call 832-474-9547</PhoneLink>
             <a
               href="mailto:midtownmodern@gmail.com?subject=River%20Oaks%20estate%20inquiry"
               className="px-8 py-3.5 border border-cream/30 text-cream font-compact text-sm tracking-widest uppercase hover:border-bronze hover:text-bronze transition-colors"

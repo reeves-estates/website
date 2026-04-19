@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import FAQAccordion from "@/components/FAQAccordion";
 import { faqGroups } from "@/lib/faq-data";
+import PhoneLink from "@/components/PhoneLink";
 
 export const metadata: Metadata = {
   title: "Estate Sale FAQs — Houston",
@@ -104,12 +105,9 @@ export default function FAQPage() {
             conversation about your situation and what your options are.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="tel:8324749547"
-              className="px-8 py-3.5 bg-bronze text-cream font-compact text-sm tracking-widest uppercase hover:opacity-90 transition-opacity"
-            >
+            <PhoneLink className="px-8 py-3.5 bg-bronze text-cream font-compact text-sm tracking-widest uppercase hover:opacity-90 transition-opacity">
               Call 832-474-9547
-            </a>
+            </PhoneLink>
             <a
               href="mailto:midtownmodern@gmail.com?subject=Estate%20sale%20question"
               className="px-8 py-3.5 border border-cream/30 text-cream font-compact text-sm tracking-widest uppercase hover:border-bronze hover:text-bronze transition-colors"

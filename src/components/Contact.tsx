@@ -1,3 +1,5 @@
+import PhoneLink from "@/components/PhoneLink";
+
 export default function Contact() {
   return (
     <section id="contact" className="py-16 lg:py-24 bg-charcoal">
@@ -19,12 +21,7 @@ export default function Contact() {
             <span className="font-compact text-xs tracking-widest uppercase text-cream/35 block mb-3">
               Phone
             </span>
-            <a
-              href="tel:8324749547"
-              className="font-heading text-xl md:text-2xl text-bronze hover:text-bronze-light transition-colors whitespace-nowrap"
-            >
-              832-474-9547
-            </a>
+            <PhoneLink className="font-heading text-xl md:text-2xl text-bronze hover:text-bronze-light transition-colors whitespace-nowrap" />
           </div>
 
           <div className="text-center px-8 md:border-l md:border-cream/10">
