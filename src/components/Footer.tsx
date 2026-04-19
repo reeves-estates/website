@@ -1,3 +1,5 @@
+import PhoneLink from "@/components/PhoneLink";
+
 const quickLinks = [
   { label: "Our Services", href: "/services" },
   { label: "How It Works", href: "/#how-it-works" },
@@ -54,9 +56,7 @@ export default function Footer() {
             <address className="not-italic flex flex-col gap-2">
               <span className="font-body text-sm text-cream/50">2415 Taft St</span>
               <span className="font-body text-sm text-cream/50">Houston, TX 77006</span>
-              <a href="tel:8324749547" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors mt-2">
-                832-474-9547
-              </a>
+              <PhoneLink className="font-body text-sm text-cream/50 hover:text-bronze transition-colors mt-2" />
               <a href="mailto:midtownmodern@gmail.com" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">
                 midtownmodern@gmail.com
               </a>
