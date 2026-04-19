@@ -41,7 +41,7 @@ export default function Contact() {
               Visit
             </span>
             <a
-              href="https://www.google.com/maps/place/?q=place_id:ChIJP21-eCcjoIgRuxqKmoIKAvY"
+              href="https://www.google.com/maps/place/Reeves+Estates+Sales/@29.747744,-95.385571"
               target="_blank"
               rel="noopener noreferrer"
               className="font-heading text-xl md:text-2xl text-bronze hover:text-bronze-light transition-colors"
