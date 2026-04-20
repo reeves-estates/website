@@ -91,7 +91,7 @@ export default function Services() {
         <div className="text-center mt-10">
           <a
             href="/services"
-            className="inline-block font-compact text-sm tracking-widest uppercase px-10 py-4 border border-bronze text-bronze hover:bg-bronze hover:text-cream transition-colors"
+            className="inline-block font-compact text-base tracking-widest uppercase px-12 py-5 bg-charcoal text-cream hover:bg-charcoal/80 transition-colors"
           >
             View all services in detail →
           </a>

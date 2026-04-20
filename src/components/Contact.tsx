@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-12 fade-in-section">
           <h2 className="font-heading text-3xl md:text-5xl text-cream mb-4">
-            Your Estate. Uniquely Yours.
+            Contact Us
           </h2>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-6" />
           <p className="font-body text-base md:text-lg text-cream/65 max-w-xl mx-auto leading-relaxed">

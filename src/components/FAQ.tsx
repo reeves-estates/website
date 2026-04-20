@@ -111,27 +111,29 @@ const faqGroups: FAQGroup[] = [
   },
 ];
 
-function AccordionItem({ item }: { item: FAQItem }) {
+function AccordionItem({ item, id }: { item: FAQItem; id: string }) {
   const [open, setOpen] = useState(false);
+  const panelId = `faq-panel-${id}`;
 
   return (
     <div className="border-b border-bronze/10">
       <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
+        aria-controls={panelId}
         className="w-full flex items-center justify-between py-7 text-left cursor-pointer"
       >
         <span className="font-heading text-xl md:text-2xl font-medium text-charcoal/85 pr-4">
           {item.question}
         </span>
-        <span
-          className={`text-bronze text-xl flex-shrink-0 transition-transform duration-300 ${
-            open ? "rotate-45" : ""
-          }`}
-        >
-          +
+        <span className="text-bronze text-xl flex-shrink-0 select-none w-4 text-center">
+          {open ? "−" : "+"}
         </span>
       </button>
       <div
+        id={panelId}
+        role="region"
+        aria-label={item.question}
         className={`overflow-hidden transition-all duration-300 ${
           open ? "max-h-96 pb-7" : "max-h-0"
         }`}
@@ -163,7 +165,7 @@ export default function FAQ() {
               </h3>
               <div className="border-t border-bronze/10">
                 {group.items.map((item, j) => (
-                  <AccordionItem key={j} item={item} />
+                  <AccordionItem key={j} item={item} id={`${i}-${j}`} />
                 ))}
               </div>
             </div>
