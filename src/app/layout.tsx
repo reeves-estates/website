@@ -17,19 +17,16 @@ const pangram = localFont({
 });
 
 const fragment = localFont({
-  src: [
-    {
-      path: "../../public/fonts/PPFragment-GlareRegular.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/PPFragment-GlareRegularItalic.otf",
-      weight: "400",
-      style: "italic",
-    },
-  ],
+  src: "../../public/fonts/PPFragment-GlareRegular.otf",
   variable: "--font-fragment",
+  weight: "400",
+  display: "swap",
+});
+
+const fragmentItalic = localFont({
+  src: "../../public/fonts/PPFragment-GlareRegularItalic.otf",
+  variable: "--font-fragment-italic",
+  weight: "400",
   display: "swap",
 });
 
@@ -66,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${hatton.variable} ${pangram.variable} ${fragment.variable}`}>
+    <html lang="en" className={`${hatton.variable} ${pangram.variable} ${fragment.variable} ${fragmentItalic.variable}`}>
       <head>
         <link rel="preload" href="/images/hero/Hero-1.webp" as="image" type="image/webp" />
         <script
