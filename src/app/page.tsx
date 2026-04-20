@@ -15,6 +15,8 @@ import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   useEffect(() => {
+    const sections = document.querySelectorAll(".fade-in-section");
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -26,11 +28,17 @@ export default function Home() {
       { threshold: 0.05 }
     );
 
-    document.querySelectorAll(".fade-in-section").forEach((el) => {
-      observer.observe(el);
-    });
+    sections.forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect();
+    // Safety net: if observer never fires (JS error, timing issue), force all visible
+    const fallback = setTimeout(() => {
+      sections.forEach((el) => el.classList.add("visible"));
+    }, 1500);
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(fallback);
+    };
   }, []);
 
   return (

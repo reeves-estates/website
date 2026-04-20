@@ -72,6 +72,15 @@ body::before {
   transform: translateY(0);
 }
 
+/* Fallback: if JS animations never fire, content must still be readable */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* Hero fade-in animation */
 @keyframes heroFadeIn {
   from {
