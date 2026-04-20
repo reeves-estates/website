@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'PPFragmentGlareItalic';
+  src: url('/fonts/PPFragment-GlareRegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 @theme inline {
   --color-cream: #F8F4EE;
   --color-cream-dark: #F0EBE3;

@@ -50,7 +50,7 @@ export default function Hero() {
         <div className="hero-fade-in w-[60px] h-[1px] bg-bronze mx-auto mb-6" />
         <p
           className="hero-fade-in-delay text-[1.25rem] md:text-[1.9rem] text-cream/90 leading-relaxed mb-14 px-2"
-          style={{ fontFamily: "var(--font-fragment-italic)", fontStyle: "italic" }}
+          style={{ fontFamily: "'PPFragmentGlareItalic', serif", fontStyle: "italic" }}
         >
           White-glove service. Cash offers. Nothing left behind.
         </p>

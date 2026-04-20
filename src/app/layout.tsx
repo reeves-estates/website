@@ -23,12 +23,6 @@ const fragment = localFont({
   display: "swap",
 });
 
-const fragmentItalic = localFont({
-  src: "../../public/fonts/PPFragment-GlareRegularItalic.otf",
-  variable: "--font-fragment-italic",
-  weight: "400",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://reevesestates.com"),
@@ -63,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${hatton.variable} ${pangram.variable} ${fragment.variable} ${fragmentItalic.variable}`}>
+    <html lang="en" className={`${hatton.variable} ${pangram.variable} ${fragment.variable}`}>
       <head>
         <link rel="preload" href="/images/hero/Hero-1.webp" as="image" type="image/webp" />
         <script
