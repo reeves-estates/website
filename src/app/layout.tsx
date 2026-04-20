@@ -59,6 +59,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${hatton.variable} ${pangram.variable} ${fragment.variable}`}>
       <head>
+        <style dangerouslySetInnerHTML={{ __html: `
+          @font-face {
+            font-family: 'PPFragmentGlareItalic';
+            src: url('/fonts/PPFragment-GlareRegularItalic.otf') format('opentype');
+            font-weight: 400;
+            font-style: italic;
+            font-display: swap;
+          }
+        `}} />
         <link rel="preload" href="/images/hero/Hero-1.webp" as="image" type="image/webp" />
         <script
           type="application/ld+json"
