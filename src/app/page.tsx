@@ -7,6 +7,7 @@ import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
 import About from "@/components/About";
+import Credentials from "@/components/Credentials";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
@@ -47,6 +48,7 @@ export default function Home() {
       <Hero />
       <div className="hidden md:block"><TrustBar /></div>
       <HowItWorks />
+      <Credentials />
 <Services />
       <FAQ />
       <Testimonials />
