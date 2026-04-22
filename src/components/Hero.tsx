@@ -55,24 +55,16 @@ export default function Hero() {
           White-glove service. Cash offers. Nothing left behind.
         </p>
 
-        <div className="hero-fade-in-delay-2 flex flex-col items-center gap-6">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            {/* Mobile: tap-to-call button */}
-            <a
-              href="tel:8324749547"
-              className="lg:hidden px-8 py-3.5 bg-bronze text-cream font-compact text-sm tracking-wide hover:bg-bronze-dark transition-colors rounded-md"
-            >
-              Call Now 832-474-9547
-            </a>
-            {/* Desktop: plain display text */}
-            <span className="hidden lg:block font-compact text-3xl font-semibold text-cream tracking-normal">
-              832-474-9547
+        <div className="hero-fade-in-delay-2 flex flex-col items-center">
+          <div className="flex flex-col items-center gap-2">
+            <span className="font-compact text-sm tracking-widest uppercase font-semibold text-cream/85">
+              Call or text
             </span>
             <a
-              href="mailto:midtownmodern@gmail.com?subject=Schedule%20an%20estate%20sale%20consultation"
-              className="px-8 py-3.5 border border-cream/40 text-cream font-compact text-base font-semibold tracking-wide hover:text-bronze transition-colors rounded-md"
+              href="tel:8324749547"
+              className="font-compact text-4xl md:text-5xl text-cream tracking-wide hover:text-bronze transition-colors"
             >
-              Schedule a Consultation
+              832-474-9547
             </a>
           </div>
 
@@ -82,13 +74,10 @@ export default function Hero() {
               e.preventDefault();
               document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="flex flex-col items-center gap-2 mt-6 md:mt-12 lg:mt-16 group cursor-pointer"
+            className="mt-12 md:mt-16 cursor-pointer w-11 h-11 rounded-full border border-cream/40 flex items-center justify-center hover:border-cream/75 transition-colors"
           >
-            <span className="font-compact text-xs tracking-widest uppercase font-semibold text-cream/60 group-hover:text-cream/90 transition-colors">
-              Learn how we work together
-            </span>
             <svg
-              className="w-5 h-5 text-cream/50 group-hover:text-cream/80 transition-colors animate-bounce"
+              className="w-4 h-4 text-cream/80"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
