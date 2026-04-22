@@ -94,7 +94,7 @@ export default function Services() {
           {categories.map((category) => (
             <div key={category.name} className="fade-in-section">
               <div className="mb-6 md:mb-8">
-                <h3 className="font-compact text-xs tracking-widest uppercase text-bronze mb-1">
+                <h3 className="font-compact text-xs tracking-widest uppercase text-charcoal/50 mb-1">
                   {category.name}
                 </h3>
                 <p className="font-body text-sm text-charcoal/50">
