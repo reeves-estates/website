@@ -27,13 +27,13 @@ export default function Navigation() {
 
           {/* Desktop links */}
           <TooltipProvider>
-            <div className="hidden lg:flex items-baseline gap-4">
+            <div className="hidden lg:flex items-baseline gap-2">
               {navLinks.map((link) => (
                 <Tooltip key={link.href}>
                   <TooltipTrigger asChild>
                     <a
                       href={link.href}
-                      className="font-body uppercase text-sm font-semibold text-charcoal/70 hover:text-bronze transition-colors px-2 py-1 rounded-[5px]"
+                      className="font-body uppercase text-sm font-semibold text-charcoal/70 hover:text-bronze transition-colors px-1.5 py-1 rounded-[5px]"
                     >
                       {link.label}
                     </a>
@@ -48,7 +48,7 @@ export default function Navigation() {
                 <TooltipTrigger asChild>
                   <a
                     href="/#about"
-                    className="font-body uppercase text-sm font-semibold text-charcoal/70 hover:text-bronze transition-colors px-2 py-1 rounded-[5px]"
+                    className="font-body uppercase text-sm font-semibold text-charcoal/70 hover:text-bronze transition-colors px-1.5 py-1 rounded-[5px]"
                   >
                     About Reeves
                   </a>
