@@ -158,6 +158,78 @@ export default function RootLayout({
                       "@type": "Answer",
                       "text": "Our 5,000 square foot gallery in Houston's Midtown gives us a significant advantage. Rather than a rushed sale in a private home, we bring the estate to our gallery — presenting pieces in a professional environment that attracts serious buyers."
                     }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Do I need to organize anything before you arrive?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Not at all. We ask that you leave everything exactly as it is. Part of what we do is assess the estate in its entirety — including items you may not realize have value."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How is the buyout price determined?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our specialists draw on decades of expertise in fine art, antiques, and mid-century modern furniture to assess fair market value. We make a transparent, no-obligation offer based on that assessment."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can I sell just part of the estate?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. We handle partial estates and work with you to identify which pieces to include."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "We're moving a parent into assisted living. Can Reeves help?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Absolutely. This is one of the most common situations we handle. We work sensitively with families during what can be an emotional transition, managing the process so you can focus on what matters most."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What neighbourhoods do you serve?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "We serve Houston and the surrounding area, with particular experience in River Oaks, Midtown, and Houston's condo and high-rise communities."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can you conduct a sale at the property itself?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. We organize and manage professional on-site sales events — handling all logistics, pricing, marketing, and staffing from start to finish."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How are proceeds handled?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "We provide a full accounting of all items sold and issue payment promptly after the sale concludes. Complete transparency at every step."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What happens to items that don't sell?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Options include donation to Houston-area charities, recycling, or removal — we handle all of it so the property is left clean and ready."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Are you licensed and insured?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. Reeves carries full professional liability insurance and operates in full compliance with Texas state requirements for estate sales and appraisals."
+                    }
                   }
                 ]
               }

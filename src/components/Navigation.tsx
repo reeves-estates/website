@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
-import PhoneLink from "@/components/PhoneLink";
 
 const navLinks = [
   { label: "How It Works", href: "/#how-it-works" },
   { label: "Our Services", href: "/services" },
-  { label: "FAQs", href: "/faq" },
+  { label: "FAQs", href: "/#faq" },
   { label: "Testimonials", href: "/#testimonials" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navigation() {
@@ -58,9 +58,9 @@ export default function Navigation() {
                 </TooltipContent>
               </Tooltip>
 
-              <PhoneLink className="font-compact text-base font-bold tracking-wide border border-bronze px-3 py-1.5 text-charcoal">
+              <a href="tel:8324749547" className="font-compact text-base font-bold tracking-wide border border-bronze px-3 py-1.5 text-charcoal">
                 832-474-9547
-              </PhoneLink>
+              </a>
             </div>
           </TooltipProvider>
 
