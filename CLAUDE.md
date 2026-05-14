@@ -4,24 +4,25 @@
 > It is the single source of truth for project conventions. Follow it precisely.
 
 ## Current State
-*Last updated: 2026-05-01*
+*Last updated: 2026-05-14*
 
-**Last session:** Diagnosed and fixed broken Vercel auto-deploy — the live `reeves-estates` Vercel project (ReevesEstates team) had no git repo connected. Connected `aidansinclair/reeves-estates` and confirmed webhook auto-deploys are working. Corrected CLAUDE.md architecture — removed "single-page site" framing, documented full multi-page route structure. Resolved audit item 8 (not actually orphaned — `/services` page exists).
+**Last session:** Rewrote all 8 neighborhood pages for content depth and distinctiveness — each page now has 4 sections with copy grounded in the specific character of that neighborhood. Museum District, Midtown, and Upper Kirby gained a 4th section each. Added OG image (`/images/openGraph.webp`) to root layout and all 8 neighborhood pages. Changes are on `feature/neighborhood-rewrites` branch, open as a PR on `reeves-estates/website` for review before merge.
 
-**Unresolved — Vercel/GitHub handoff connection:**
-The `reeves-estates/website` GitHub repo (under the `reeves-estates` GitHub account, intended for client handoff to Matt Reeves) cannot currently be connected to Vercel. Vercel only sees GitHub accounts linked via OAuth, and the `reeves-estates` GitHub account has not been successfully added to Vercel despite the GitHub App being installed on it. The blocker appears to be that Vercel's "Add GitHub Account" OAuth flow requires active GitHub session switching — it didn't work while logged in as `aidansinclair`. **Resolution path:** While logged into GitHub as `reeves-estates`, click "Add GitHub Account" in Vercel Git settings, complete the OAuth flow, then reconnect the project to `reeves-estates/website`.
+Also confirmed the correct repo and deploy setup (see below) — the `aidansinclair/reeves-estates` repo is no longer the authoritative source. The project now lives entirely under the client's own account.
 
-**Current deploy setup (working):**
-- Local remote: `git@github.com:aidansinclair/reeves-estates.git`
-- Vercel project: ReevesEstates team → `reeves-estates` → connected to `aidansinclair/reeves-estates`
-- Auto-deploys on push to `main` ✓
+**Current deploy setup:**
+- Repo: `git@github.com:reeves-estates/website.git` (under the `reeves-estates` GitHub account)
+- Vercel project: ReevesEstates team → connected to `reeves-estates/website`
+- Auto-deploys on push to `main`
+- SSH key authenticates as `reeves-estates` ✓
+- `aidansinclair/reeves-estates` is a stale fork — no longer used
 
 **Next up (suggested):**
+- Merge `feature/neighborhood-rewrites` PR after review
 - Audit item 6: flip hero CTA hierarchy — make "Schedule a Consultation" primary (filled bronze), phone number secondary
 - Delete `CalEmbed.tsx` if confirmed unused
 - Confirm whether `feature/services-grouping` has been merged into `main` or is still open
-- Audit item 11: add pricing/commission FAQ entry
-- Resolve `reeves-estates/website` Vercel connection (see above)
+- Audit item 11: pricing/commission FAQ — client preference is not to address pricing directly (each estate evaluated on its own merits)
 
 ## Project Overview
 
@@ -29,7 +30,7 @@ The `reeves-estates/website` GitHub repo (under the `reeves-estates` GitHub acco
 
 - **Live site:** reevesestates.com
 - **Hosting:** Vercel (auto-deploys from `main`)
-- **Repo:** github.com/aidansinclair/reeves-estates (private)
+- **Repo:** github.com/reeves-estates/website (private, under client's GitHub account)
 
 ## Stack
 
