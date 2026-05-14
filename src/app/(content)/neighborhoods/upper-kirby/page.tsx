@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description:
       "Reeves Estates handles estate sales, cash buyouts, and fine art appraisals in Upper Kirby, Houston. Specialists in antiques, fine art, and quality collections.",
     url: "https://reevesestates.com/neighborhoods/upper-kirby",
+    images: [{ url: "https://reevesestates.com/images/openGraph.webp", width: 1200, height: 630, alt: "Reeves Estates — Houston Estate Sales, Buyouts & Appraisals" }],
   },
 };
 
@@ -31,9 +32,9 @@ export default function UpperKirbyPage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            Upper Kirby is well-placed and well-considered. The estates here
-            reflect decades of intentional living — and deserve to be
-            handled that way.
+            Upper Kirby doesn&rsquo;t announce itself. But the people who
+            live here care about what surrounds them — and the estates
+            reflect that.
           </p>
         </div>
       </div>
@@ -45,28 +46,31 @@ export default function UpperKirbyPage() {
           {/* Section 1 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              A neighborhood that bridges River Oaks and the inner loop
+              A neighborhood of considered taste
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Upper Kirby draws from the residential character of River Oaks
-                and West University to the north and west, and the cultural
-                density of Montrose and the Museum District to the east. It's a
-                neighborhood where long-established families and newer arrivals
-                coexist — and where the estates we encounter tend to be as
-                varied as the people who built them.
+                Upper Kirby sits in an interesting position — drawn from the
+                established residential character of River Oaks and West
+                University to the north and west, and shaped by the cultural
+                density of Montrose and the Museum District to the east. The
+                people who settle here are often those who moved from a larger
+                house and kept only the best of it, or professionals who have
+                bought carefully over the course of a career.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                What they share, more often than not, is quality — furniture
-                chosen with care, art acquired over time, and objects that
-                meant something to the people who owned them. That's exactly
-                what we're equipped to handle.
+                The estates here tend to be eclectic in the best sense.
+                A significant painting alongside well-chosen mid-century
+                furniture. Estate jewelry from a grandmother who had good
+                taste. Objects picked up in a well-traveled life, alongside
+                things that were simply bought well. Range doesn&rsquo;t mean
+                inconsistency — it means the people who lived here were curious.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Our gallery on Taft Street in Midtown is less than two miles
-                away. When we bring an Upper Kirby estate to our showroom, it
-                reaches collectors and buyers from across the city who
-                understand what they're looking at.
+                Our gallery on Taft Street is less than two miles away. When
+                we bring an Upper Kirby estate to our showroom, it reaches
+                collectors and buyers from across the city who understand what
+                they&rsquo;re looking at.
               </p>
             </div>
           </div>
@@ -74,26 +78,28 @@ export default function UpperKirbyPage() {
           {/* Section 2 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              How we approach an Upper Kirby estate
+              An honest assessment before any commitment
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We start with a walkthrough — a thorough, unhurried review of
-                everything in the property. We identify what has real value,
-                what belongs in a gallery sale, and what might warrant a
-                private placement with a specific buyer. We tell you what we
-                think honestly, before any commitment is made.
+                We begin every Upper Kirby engagement the same way: a thorough,
+                unhurried walkthrough of the property. No pressure, no sales
+                pitch. We identify what has real market value, what belongs in
+                a gallery sale, and what might warrant a private approach with
+                a specific buyer. Then we tell you what we think — honestly —
+                before you make any decision.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                For most Upper Kirby estates, our gallery sale is the right
-                answer. We handle everything: cataloging, staging, marketing,
-                the sale itself, and the clearance afterward. You receive a
+                For most estates here, our gallery sale is the right path.
+                We manage everything in-house: cataloging, staging, marketing,
+                the sale itself, and all clearance afterward. You receive a
                 full accounting and a property left clean.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                If speed and certainty matter more than maximizing every item,
-                our cash buyout is available as well — one offer, one payment,
-                and we handle the rest.
+                For families who would prefer a professionally managed event at
+                the property — particularly when a well-furnished home makes a
+                natural setting for what it holds — we organize and staff
+                on-site sales as well. Same team, same standards.
               </p>
             </div>
           </div>
@@ -101,21 +107,47 @@ export default function UpperKirbyPage() {
           {/* Section 3 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Fine art and antiques handled with real expertise
+              Specialist knowledge where generalists fall short
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Upper Kirby estates frequently include pieces that benefit from
-                specialist knowledge: Texas art, mid-century furniture by
-                recognized designers, decorative antiques, estate jewelry, and
-                silver. A generalist will often miss the mark on value — either
-                undervaluing what's significant or overvaluing what isn't.
+                Upper Kirby estates frequently include pieces that reward
+                specialist attention: Texas art and regional work, mid-century
+                furniture by recognized designers, decorative antiques, estate
+                jewelry, and silver that has been properly maintained. A
+                generalist will often miss the mark on value — undervaluing
+                what&rsquo;s significant, or overvaluing what looks impressive
+                but isn&rsquo;t.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Our team brings decades of expertise in exactly these
-                categories. We document each significant item with provenance,
-                condition notes, and current market comparables — and we make
-                sure nothing of value goes unrecognized.
+                categories. Our written appraisals document each significant
+                item with provenance, condition notes, and current market
+                comparables — and they ensure that nothing of value leaves
+                without being properly recognized.
+              </p>
+            </div>
+          </div>
+
+          {/* Section 4 */}
+          <div>
+            <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
+              When speed and simplicity are the priority
+            </h2>
+            <div className="flex flex-col gap-4">
+              <p className="font-body text-base leading-relaxed text-charcoal/75">
+                Not every family arrives at this process with time to optimize.
+                Properties under contract, out-of-town executors, probate
+                timelines that won&rsquo;t accommodate a multi-week sale — these
+                are the situations our cash buyout service is built for. One
+                offer, one payment, everything cleared.
+              </p>
+              <p className="font-body text-base leading-relaxed text-charcoal/75">
+                We deliver a fair cash offer within 48 hours of our initial
+                visit. If it works for you, we handle all removal and clearance
+                and leave the property ready. If it doesn&rsquo;t work, there
+                is no obligation. Most families know quickly which path is
+                right for them — and we make it easy to take either one.
               </p>
             </div>
           </div>
@@ -148,9 +180,7 @@ export default function UpperKirbyPage() {
       {/* CTA */}
       <div className="bg-charcoal py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 text-center">
-          <h2
-            className="font-heading text-3xl md:text-4xl font-light text-cream mb-4"
-          >
+          <h2 className="font-heading text-3xl md:text-4xl font-light text-cream mb-4">
             Let&rsquo;s talk about your estate.
           </h2>
           <p className="font-body text-sm text-cream/60 mb-6">

@@ -45,6 +45,7 @@ export const metadata: Metadata = {
     title: "Reeves Estates | Houston Estate Sales, Buyouts & Liquidations",
     description:
       "Reeves Estates — Houston's full-service estate handling specialists. Cash buyouts, estate sales, appraisals, and liquidations. Serving River Oaks and greater Houston.",
+    images: [{ url: "https://reevesestates.com/images/openGraph.webp", width: 1200, height: 630, alt: "Reeves Estates — Houston Estate Sales, Buyouts & Appraisals" }],
   },
   verification: {
     google: "0ZvlKynvzOy89HqbicAAppPNQ_u5lx48RIRmIfkUoIo",

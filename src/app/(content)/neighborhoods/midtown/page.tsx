@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description:
       "Reeves Estates is based in Midtown Houston — estate sales, cash buyouts, fine art appraisals, and complete estate handling from our 5,000 sq ft gallery on Taft Street.",
     url: "https://reevesestates.com/neighborhoods/midtown",
+    images: [{ url: "https://reevesestates.com/images/openGraph.webp", width: 1200, height: 630, alt: "Reeves Estates — Houston Estate Sales, Buyouts & Appraisals" }],
   },
 };
 
@@ -31,9 +32,8 @@ export default function MidtownPage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            We&rsquo;ve been on Taft Street since 1969. Midtown is where
-            Reeves Estates began, and it&rsquo;s where your family&rsquo;s
-            belongings will be presented properly.
+            Most estate companies pass through Midtown. We&rsquo;ve been here
+            since 1969. There&rsquo;s a difference.
           </p>
         </div>
       </div>
@@ -45,27 +45,26 @@ export default function MidtownPage() {
           {/* Section 1 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              We're not just nearby — we're here
+              Inside the market, not observing it from the outside
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Reeves Art + Design has occupied the corner of Taft and Fairview
-                in Midtown since 1969. That history isn't a marketing point —
-                it's the reason we understand this city's art market, collector
-                community, and the kinds of collections that Houston families
-                have built over generations.
+                since 1969. That&rsquo;s not a marketing point — it&rsquo;s the
+                reason we understand Houston&rsquo;s art market from the inside.
+                The galleries that have come and gone. The collectors who have
+                shaped the city&rsquo;s taste. The artists who worked here,
+                exhibited here, and whose work now appears in estate inventories
+                across the inner loop.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Our 5,000 square foot gallery is where we bring estates to be
-                sold properly. Not in a rushed home sale, not in a cluttered
-                auction house — but in a considered, gallery-quality environment
-                that attracts serious buyers who recognize quality when they see
-                it.
-              </p>
-              <p className="font-body text-base leading-relaxed text-charcoal/75">
-                For Midtown families and executors, working with us means working
-                with people who are genuinely part of this neighborhood — and
-                have been for more than fifty years.
+                Midtown has changed substantially over the decades — from a
+                quieter residential area to one of the most active parts of
+                the city — and we&rsquo;ve been part of all of it. That
+                continuity is rare. It gives us a view of Houston&rsquo;s
+                collector community that few people have, and a network of
+                relationships that makes a real difference in how estates
+                are handled.
               </p>
             </div>
           </div>
@@ -73,27 +72,24 @@ export default function MidtownPage() {
           {/* Section 2 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              What we handle in Midtown
+              What Midtown estates actually look like
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Midtown Houston has changed considerably over the decades, but it
-                has always attracted people with genuine taste — artists,
-                collectors, professionals who care about what surrounds them.
-                The estates we see here reflect that: fine art, well-chosen
-                antiques, quality furniture, and objects that have been
-                thoughtfully accumulated over time.
+                Midtown has always drawn people with genuine taste — artists,
+                creative professionals, longtime Houstonians, people who chose
+                where they lived because of the city&rsquo;s culture, not despite
+                it. The estates we handle here are genuinely varied. A lifelong
+                Houstonian&rsquo;s apartment packed with acquired art. The studio
+                and belongings of an artist who worked in this neighborhood for
+                forty years. A professional who bought carefully and well over
+                a long career.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We approach each estate the same way — thorough walkthrough, honest
-                assessment, clear recommendation. For most Midtown estates, our
-                gallery sale is the right path. For pieces of particular
-                significance, we look at private placement first.
-              </p>
-              <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We also offer complete cash buyouts — one offer, one payment, fast
-                closing — for families or executors who need certainty more than
-                they need to optimize every line item.
+                We don&rsquo;t approach Midtown estates with a template —
+                because this neighborhood doesn&rsquo;t produce them. Each
+                walkthrough is its own education, and that&rsquo;s what we
+                find interesting about the work.
               </p>
             </div>
           </div>
@@ -101,20 +97,50 @@ export default function MidtownPage() {
           {/* Section 3 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Serving the greater Midtown area
+              Your estate, presented right here
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We work with families across Midtown and every surrounding
-                neighborhood — Museum District, Montrose, Montrose/Neartown,
-                Upper Kirby, and the broader inner loop. If you're managing an
-                estate anywhere in central Houston, we're likely the closest
-                specialist you'll find — and one of the most experienced.
+                Our 5,000 square foot gallery on Taft Street is where we bring
+                estates to be sold properly — not in a hurried home sale, not
+                in a cluttered auction warehouse, but in a considered
+                environment that draws collectors and buyers from across the
+                city who recognize quality when they see it.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We've worked with estate attorneys, out-of-town executors, and
-                families navigating one of the most emotionally complicated
-                processes there is. Our job is to make it simpler.
+                For Midtown families and executors, this is the most direct
+                path available. We&rsquo;re not commuting to your neighborhood
+                from somewhere else — we&rsquo;re already here. That means
+                faster assessments, fewer complications, and the kind of
+                familiarity with the local market that only comes from being
+                genuinely part of it.
+              </p>
+              <p className="font-body text-base leading-relaxed text-charcoal/75">
+                We handle every step: walkthrough, cataloging, pricing, staging,
+                marketing, and the sale. Full accounting at close, proceeds
+                distributed promptly.
+              </p>
+            </div>
+          </div>
+
+          {/* Section 4 */}
+          <div>
+            <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
+              Complete handling — from first visit to cleared property
+            </h2>
+            <div className="flex flex-col gap-4">
+              <p className="font-body text-base leading-relaxed text-charcoal/75">
+                Out-of-town executors managing Midtown estates find us especially
+                useful. We can assess, advise, and move without the back-and-forth
+                that comes from working with a company that has to travel to the
+                property every time.
+              </p>
+              <p className="font-body text-base leading-relaxed text-charcoal/75">
+                For families or executors who need certainty over optimization,
+                our cash buyout service offers a straightforward path: one offer
+                within 48 hours of our visit, one payment at close, all removal
+                and clearance included. The property is left ready for whatever
+                comes next — no second trips required.
               </p>
             </div>
           </div>
@@ -147,9 +173,7 @@ export default function MidtownPage() {
       {/* CTA */}
       <div className="bg-charcoal py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 text-center">
-          <h2
-            className="font-heading text-3xl md:text-4xl font-light text-cream mb-4"
-          >
+          <h2 className="font-heading text-3xl md:text-4xl font-light text-cream mb-4">
             Let&rsquo;s talk about your estate.
           </h2>
           <p className="font-body text-sm text-cream/60 mb-6">

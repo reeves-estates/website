@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description:
       "Reeves Estates handles estate sales, cash buyouts, and fine art appraisals in River Oaks, Houston. White-glove service for one of Houston's most distinguished neighborhoods.",
     url: "https://reevesestates.com/neighborhoods/river-oaks",
+    images: [{ url: "https://reevesestates.com/images/openGraph.webp", width: 1200, height: 630, alt: "Reeves Estates — Houston Estate Sales, Buyouts & Appraisals" }],
   },
 };
 
@@ -31,8 +32,8 @@ export default function RiverOaksPage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            River Oaks estates tend to arrive with history behind them. We know
-            how to read a collection — and how to handle one.
+            River Oaks collections weren&rsquo;t assembled by accident. Neither
+            is the way we handle them.
           </p>
         </div>
       </div>
@@ -44,27 +45,30 @@ export default function RiverOaksPage() {
           {/* Section 1 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              A neighborhood that demands a different standard
+              A neighborhood that demands genuine expertise
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                River Oaks is home to some of Houston&rsquo;s most significant
-                private collections — fine art, antique furniture, estate
-                jewelry, silver, and mid-century pieces accumulated over
-                generations. Settling an estate here isn&rsquo;t the same as
-                settling one anywhere else.
+                River Oaks is home to some of the most significant private
+                collections in Texas — fine art acquired over decades, European
+                antiques, mid-century furniture by designers whose work now
+                appears in museums, silver and porcelain passed through
+                generations. These estates didn&rsquo;t accumulate by default.
+                The people who built them understood markets, provenance, and
+                quality.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                The stakes are higher. The buyers are more discerning. And the
-                families involved have every right to expect a company that
-                knows what it&rsquo;s handling — not just logistically, but in
-                terms of genuine market knowledge.
+                Settling an estate here requires someone who can read what
+                they&rsquo;re looking at. Not just catalog it — understand it.
+                Know which pieces deserve individual attention, which buyers are
+                right for what&rsquo;s significant, and where the real value
+                lies beneath the surface of a room.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Reeves Art + Design has been part of the Houston art market
-                since 1969. That history is what makes Reeves Estates the right
-                call for River Oaks families. We don&rsquo;t guess at values.
-                We know them.
+                Reeves Art + Design has been active in Houston&rsquo;s art and
+                antiques market since 1969. That history is what makes Reeves
+                Estates the right call for River Oaks families. We don&rsquo;t
+                guess at values. We know them.
               </p>
             </div>
           </div>
@@ -72,28 +76,30 @@ export default function RiverOaksPage() {
           {/* Section 2 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              How we work with River Oaks estates
+              The right buyer for the right piece
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We start with a thorough walkthrough of the property. No
-                pressure, no obligation — just an honest conversation about
-                what you have and what your options are.
+                For most River Oaks estates, we begin with private placement —
+                reaching out directly to collectors and specialist buyers before
+                recommending any public channel. The right buyer for a
+                significant Texas regionalist painting, a notable piece of
+                sculpture, or a fine European antique is often someone specific.
+                Someone who knows the work and is prepared to pay accordingly.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                For most River Oaks estates, we recommend bringing the
-                collection to our 5,000 square foot gallery in Midtown Houston.
-                Our gallery environment attracts the right buyers — collectors,
-                interior designers, and private individuals who understand
-                quality and are prepared to pay for it. A home sale, even a
-                well-run one, rarely achieves the same result.
+                For the broader estate, our 5,000 square foot gallery in
+                Midtown attracts exactly the kind of buyers River Oaks
+                collections deserve — serious collectors, interior designers
+                working at the highest level, private buyers who understand
+                what they&rsquo;re acquiring. A home sale, even a well-run
+                one, rarely puts pieces in front of the same audience.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                For pieces of particular significance — a painting, a piece of
-                sculpture, notable silver or porcelain — we look first at
-                private placement with known collectors before recommending any
-                public sale. Some things belong in the right hands, and we have
-                the relationships to make that happen.
+                We manage the entire process in-house: walkthrough and
+                assessment, cataloging, staging, marketing, the sale itself.
+                You receive a detailed accounting at close and proceeds are
+                distributed promptly.
               </p>
             </div>
           </div>
@@ -101,25 +107,22 @@ export default function RiverOaksPage() {
           {/* Section 3 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Cash buyouts for River Oaks families who need certainty
+              Cash buyouts for families who need certainty
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Sometimes a family needs this handled quickly and completely.
-                There are out-of-town executors, probate timelines, properties
-                that need to be listed, and relatives who simply cannot manage
-                a drawn-out process.
+                River Oaks estates are often among the most complex to settle.
+                Formal probate proceedings, out-of-town executors, multiple
+                heirs with different priorities, properties that need to be
+                cleared before they can be listed — these situations call for
+                a path that removes uncertainty from the process entirely.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Our cash buyout service purchases the entire estate outright —
-                one offer, one payment, one close. We handle all removal and
-                clearance. The property is left clean and ready for whatever
-                comes next.
-              </p>
-              <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We deliver a fair cash offer within 48 hours of our initial
-                visit. If it works for you, we move quickly. If not, there is
-                no obligation.
+                Our cash buyout service purchases the entire estate outright.
+                One offer within 48 hours of our visit. One payment at close.
+                We handle all removal and clearance and leave the property
+                ready for whatever comes next. If the offer doesn&rsquo;t
+                work for you, there is no obligation.
               </p>
             </div>
           </div>
@@ -127,22 +130,21 @@ export default function RiverOaksPage() {
           {/* Section 4 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Fine art and antiques — handled properly
+              Appraisals that hold up where it counts
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                River Oaks estates regularly include pieces that deserve
-                individual attention: Texas regionalist paintings, significant
-                European antiques, Mid-Century Modern furniture by recognized
-                designers, and collections of decorative art that have been
-                carefully assembled over a lifetime.
+                Before any River Oaks estate is sold or distributed, a proper
+                written appraisal is essential — not optional. Our appraisers
+                document each significant item with provenance, condition notes,
+                and current market comparables. These reports satisfy estate
+                attorneys, courts, insurance carriers, and the IRS.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Our appraisal team documents each item with provenance, condition
-                notes, and current market comparables. These reports hold up
-                for estate attorneys, courts, insurance carriers, and tax
-                filings — and they ensure that nothing of value gets missed,
-                undervalued, or sold for less than it should be.
+                More than their legal utility, a thorough appraisal ensures
+                that nothing of value is missed, undervalued, or sold for
+                less than it should be. In an estate of this caliber,
+                that protection is worth the time it takes.
               </p>
             </div>
           </div>
@@ -175,9 +177,7 @@ export default function RiverOaksPage() {
       {/* CTA */}
       <div className="bg-charcoal py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 text-center">
-          <h2
-            className="font-heading text-3xl md:text-4xl font-light text-cream mb-4"
-          >
+          <h2 className="font-heading text-3xl md:text-4xl font-light text-cream mb-4">
             Let&rsquo;s talk about your estate.
           </h2>
           <p className="font-body text-sm text-cream/60 mb-6">

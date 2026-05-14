@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description:
       "Reeves Estates handles estate sales, cash buyouts, and fine art appraisals in Tanglewood, Houston. Expert handling for one of Houston's most storied neighborhoods.",
     url: "https://reevesestates.com/neighborhoods/tanglewood",
+    images: [{ url: "https://reevesestates.com/images/openGraph.webp", width: 1200, height: 630, alt: "Reeves Estates — Houston Estate Sales, Buyouts & Appraisals" }],
   },
 };
 
@@ -32,9 +33,8 @@ export default function TanglewoodPage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            Tanglewood has a particular character — quiet, considered,
-            established. The estates here reflect that. So does the way
-            we work.
+            Tanglewood wasn&rsquo;t built overnight, and neither were the
+            collections inside it. We handle both with the same respect.
           </p>
         </div>
       </div>
@@ -46,27 +46,30 @@ export default function TanglewoodPage() {
           {/* Section 1 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              A neighborhood with a distinct collecting history
+              Collections built with knowledge, not just wealth
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Tanglewood has been home to Houston&rsquo;s business and
-                civic leadership for generations. The estates we handle
-                here reflect that history — significant art collections,
-                antique furniture, fine silver and porcelain, and mid-century
-                pieces that were acquired with real knowledge and care.
+                Tanglewood has housed Houston&rsquo;s business and civic
+                leadership for generations — and the estates we encounter here
+                reflect that history. Art collections acquired with genuine
+                discernment. Antique furniture chosen for its quality, not its
+                convenience. Fine silver and porcelain that belonged to people
+                who understood what they were acquiring.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                These aren&rsquo;t collections that should be sold quickly
-                or handled by someone who can&rsquo;t tell the difference
-                between a notable piece and a reproduction. They deserve
-                specialists — people who have spent decades in the market
-                and know exactly what they&rsquo;re looking at.
+                These collections weren&rsquo;t assembled casually. They were
+                built over decades by people who cared about what surrounded
+                them — which means they deserve to be handled by someone who
+                understands the difference between a notable piece and a
+                reproduction, between market value and sentimental assignment.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Reeves Art + Design has been part of the Houston art and
-                antiques market since 1969. That depth of experience is
-                what Reeves Estates brings to every Tanglewood engagement.
+                antiques market since 1969. That depth of experience is what
+                we bring to every Tanglewood engagement — and what allows us
+                to find the right outcome for each piece, not just the fastest
+                one.
               </p>
             </div>
           </div>
@@ -74,28 +77,30 @@ export default function TanglewoodPage() {
           {/* Section 2 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Presented properly, sold at the right price
+              Presented properly, to buyers who know the difference
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We conduct estate sales at our 5,000 square foot gallery
-                in Midtown Houston — a professional environment that draws
-                the kind of buyers Tanglewood collections deserve. Serious
+                We hold estate sales at our 5,000 square foot gallery in
+                Midtown Houston — a considered environment that draws the
+                kind of buyers Tanglewood collections deserve. Serious
                 collectors. Interior designers working at the highest level.
-                Private buyers who know quality and are willing to pay for it.
+                Private buyers who recognize quality because they&rsquo;ve
+                spent a lifetime acquiring it.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Everything is managed in-house: the initial walkthrough and
-                assessment, cataloging and research, pricing, staging, marketing,
-                and the sale itself. You receive a detailed accounting at close
-                and proceeds are distributed promptly.
+                For pieces of particular significance, we look first at private
+                placement — reaching directly into our network of collectors and
+                specialist dealers before recommending any public channel. The
+                right buyer for a significant piece is often someone specific,
+                and a direct approach almost always yields a better result than
+                a general sale.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                For pieces of particular significance, we look first at
-                private placement — connecting directly with known collectors
-                and specialist dealers before recommending any public channel.
-                The right buyer for the right piece often isn&rsquo;t found
-                in a general sale.
+                Everything is managed in-house: the walkthrough, cataloging
+                and research, pricing, staging, marketing, and the sale itself.
+                You receive a full accounting at close and proceeds are
+                distributed promptly.
               </p>
             </div>
           </div>
@@ -103,20 +108,22 @@ export default function TanglewoodPage() {
           {/* Section 3 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Cash buyouts for Tanglewood families
+              When the priority is resolution, not optimization
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                When a family needs this resolved quickly — probate timelines,
-                a property under contract, an executor managing things remotely
-                — our cash buyout service offers a direct path forward.
+                Tanglewood estates are often settled across complex family
+                circumstances — out-of-state heirs, properties under contract,
+                executors managing probate on a timeline that doesn&rsquo;t
+                accommodate a multi-week sale process. When certainty matters
+                more than maximizing every item, our cash buyout service
+                offers a direct path forward.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We assess the estate, make a fair offer, and if it works for
-                you, we handle everything from there. All removal, all
-                clearance, one payment. The property is left clean and
-                ready for whatever comes next. We typically deliver an
-                offer within 48 hours of our initial visit.
+                We assess the estate, deliver a fair offer within 48 hours
+                of our visit, and if it works for you, we take it from there.
+                All removal. All clearance. One payment. The property is left
+                clean and ready for its next chapter.
               </p>
             </div>
           </div>
@@ -124,22 +131,23 @@ export default function TanglewoodPage() {
           {/* Section 4 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Estate appraisals in Tanglewood
+              Appraisals that protect every member of the family
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                A proper appraisal is the foundation of any well-managed
-                estate. Before decisions are made about what to sell, donate,
-                or distribute, every family deserves to know what they
-                actually have.
+                Before any decision is made about what to sell, donate, or
+                distribute, every family deserves to know what they actually
+                have. In a Tanglewood estate, that question is rarely simple —
+                the collections here often include pieces whose value isn&rsquo;t
+                obvious without specialist knowledge.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Our written valuations document each item with provenance,
-                condition, and current market comparables. They satisfy
-                the requirements of estate attorneys, courts, insurance
-                carriers, and tax filings — and they protect every member
-                of the family by ensuring that nothing of value is
-                overlooked or undervalued.
+                condition, and current market comparables. They satisfy estate
+                attorneys, courts, insurance carriers, and the IRS — and they
+                ensure that no heir walks away uncertain about whether the
+                estate was handled fairly. That certainty is worth the care
+                it takes to produce it.
               </p>
             </div>
           </div>
