@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Reeves Estates | Houston Estate Sales",
     description:
-      "Free consultations. No obligation. Call, email, or visit our Midtown Houston gallery. Serving Houston families for three generations.",
+      "Free consultations. No obligation. Call, email, or visit our Montrose gallery. Serving Houston families for three generations.",
     url: "https://reevesestates.com/contact",
   },
 };
@@ -89,7 +89,7 @@ export default function ContactPage() {
                 2415 Taft St
               </a>
               <p className="font-body text-sm text-charcoal/50 mt-3 leading-relaxed">
-                Houston, TX 77006 &mdash; Midtown. Gallery visits by appointment.
+                Houston, TX 77006 &mdash; Montrose. Gallery visits by appointment.
               </p>
             </div>
 
@@ -161,7 +161,7 @@ export default function ContactPage() {
               { name: "West University Place", href: "/neighborhoods/west-university" },
               { name: "Bellaire", href: "/neighborhoods/bellaire" },
               { name: "Museum District", href: "/neighborhoods/museum-district" },
-              { name: "Midtown", href: "/neighborhoods/midtown" },
+              { name: "Montrose", href: "/neighborhoods/montrose" },
               { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
             ].map((n) => (
               <a

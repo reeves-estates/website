@@ -61,12 +61,12 @@ export const faqGroups = [
       {
         question: "What makes Reeves Estates different?",
         answer:
-          "Our 5,000 square foot gallery in Houston\u2019s Midtown gives us a significant advantage. Rather than a rushed sale in a private home, we bring the estate to our gallery \u2014 presenting pieces in a professional environment that attracts serious buyers.",
+          "Our 5,000 square foot gallery in Houston\u2019s Montrose gives us a significant advantage. Rather than a rushed sale in a private home, we bring the estate to our gallery \u2014 presenting pieces in a professional environment that attracts serious buyers.",
       },
       {
         question: "What neighbourhoods do you serve?",
         answer:
-          "We serve Houston and the surrounding area, with particular experience in River Oaks, Midtown, and Houston\u2019s condo and high-rise communities.",
+          "We serve Houston and the surrounding area, with particular experience in River Oaks, Montrose, and Houston\u2019s condo and high-rise communities.",
       },
       {
         question: "Can you conduct a sale at the property itself?",

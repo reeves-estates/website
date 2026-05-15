@@ -34,7 +34,7 @@ export default function About() {
               <div className="space-y-4 font-body text-base leading-relaxed text-charcoal/75">
                 <p>
                   For more than fifty years, Reeves has occupied the corner of
-                  Taft and Fairview in Houston&rsquo;s Midtown — a family
+                  Taft and Fairview in Houston&rsquo;s Montrose — a family
                   business built on three generations of expertise in antiques,
                   mid-century modern furniture, and fine art. Respected by
                   artists, collectors, interior designers, and cultural
@@ -50,7 +50,7 @@ export default function About() {
                 <p>
                   Our 5,000 square foot gallery space sets us apart. Rather than
                   a rushed sale in a private home, we bring the estate to
-                  Midtown — carefully staging and presenting pieces in a
+                  Montrose — carefully staging and presenting pieces in a
                   considered, gallery-quality environment that honors the
                   collection and attracts serious buyers.
                 </p>

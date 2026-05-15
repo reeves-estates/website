@@ -81,7 +81,7 @@ export default function Footer() {
               <a href="/neighborhoods/tanglewood" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">Tanglewood</a>
               <a href="/neighborhoods/west-university" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">West University Place</a>
               <a href="/neighborhoods/bellaire" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">Bellaire</a>
-              <a href="/neighborhoods/midtown" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">Midtown</a>
+              <a href="/neighborhoods/montrose" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">Montrose</a>
               <a href="/neighborhoods/museum-district" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">Museum District</a>
               <a href="/neighborhoods/upper-kirby" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">Upper Kirby</a>
             </div>
@@ -93,7 +93,7 @@ export default function Footer() {
       <div className="border-t border-cream/10">
         <div className="max-w-6xl mx-auto px-6 lg:px-12 py-6 text-center">
           <p className="font-body text-sm text-bronze italic">
-            Serving River Oaks &middot; Midtown &middot; Houston High-Rises &middot; and surrounding communities
+            Serving River Oaks &middot; Montrose &middot; Houston High-Rises &middot; and surrounding communities
           </p>
         </div>
       </div>

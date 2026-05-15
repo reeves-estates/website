@@ -6,7 +6,7 @@ export default function Credentials() {
           <div className="md:px-10">
             <p className="font-heading text-6xl text-bronze mb-2">50+</p>
             <p className="font-compact text-xs tracking-widest uppercase text-cream/40 mb-2">Years</p>
-            <p className="font-body text-sm text-cream/65 leading-relaxed">On the corner of Taft &amp; Fairview in Houston&rsquo;s Midtown</p>
+            <p className="font-body text-sm text-cream/65 leading-relaxed">On the corner of Taft &amp; Fairview in Houston&rsquo;s Montrose</p>
           </div>
           <div className="md:px-10">
             <p className="font-heading text-6xl text-bronze mb-2">3</p>

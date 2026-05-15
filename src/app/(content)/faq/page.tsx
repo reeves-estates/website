@@ -79,7 +79,7 @@ export default function FAQPage() {
               { name: "West University", href: "/neighborhoods/west-university" },
               { name: "Bellaire", href: "/neighborhoods/bellaire" },
               { name: "Museum District", href: "/neighborhoods/museum-district" },
-              { name: "Midtown", href: "/neighborhoods/midtown" },
+              { name: "Montrose", href: "/neighborhoods/montrose" },
               { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
             ].map((link) => (
               <a

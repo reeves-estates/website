@@ -51,26 +51,26 @@ export default function MemorialPage() {
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Memorial operates at a different scale than most of Houston.
-                Large lots. Long driveways. Houses built to hold a life fully
-                lived — with the rooms, the storage, and the square footage
-                to match. When it comes time to settle an estate here, the
-                sheer scope of what needs to be assessed can feel overwhelming.
+                Memorial operates at a different scale than most of Houston:
+                large lots, long driveways, and houses built to hold a life
+                fully lived&mdash;with the rooms, storage, and square footage
+                to match. When it&rsquo;s time to settle an estate here, the
+                sheer volume of what needs to be assessed can feel overwhelming.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                The substance inside is real. Texas art acquired over decades.
-                Fine furniture from rooms that were actually used. Silver
-                services, mid-century pieces, objects that have been in
-                families for generations. These aren&rsquo;t things that should
-                be cleared out quickly by someone who can&rsquo;t tell the
-                difference between what&rsquo;s valuable and what isn&rsquo;t.
+                What&rsquo;s inside carries real substance: Texas art acquired
+                over decades, fine furniture from rooms that were actually used,
+                silver services, mid-century pieces, and objects that have been
+                in families for generations. These aren&rsquo;t things that
+                should be cleared out quickly by someone who can&rsquo;t
+                distinguish what&rsquo;s valuable from what isn&rsquo;t.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Reeves Art + Design has been active in the Houston market since
-                1969. The relationships we&rsquo;ve built with collectors,
-                dealers, and institutions across the city are what allow us to
-                find the right outcome for what a Memorial estate holds — not
-                just the most efficient one.
+                Reeves Estates has been active in the Houston market since 1969.
+                The relationships we&rsquo;ve built with collectors, dealers,
+                and institutions across the city allow us to find the right
+                outcome for what a Memorial estate holds&mdash;not just the
+                fastest or most efficient one.
               </p>
             </div>
           </div>
@@ -82,25 +82,25 @@ export default function MemorialPage() {
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We hold estate sales at our 5,000 square foot gallery in
-                Midtown Houston. For Memorial families, the gallery setting
-                makes a real difference — it draws buyers who are specifically
-                looking for quality and understand what they&rsquo;re
-                purchasing. Collectors. Interior designers. Private individuals
-                with a genuine eye.
+                We hold estate sales at our 5,000-square-foot gallery in
+                Montrose. For Memorial families, the gallery setting
+                makes a real difference&mdash;it draws buyers who are
+                specifically looking for quality and who understand what
+                they&rsquo;re purchasing: collectors, interior designers, and
+                private individuals with a trained eye.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                For families who prefer a sale at the property itself,
-                Memorial homes are often well-suited to on-site events.
-                Large, well-appointed rooms can work in a sale&rsquo;s favor —
-                and we manage those events with the same standards we bring to
-                the gallery. The same team, the same thoroughness, the same
-                commitment to a fair result.
+                For families who prefer a sale at the property, Memorial homes
+                are often well-suited to on-site events. Large, well-appointed
+                rooms can work in a sale&rsquo;s favor, and we manage those
+                events with the same standards we bring to the gallery: the
+                same team, the same thoroughness, the same commitment to a
+                fair result.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 We handle every step: the walkthrough, cataloging, pricing,
-                staging, marketing, and the sale itself. A full accounting
-                at close, with proceeds distributed promptly.
+                staging, marketing, and the sale itself. At close, we provide
+                a full accounting, with proceeds distributed promptly.
               </p>
             </div>
           </div>
@@ -112,17 +112,18 @@ export default function MemorialPage() {
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Memorial estates are frequently settled by executors or family
+                Memorial estates are often settled by executors or family
                 members who are managing the process from out of town. A
-                property that needs to be cleared before it can be listed, a
-                probate timeline that won&rsquo;t accommodate a drawn-out sale —
-                these are among the most common situations we encounter here.
+                property that needs to be cleared before it can be listed,
+                or a probate timeline that won&rsquo;t accommodate a drawn-out
+                sale&mdash;these are among the most common situations we
+                encounter.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Our cash buyout service was built for exactly this. We assess
                 the estate, deliver a fair cash offer within 48 hours of our
-                visit, and if you accept, we handle everything from there.
-                All removal. All clearance. One payment. The property is left
+                visit, and, if you accept, we handle everything from there:
+                all removal, all clearance, one payment. The property is left
                 clean and ready for sale. No second trips. No uncertainty.
               </p>
             </div>
@@ -135,19 +136,18 @@ export default function MemorialPage() {
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Memorial estates often involve formal probate proceedings —
-                which means the appraisal documentation needs to hold up in
-                court, not just in conversation. Our written valuations document
-                each item with provenance, condition, and current market
-                comparables. They satisfy estate attorneys, courts, insurance
-                carriers, and the IRS.
+                Memorial estates often involve formal probate, which means the
+                appraisal documentation needs to hold up in court, not just in
+                conversation. Our written valuations document each item with
+                provenance, condition, and current market comparables. They
+                satisfy estate attorneys, courts, and insurance carriers.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Memorial properties reward the careful attention a proper
                 appraisal requires. Texas art, significant mid-century furniture,
-                decorative objects assembled by people who knew what they were
-                doing — these are the pieces that benefit most from a specialist
-                who takes the time to get them right.
+                and decorative objects assembled by people who knew what they
+                were doing&mdash;these are the pieces that benefit most from a
+                specialist who takes the time to get them right.
               </p>
             </div>
           </div>
@@ -164,7 +164,7 @@ export default function MemorialPage() {
                 { name: "West University Place", href: "/neighborhoods/west-university" },
                 { name: "Bellaire", href: "/neighborhoods/bellaire" },
                 { name: "Museum District", href: "/neighborhoods/museum-district" },
-                { name: "Midtown", href: "/neighborhoods/midtown" },
+                { name: "Montrose", href: "/neighborhoods/montrose" },
                 { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
               ].map((n) => (
                 <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">

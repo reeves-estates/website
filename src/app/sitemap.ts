@@ -6,42 +6,75 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: new Date("2026-03-18"),
       changeFrequency: "monthly",
       priority: 1.0,
     },
     {
       url: `${baseUrl}/services`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-03-24"),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/faq`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-04-02"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-04-05"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
-    ...[
-      "river-oaks",
-      "memorial",
-      "tanglewood",
-      "west-university",
-      "bellaire",
-      "midtown",
-      "museum-district",
-      "upper-kirby",
-    ].map((slug) => ({
-      url: `${baseUrl}/neighborhoods/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
+    {
+      url: `${baseUrl}/neighborhoods/river-oaks`,
+      lastModified: new Date("2026-04-08"),
+      changeFrequency: "monthly",
       priority: 0.8,
-    })),
+    },
+    {
+      url: `${baseUrl}/neighborhoods/tanglewood`,
+      lastModified: new Date("2026-04-10"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/neighborhoods/memorial`,
+      lastModified: new Date("2026-04-12"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/neighborhoods/west-university`,
+      lastModified: new Date("2026-04-14"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/neighborhoods/bellaire`,
+      lastModified: new Date("2026-04-16"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/neighborhoods/upper-kirby`,
+      lastModified: new Date("2026-04-18"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/neighborhoods/museum-district`,
+      lastModified: new Date("2026-04-21"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/neighborhoods/montrose`,
+      lastModified: new Date("2026-04-23"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 }

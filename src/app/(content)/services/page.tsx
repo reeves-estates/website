@@ -4,7 +4,7 @@ import PhoneLink from "@/components/PhoneLink";
 export const metadata: Metadata = {
   title: "Houston Estate Sale Services",
   description:
-    "Full-service estate management in Houston — estate sales, cash buyouts, appraisals, fine art & antiques, executor support, and complete estate clearance. Serving River Oaks, Midtown, Memorial, and surrounding communities.",
+    "Full-service estate management in Houston — estate sales, cash buyouts, appraisals, fine art & antiques, executor support, and complete estate clearance. Serving River Oaks, Montrose, Memorial, and surrounding communities.",
   alternates: { canonical: "https://reevesestates.com/services" },
   openGraph: {
     title: "Houston Estate Sale Services | Reeves Estates",
@@ -22,7 +22,7 @@ const services = [
     tagline: "We take care of everything — so you don't have to.",
     body: [
       "Settling an estate is a lot to hold. Reeves Estates manages the entire process so you can focus on what actually needs your attention — family, decisions, rest. We start with a walkthrough, then handle cataloging, pricing, staging, and the sale itself.",
-      "We hold estate sales at our 5,000 square foot gallery in Midtown Houston. Your family's belongings are presented the way they deserve to be — not in a hurried home sale that drives prices down, but in a curated environment that draws in collectors, designers, and buyers who recognize what they're looking at.",
+      "We hold estate sales at our 5,000 square foot gallery in Montrose. Your family's belongings are presented the way they deserve to be — not in a hurried home sale that drives prices down, but in a curated environment that draws in collectors, designers, and buyers who recognize what they're looking at.",
       "Every item is priced by people who have spent decades with fine art, antiques, and mid-century furniture. At the close, you receive a full accounting — every item, every dollar.",
     ],
     keywords: ["Houston estate sales", "estate sale company Houston", "estate sale services Houston"],

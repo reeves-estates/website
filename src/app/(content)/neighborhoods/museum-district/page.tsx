@@ -45,29 +45,27 @@ export default function MuseumDistrictPage() {
           {/* Section 1 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              A neighborhood shaped by proximity to great art
+              A neighborhood shaped by world-class cultural institutions
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Living within walking distance of the Museum of Fine Arts, the
                 Menil Collection, the Contemporary Arts Museum, and the Rothko
-                Chapel shapes how a person relates to art — whether they intend
-                it to or not. The residents of the Museum District have spent
-                their lives surrounded by serious work, and the collections
-                inside their homes reflect that exposure.
+                Chapel changes how a person relates to art. Museum District
+                residents have spent their lives surrounded by serious work,
+                and their homes reflect that.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                What we find in Museum District estates is consistently more
-                considered than elsewhere. Not necessarily more expensive —
-                though often that too — but more deliberate. Works chosen
-                because someone understood them. Objects acquired because they
-                meant something, not because they filled a wall.
+                In these estates, collections are consistently more considered.
+                Not always more expensive — though often that too — but more
+                deliberate. Works chosen with understanding. Objects acquired
+                because they meant something, not just to fill a wall.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Reeves Art + Design has been active in Houston&rsquo;s art world
-                since 1969. We know the galleries, the artists, the institutions,
-                and the collector community that has shaped this part of the city.
-                That history is directly relevant to the estates we encounter here.
+                Reeves Art + Design has been part of Houston&rsquo;s art world
+                since 1969. We know the galleries, artists, institutions, and
+                collectors that have shaped this part of the city&mdash;experience
+                that directly informs how we handle Museum District estates.
               </p>
             </div>
           </div>
@@ -75,29 +73,27 @@ export default function MuseumDistrictPage() {
           {/* Section 2 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Significant works handled with specialist knowledge
+              Significant works, specialist handling
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Museum District estates regularly include works that benefit from
-                more than a general appraisal — paintings with documented
-                provenance, prints from known editions, sculpture by artists
-                with established market records, and decorative objects chosen
-                by people who understood their context. These pieces deserve
-                individual attention.
+                Museum District estates often include works that need more than
+                a general appraisal — paintings with provenance, prints from
+                known editions, sculpture by artists with track records, and
+                decorative objects chosen with context in mind. These pieces
+                deserve individual attention.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                For works of particular significance, we look first at private
-                placement — connecting your family directly with a collector or
-                institution that knows the work and is prepared to pay for it
-                appropriately. Some pieces belong in the right hands, and we
-                have the relationships to find them.
+                For especially important works, we first pursue private
+                placement — connecting your family with a collector or institution
+                that knows the work and will pay appropriately for it. Some
+                pieces belong in the right hands; we know how to find them.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Our written appraisals document each item with provenance,
-                condition notes, and current market comparables — reports that
-                hold up for estate attorneys, courts, insurance carriers, and
-                tax purposes, and that ensure nothing of value goes unrecognized.
+                Our written appraisals record provenance, condition, and current
+                market comparables for each item — reports that satisfy estate
+                attorneys, courts, insurers, and tax requirements, and ensure
+                nothing of value is overlooked.
               </p>
             </div>
           </div>
@@ -105,22 +101,21 @@ export default function MuseumDistrictPage() {
           {/* Section 3 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Gallery sales that reach the right audience
+              Gallery sales that reach the right buyers
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                For the broader estate, our 5,000 square foot gallery in Midtown
-                is the right environment. The buyers who come to Reeves are
-                collectors and serious buyers — exactly the audience for the
-                kinds of pieces that tend to come from this neighborhood. We
-                handle everything in-house: the initial walkthrough, cataloging,
-                pricing, staging, marketing, and the sale itself.
+                For the broader estate, our 5,000-square-foot Montrose gallery
+                is the right setting. Reeves attracts collectors and serious
+                buyers — exactly the audience for pieces that come from this
+                neighborhood. We handle everything in-house: walkthrough,
+                cataloging, pricing, staging, marketing, and sales.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We begin every engagement with an honest walkthrough — no
-                obligation, no pressure. Just a clear picture of what you have,
-                what it&rsquo;s worth, and what your options are. The family
-                makes the decision; we make sure that decision is an informed one.
+                Every engagement begins with an honest walkthrough — no
+                obligation, no pressure. You get a clear picture of what you
+                have, what it&rsquo;s worth, and your options. The family
+                decides; we make sure that the decision is informed.
               </p>
             </div>
           </div>
@@ -128,22 +123,22 @@ export default function MuseumDistrictPage() {
           {/* Section 4 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Cash buyouts for families who need simplicity
+              Cash buyouts when simplicity matters
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Not every family needs an art auction. Sometimes the most
-                important pieces have already been identified and distributed —
-                and what remains is a home that needs to be handled quickly
-                and completely. Our cash buyout service is designed for that:
-                one offer, one payment, everything cleared.
+                Not every family needs an auction. Sometimes the key pieces
+                have already been placed, and what&rsquo;s left is a house
+                that needs to be cleared quickly and completely. Our cash
+                buyout service is for that: one offer, one payment,
+                everything removed.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We deliver a fair cash offer within 48 hours of our initial
-                visit. If it works for you, we handle all removal and clearance
-                and leave the property ready for whatever comes next. Executors
-                managing a Museum District estate from out of town find this
-                option removes more complexity than almost anything else we offer.
+                Within 48 hours of our visit, we will present a fair cash
+                offer. If you accept, we handle all removal and leave the
+                property ready for whatever comes next. For out-of-town
+                executors, this option often removes more complexity than
+                anything else we offer.
               </p>
             </div>
           </div>
@@ -160,7 +155,7 @@ export default function MuseumDistrictPage() {
                 { name: "Memorial", href: "/neighborhoods/memorial" },
                 { name: "West University Place", href: "/neighborhoods/west-university" },
                 { name: "Bellaire", href: "/neighborhoods/bellaire" },
-                { name: "Midtown", href: "/neighborhoods/midtown" },
+                { name: "Montrose", href: "/neighborhoods/montrose" },
                 { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
               ].map((n) => (
                 <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">

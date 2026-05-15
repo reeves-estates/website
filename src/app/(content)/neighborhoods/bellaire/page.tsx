@@ -33,8 +33,8 @@ export default function BellairePage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            Bellaire is a neighborhood built on permanence. The families who
-            settle here tend to stay. What&rsquo;s inside reflects that.
+            Bellaire is a neighborhood built on permanence. Families who
+            settle here tend to stay, and their homes reflect that.
           </p>
         </div>
       </div>
@@ -50,24 +50,21 @@ export default function BellairePage() {
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Bellaire homes don&rsquo;t turn over quickly. Families put down
-                roots here and stay — thirty, forty, fifty years in the same
-                house, acquiring as they go. The estates we handle here are
-                rarely grand collections in the formal sense. They&rsquo;re
-                something more personal than that: a dining room set chosen the
-                year a couple married, a painting picked up on a trip that
-                meant something, silver inherited from a grandmother who kept
-                it polished.
+                Bellaire homes rarely change hands. Families put down roots
+                and remain — thirty, forty, even fifty years in the same house.
+                The estates we handle here are less formal &ldquo;collections&rdquo;
+                and more a record of a life: a dining room set chosen the year
+                a couple married, a painting from a meaningful trip, silver
+                inherited from a grandmother who kept it polished.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                These estates carry real value — monetary and otherwise. And
-                they deserve to be handled by someone who slows down enough to
-                recognize what&rsquo;s significant, rather than moving through
-                a property as quickly as possible.
+                These estates carry real value — monetary and otherwise — and
+                deserve to be handled by someone who slows down enough to see
+                what&rsquo;s significant.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Reeves Estates has served Houston families since 1969. We bring
-                the same patience and expertise to every Bellaire engagement —
+                the same patience and expertise to every Bellaire engagement,
                 because the families we work with here have every right to
                 expect both.
               </p>
@@ -82,24 +79,22 @@ export default function BellairePage() {
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 For most estates, we recommend bringing the collection to our
-                5,000 square foot gallery in Midtown Houston. The gallery
-                setting draws buyers who are specifically looking for quality —
-                collectors, interior designers, private individuals who
-                understand what they&rsquo;re purchasing and are prepared to
-                pay accordingly.
+                5,000-square-foot Montrose gallery. The setting attracts
+                buyers who seek quality — collectors, interior designers, and
+                private individuals who understand what they&rsquo;re purchasing
+                and are prepared to pay accordingly.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Bellaire properties often lend themselves to on-site sales as
-                well — particularly when a home has a character that suits what
-                it holds. If the family prefers a professionally managed event
-                at the property itself, we organize and staff those too. The
-                same team, the same standards, the same commitment to a
-                thorough result.
+                Many Bellaire properties also suit on-site sales, especially
+                when a home&rsquo;s character matches what it holds. If the
+                family prefers a professionally managed sale at the property,
+                we organize and staff that as well — the same team, the same
+                standards, the same commitment to a thorough result.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 We handle every step: walkthrough, cataloging, pricing, staging,
-                marketing, and the sale. A complete accounting at close, with
-                proceeds distributed without delay.
+                marketing, and the sale, followed by a complete accounting at
+                close and prompt distribution of proceeds.
               </p>
             </div>
           </div>
@@ -111,18 +106,18 @@ export default function BellairePage() {
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Sometimes a family arrives at this process with competing
-                priorities — siblings managing an estate from different cities,
-                a property that needs to close, a timeline set by probate.
-                Our cash buyout service is designed for exactly that: one offer
-                on the entire estate, one payment, and we handle everything
-                from there.
+                Families often come to this process with competing priorities —
+                siblings in different cities, a property that needs to close,
+                deadlines set by probate. Our cash buyout service is designed
+                for exactly that: one offer on the entire estate, one payment,
+                and we handle everything from there.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We deliver a fair cash offer within 48 hours of our initial
-                visit. If it works, we move quickly. All removal and clearance
-                is included. The property is left ready for whatever comes next.
-                If the offer doesn&rsquo;t work for you, there is no obligation.
+                Within 48 hours of our initial visit, we provide a fair cash
+                offer. If it works for you, we move quickly. All removal and
+                clearance are included, and the property is left ready for
+                whatever comes next. If the offer isn&rsquo;t right, there
+                is no obligation.
               </p>
             </div>
           </div>
@@ -135,17 +130,17 @@ export default function BellairePage() {
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 When a Bellaire estate passes to multiple heirs, an independent
-                written appraisal is often the most important step a family can
-                take before making any decisions. It gives everyone the same
-                information, removes speculation, and protects the integrity of
-                the process — whatever direction the family ultimately chooses.
+                written appraisal is often the most important step before any
+                decisions are made. It gives everyone the same information,
+                prevents speculation, and protects the integrity of the process —
+                whatever the family ultimately chooses.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Our valuations document each item with provenance, condition
                 notes, and current market comparables. They satisfy estate
-                attorneys, courts, insurance carriers, and the IRS — and they
-                give families the confidence that nothing of value has been
-                overlooked or mischaracterized.
+                attorneys, courts, and insurance carriers — and they give
+                families confidence that nothing of value has been overlooked
+                or mischaracterized.
               </p>
             </div>
           </div>
@@ -162,7 +157,7 @@ export default function BellairePage() {
                 { name: "Memorial", href: "/neighborhoods/memorial" },
                 { name: "West University Place", href: "/neighborhoods/west-university" },
                 { name: "Museum District", href: "/neighborhoods/museum-district" },
-                { name: "Midtown", href: "/neighborhoods/midtown" },
+                { name: "Montrose", href: "/neighborhoods/montrose" },
                 { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
               ].map((n) => (
                 <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">

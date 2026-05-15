@@ -33,7 +33,7 @@ export default function UpperKirbyPage() {
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
             Upper Kirby doesn&rsquo;t announce itself. But the people who
-            live here care about what surrounds them — and the estates
+            live here care about what surrounds them — and their estates
             reflect that.
           </p>
         </div>
@@ -50,21 +50,21 @@ export default function UpperKirbyPage() {
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Upper Kirby sits in an interesting position — drawn from the
+                Upper Kirby occupies a distinctive position, drawing on the
                 established residential character of River Oaks and West
-                University to the north and west, and shaped by the cultural
-                density of Montrose and the Museum District to the east. The
-                people who settle here are often those who moved from a larger
-                house and kept only the best of it, or professionals who have
-                bought carefully over the course of a career.
+                University to the north and west, and the cultural density of
+                Montrose and the Museum District to the east. The people who
+                settle here are often those who have moved from a larger house
+                and kept only the best of it, or professionals who have bought
+                carefully over the course of a career.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                The estates here tend to be eclectic in the best sense.
-                A significant painting alongside well-chosen mid-century
-                furniture. Estate jewelry from a grandmother who had good
-                taste. Objects picked up in a well-traveled life, alongside
-                things that were simply bought well. Range doesn&rsquo;t mean
-                inconsistency — it means the people who lived here were curious.
+                The estates here are eclectic in the best sense. A significant
+                painting above well-chosen mid-century furniture. Estate jewelry
+                from a grandmother with good taste. Objects collected over a
+                well-traveled life, alongside pieces that were simply bought
+                well. Range doesn&rsquo;t mean inconsistency — it means the
+                people who lived here were curious.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Our gallery on Taft Street is less than two miles away. When
@@ -86,18 +86,18 @@ export default function UpperKirbyPage() {
                 unhurried walkthrough of the property. No pressure, no sales
                 pitch. We identify what has real market value, what belongs in
                 a gallery sale, and what might warrant a private approach with
-                a specific buyer. Then we tell you what we think — honestly —
+                a specific buyer. Then we share our recommendations — honestly —
                 before you make any decision.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                For most estates here, our gallery sale is the right path.
+                For most estates here, a gallery sale is the right path.
                 We manage everything in-house: cataloging, staging, marketing,
                 the sale itself, and all clearance afterward. You receive a
                 full accounting and a property left clean.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                For families who would prefer a professionally managed event at
-                the property — particularly when a well-furnished home makes a
+                For families who prefer a professionally managed event at
+                the property — particularly when a well-furnished home is a
                 natural setting for what it holds — we organize and staff
                 on-site sales as well. Same team, same standards.
               </p>
@@ -111,20 +111,19 @@ export default function UpperKirbyPage() {
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Upper Kirby estates frequently include pieces that reward
-                specialist attention: Texas art and regional work, mid-century
-                furniture by recognized designers, decorative antiques, estate
-                jewelry, and silver that has been properly maintained. A
-                generalist will often miss the mark on value — undervaluing
-                what&rsquo;s significant, or overvaluing what looks impressive
-                but isn&rsquo;t.
+                Upper Kirby estates often include pieces that reward specialist
+                attention: Texas art and regional work, mid-century furniture
+                by recognized designers, decorative antiques, estate jewelry,
+                and properly maintained silver. A generalist will often miss
+                the mark — undervaluing what&rsquo;s significant, or
+                overvaluing what looks impressive but isn&rsquo;t.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Our team brings decades of expertise in exactly these
-                categories. Our written appraisals document each significant
-                item with provenance, condition notes, and current market
-                comparables — and they ensure that nothing of value leaves
-                without being properly recognized.
+                Our team brings decades of expertise in these categories. Our
+                written appraisals document each significant item with
+                provenance, condition notes, and current market comparables,
+                ensuring that nothing of value leaves without being properly
+                recognized.
               </p>
             </div>
           </div>
@@ -137,7 +136,7 @@ export default function UpperKirbyPage() {
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Not every family arrives at this process with time to optimize.
-                Properties under contract, out-of-town executors, probate
+                Properties under contract, out-of-town executors, and probate
                 timelines that won&rsquo;t accommodate a multi-week sale — these
                 are the situations our cash buyout service is built for. One
                 offer, one payment, everything cleared.
@@ -145,7 +144,7 @@ export default function UpperKirbyPage() {
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 We deliver a fair cash offer within 48 hours of our initial
                 visit. If it works for you, we handle all removal and clearance
-                and leave the property ready. If it doesn&rsquo;t work, there
+                and leave the property ready. If it doesn&rsquo;t, there
                 is no obligation. Most families know quickly which path is
                 right for them — and we make it easy to take either one.
               </p>
@@ -165,7 +164,7 @@ export default function UpperKirbyPage() {
                 { name: "West University Place", href: "/neighborhoods/west-university" },
                 { name: "Bellaire", href: "/neighborhoods/bellaire" },
                 { name: "Museum District", href: "/neighborhoods/museum-district" },
-                { name: "Midtown", href: "/neighborhoods/midtown" },
+                { name: "Montrose", href: "/neighborhoods/montrose" },
               ].map((n) => (
                 <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
                   {n.name}

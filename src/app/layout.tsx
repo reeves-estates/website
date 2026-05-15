@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     images: [{ url: "https://reevesestates.com/images/openGraph.webp", width: 1200, height: 630, alt: "Reeves Estates — Houston Estate Sales, Buyouts & Appraisals" }],
   },
   verification: {
-    google: "0ZvlKynvzOy89HqbicAAppPNQ_u5lx48RIRmIfkUoIo",
+    google: "BfsHm3rYAYrHb8ROlYwZz4KFq5bi-RmFioYolMzIaKE",
   },
 };
 
@@ -99,7 +99,7 @@ export default function RootLayout({
                   "longitude": -95.38554
                 },
                 "areaServed": [
-                  "River Oaks", "Midtown Houston", "Memorial", "West University",
+                  "River Oaks", "Montrose", "Memorial", "West University",
                   "Tanglewood", "Bellaire", "Museum District", "Houston"
                 ],
                 "makesOffer": [
@@ -157,7 +157,7 @@ export default function RootLayout({
                     "name": "What makes Reeves Estates different?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Our 5,000 square foot gallery in Houston's Midtown gives us a significant advantage. Rather than a rushed sale in a private home, we bring the estate to our gallery — presenting pieces in a professional environment that attracts serious buyers."
+                      "text": "Our 5,000 square foot gallery in Houston's Montrose gives us a significant advantage. Rather than a rushed sale in a private home, we bring the estate to our gallery — presenting pieces in a professional environment that attracts serious buyers."
                     }
                   },
                   {
@@ -197,7 +197,7 @@ export default function RootLayout({
                     "name": "What neighbourhoods do you serve?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "We serve Houston and the surrounding area, with particular experience in River Oaks, Midtown, and Houston's condo and high-rise communities."
+                      "text": "We serve Houston and the surrounding area, with particular experience in River Oaks, Montrose, and Houston's condo and high-rise communities."
                     }
                   },
                   {

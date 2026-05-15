@@ -34,7 +34,7 @@ export default function WestUniversityPage() {
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
             West U families tend to know what they have — and what it took
-            to acquire it. We bring the same clarity to every engagement here.
+            to acquire it. We bring that same clarity to every engagement.
           </p>
         </div>
       </div>
@@ -46,30 +46,28 @@ export default function WestUniversityPage() {
           {/* Section 1 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Deliberate homes, accumulated over a long time
+              Deliberate homes, assembled over time
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 West University Place is one of the few inner-loop neighborhoods
-                where the character has held through decades of change. Families
-                connected to Rice University, the Texas Medical Center, the legal
-                and professional communities — people who chose West U because
-                of what it offered and stayed because it delivered. The homes
-                here have held the same families for a generation or more.
+                whose character has endured decades of change. Families connected
+                to Rice University, the Texas Medical Center, and Houston&rsquo;s
+                legal and professional communities chose West U for what it
+                offered — and stayed because it delivered. Many homes have
+                remained with the same families for a generation or more.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                What&rsquo;s inside tends to reflect that intentionality.
-                Not grand collecting in the formal sense — but things chosen
-                with knowledge. Art acquired with a real eye. Furniture that
-                was bought well, not bought quickly. Objects from travels that
-                meant something. These homes were assembled by people who
-                understood quality even when they weren&rsquo;t thinking of
-                themselves as collectors.
+                Inside, the contents reflect that intention: art chosen with
+                care, furniture bought well rather than quickly, objects from
+                meaningful travels. These homes were built piece by piece by
+                people who understood quality, even if they never called
+                themselves collectors.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 Reeves Estates has handled estates like these across Houston
-                since 1969. We bring the same specialist attention to every
-                West University engagement.
+                since 1969, bringing specialist attention to every West
+                University engagement.
               </p>
             </div>
           </div>
@@ -77,25 +75,24 @@ export default function WestUniversityPage() {
           {/* Section 2 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              A gallery setting that suits what West U homes hold
+              A gallery setting that fits West U homes
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We hold estate sales at our 5,000 square foot gallery in
-                Midtown — just a few minutes from West University Place.
-                The gallery setting draws buyers who are specifically seeking
-                quality and come prepared to recognize it. For the kinds of
-                pieces that come from West U homes — well-chosen furniture,
-                art with real merit, decorative objects that reward a second
-                look — this is the right audience.
+                We hold estate sales at our 5,000-square-foot Montrose gallery,
+                just minutes from West University Place. This setting draws
+                buyers who are specifically seeking quality and ready to
+                recognize it — the right audience for well-chosen furniture,
+                art with real merit, and decorative objects that reward a
+                second look.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
                 We manage every step in-house: walkthrough and assessment,
                 cataloging and pricing, staging, marketing, and the sale
-                itself. A full accounting at close, with proceeds distributed
-                promptly. For families who prefer a professionally managed
-                on-site event at the property, we organize those as well —
-                same team, same thoroughness.
+                itself. You receive a full accounting at close and prompt
+                distribution of proceeds. If you prefer a professionally
+                managed on-site event, we organize those as well with the
+                same team and the same thoroughness.
               </p>
             </div>
           </div>
@@ -107,19 +104,18 @@ export default function WestUniversityPage() {
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                West University estates are often settled under pressure from
-                competing timelines — a property under contract, an out-of-state
-                executor managing multiple responsibilities, a probate proceeding
-                with a deadline that a multi-week sale can&rsquo;t accommodate.
+                West University estates are often settled under pressure — a
+                property under contract, an out-of-state executor with limited
+                time, or a probate deadline a multi-week sale can&rsquo;t meet.
                 These are exactly the situations our cash buyout service is
-                built to resolve.
+                designed to resolve.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We assess the estate and deliver a fair cash offer within 48 hours
-                of our visit. If it works for you, we handle all removal and
-                clearance and leave the property clean. One transaction. No
-                commissions, no uncertainty, no second visits. The estate is
-                resolved and the property is ready for whatever comes next.
+                We assess the estate and provide a fair cash offer within 48
+                hours of our visit. If it works for you, we handle all removal
+                and clearance and leave the property clean. One transaction.
+                No commissions, no uncertainty, no second visits. The estate
+                is resolved, and the property is ready for what comes next.
               </p>
             </div>
           </div>
@@ -138,12 +134,10 @@ export default function WestUniversityPage() {
                 among multiple heirs?
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Our written appraisals answer those questions in a form that
-                holds up everywhere it needs to: estate attorneys, courts,
-                insurance carriers, and the IRS. Each item is documented with
-                provenance, condition, and current market comparables. For
-                estates where more than one heir is involved, that documentation
-                is often the most important step the family can take before any
+                Our written appraisals answer those questions in a format that
+                holds up with estate attorneys, courts, and insurance carriers. Each item is documented with provenance, condition,
+                and current market comparables. For estates with multiple heirs,
+                that documentation is often the most important step before any
                 decisions are made.
               </p>
             </div>
@@ -161,7 +155,7 @@ export default function WestUniversityPage() {
                 { name: "Memorial", href: "/neighborhoods/memorial" },
                 { name: "Bellaire", href: "/neighborhoods/bellaire" },
                 { name: "Museum District", href: "/neighborhoods/museum-district" },
-                { name: "Midtown", href: "/neighborhoods/midtown" },
+                { name: "Montrose", href: "/neighborhoods/montrose" },
                 { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
               ].map((n) => (
                 <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">

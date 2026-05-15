@@ -33,8 +33,9 @@ export default function TanglewoodPage() {
           </h1>
           <div className="w-16 h-[1px] bg-bronze mx-auto mb-4" />
           <p className="font-body text-lg text-cream/70 italic leading-relaxed max-w-2xl mx-auto">
-            Tanglewood wasn&rsquo;t built overnight, and neither were the
-            collections inside it. We handle both with the same respect.
+            Tanglewood didn&rsquo;t appear overnight, and neither did the
+            collections inside its homes. Both grew slowly, with care and
+            intention. We treat them the same way.
           </p>
         </div>
       </div>
@@ -46,30 +47,31 @@ export default function TanglewoodPage() {
           {/* Section 1 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Collections built with knowledge, not just wealth
+              Collections built on taste, not just means
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Tanglewood has housed Houston&rsquo;s business and civic
-                leadership for generations — and the estates we encounter here
-                reflect that history. Art collections acquired with genuine
-                discernment. Antique furniture chosen for its quality, not its
-                convenience. Fine silver and porcelain that belonged to people
-                who understood what they were acquiring.
+                For decades, Tanglewood has been home to much of Houston&rsquo;s
+                business and civic leadership. The estates we see here reflect
+                that history. Paintings were bought after real consideration,
+                not on a whim. Furniture was chosen because it was well-made
+                and would last. Silver and porcelain were selected by people
+                who knew exactly what they were looking at.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                These collections weren&rsquo;t assembled casually. They were
-                built over decades by people who cared about what surrounded
-                them — which means they deserve to be handled by someone who
-                understands the difference between a notable piece and a
-                reproduction, between market value and sentimental assignment.
+                These are collections that took years to assemble. They mattered
+                to the people who built them, and that deserves to be honored.
+                It calls for someone who can tell the difference between a great
+                piece and a merely decorative one, and who understands that
+                value can be measured in memory as well as in money.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Reeves Art + Design has been part of the Houston art and
-                antiques market since 1969. That depth of experience is what
-                we bring to every Tanglewood engagement — and what allows us
-                to find the right outcome for each piece, not just the fastest
-                one.
+                Reeves Estates has been part of the Houston art and antiques
+                world since 1969. We&rsquo;ve watched tastes change, markets
+                rise and fall, and whole collections pass from one generation
+                to the next. That long view is what we bring to every Tanglewood
+                estate, and it&rsquo;s why we focus on the right outcome for
+                each piece&mdash;not just getting it sold quickly.
               </p>
             </div>
           </div>
@@ -77,30 +79,30 @@ export default function TanglewoodPage() {
           {/* Section 2 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Presented properly, to buyers who know the difference
+              Shown in a setting that matches the work
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We hold estate sales at our 5,000 square foot gallery in
-                Midtown Houston — a considered environment that draws the
-                kind of buyers Tanglewood collections deserve. Serious
-                collectors. Interior designers working at the highest level.
-                Private buyers who recognize quality because they&rsquo;ve
-                spent a lifetime acquiring it.
+                We don&rsquo;t hold sales in crowded garages or bare rooms.
+                We work out of a 5,000-square-foot gallery in Montrose,
+                designed to show pieces properly and to attract the people most
+                likely to appreciate them: seasoned collectors, serious
+                designers, and private buyers who have spent years training
+                their eye.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                For pieces of particular significance, we look first at private
-                placement — reaching directly into our network of collectors and
-                specialist dealers before recommending any public channel. The
-                right buyer for a significant piece is often someone specific,
-                and a direct approach almost always yields a better result than
-                a general sale.
+                When a piece is truly important, we rarely start with a public
+                sale. Instead, we go directly to the small circle of collectors
+                and specialist dealers we know will understand it. Often, the
+                right buyer is a specific person, and a direct phone call or
+                quiet introduction will do more than any broad marketing
+                campaign.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Everything is managed in-house: the walkthrough, cataloging
-                and research, pricing, staging, marketing, and the sale itself.
-                You receive a full accounting at close and proceeds are
-                distributed promptly.
+                From the first walkthrough to the last check, we keep
+                everything under one roof: research, cataloging, pricing,
+                staging, marketing, and the sale itself. At the end, you
+                receive a clear accounting and prompt payment.
               </p>
             </div>
           </div>
@@ -108,22 +110,23 @@ export default function TanglewoodPage() {
           {/* Section 3 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              When the priority is resolution, not optimization
+              When the goal is closure, not squeezing every last dollar
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Tanglewood estates are often settled across complex family
-                circumstances — out-of-state heirs, properties under contract,
-                executors managing probate on a timeline that doesn&rsquo;t
-                accommodate a multi-week sale process. When certainty matters
-                more than maximizing every item, our cash buyout service
-                offers a direct path forward.
+                Many Tanglewood estates change hands under pressure: heirs who
+                live in other states, homes that are already under contract,
+                probate timelines that don&rsquo;t leave room for a long sale
+                process. In those moments, certainty can matter more than
+                wringing out every possible dollar.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                We assess the estate, deliver a fair offer within 48 hours
-                of our visit, and if it works for you, we take it from there.
-                All removal. All clearance. One payment. The property is left
-                clean and ready for its next chapter.
+                For families in that situation, we offer a straightforward cash
+                buyout. We walk the property, evaluate the contents, and bring
+                you a fair offer within 48 hours. If you accept, we handle
+                everything that follows&mdash;packing, removal, and final
+                clearance. One decision. One payment. The house is left clean
+                and ready for whatever comes next.
               </p>
             </div>
           </div>
@@ -131,23 +134,29 @@ export default function TanglewoodPage() {
           {/* Section 4 */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl text-charcoal mb-4">
-              Appraisals that protect every member of the family
+              Appraisals that keep the peace
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Before any decision is made about what to sell, donate, or
-                distribute, every family deserves to know what they actually
-                have. In a Tanglewood estate, that question is rarely simple —
-                the collections here often include pieces whose value isn&rsquo;t
-                obvious without specialist knowledge.
+                Before anyone decides what to sell, donate, or keep, every
+                member of the family deserves to know what&rsquo;s actually
+                there. In Tanglewood, that&rsquo;s rarely obvious at a glance.
+                A picture that&rsquo;s been over the mantel for decades may be
+                more important than it looks; a small piece of silver might
+                turn out to be the most valuable object in the house.
               </p>
               <p className="font-body text-base leading-relaxed text-charcoal/75">
-                Our written valuations document each item with provenance,
-                condition, and current market comparables. They satisfy estate
-                attorneys, courts, insurance carriers, and the IRS — and they
-                ensure that no heir walks away uncertain about whether the
-                estate was handled fairly. That certainty is worth the care
-                it takes to produce it.
+                Our written valuations describe each item in plain language,
+                backed by provenance, condition notes, and current market
+                comparisons. They stand up to scrutiny from attorneys, courts,
+                and insurers&mdash;and they give heirs a shared set
+                of facts. No one has to guess whether a sibling got the
+                &ldquo;good&rdquo; piece or whether something important was
+                sold for too little.
+              </p>
+              <p className="font-body text-base leading-relaxed text-charcoal/75">
+                In the midst of grief and logistics, that kind of certainty
+                is a quiet but real kindness.
               </p>
             </div>
           </div>
@@ -164,7 +173,7 @@ export default function TanglewoodPage() {
                 { name: "West University Place", href: "/neighborhoods/west-university" },
                 { name: "Bellaire", href: "/neighborhoods/bellaire" },
                 { name: "Museum District", href: "/neighborhoods/museum-district" },
-                { name: "Midtown", href: "/neighborhoods/midtown" },
+                { name: "Montrose", href: "/neighborhoods/montrose" },
                 { name: "Upper Kirby", href: "/neighborhoods/upper-kirby" },
               ].map((n) => (
                 <a key={n.name} href={n.href} className="font-compact text-sm text-charcoal/60 border border-bronze/20 px-3 py-1 hover:text-bronze hover:border-bronze/40 transition-colors">
