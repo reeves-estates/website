@@ -4,12 +4,12 @@ import PhoneLink from "@/components/PhoneLink";
 export const metadata: Metadata = {
   title: "Estate Sales in Upper Kirby, Houston",
   description:
-    "Reeves Estates handles estate sales, cash buyouts, and fine art appraisals in Upper Kirby, Houston. Specialists in antiques, fine art, and quality collections. Call 832-474-9547.",
+    "Estate sales, cash buyouts, and appraisals in Upper Kirby, Houston. Specialists in fine art, antiques, and quality collections. Call 832-474-9547.",
   alternates: { canonical: "https://reevesestates.com/neighborhoods/upper-kirby" },
   openGraph: {
     title: "Estate Sales in Upper Kirby, Houston | Reeves Estates",
     description:
-      "Reeves Estates handles estate sales, cash buyouts, and fine art appraisals in Upper Kirby, Houston. Specialists in antiques, fine art, and quality collections.",
+      "Estate sales, cash buyouts, and appraisals in Upper Kirby, Houston. Specialists in fine art, antiques, and quality collections.",
     url: "https://reevesestates.com/neighborhoods/upper-kirby",
     images: [{ url: "https://reevesestates.com/images/openGraph.webp", width: 1200, height: 630, alt: "Reeves Estates — Houston Estate Sales, Buyouts & Appraisals" }],
   },

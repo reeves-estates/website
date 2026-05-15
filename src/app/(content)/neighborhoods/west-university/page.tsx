@@ -4,12 +4,12 @@ import PhoneLink from "@/components/PhoneLink";
 export const metadata: Metadata = {
   title: "Estate Sales in West University Place, Houston",
   description:
-    "Reeves Estates handles estate sales, cash buyouts, and fine art appraisals in West University Place, Houston. Trusted by families in one of Houston's most desirable inner-loop neighborhoods. Call 832-474-9547.",
+    "Estate sales, cash buyouts, and appraisals in West University Place, Houston. Trusted by inner-loop families for three generations. Call 832-474-9547.",
   alternates: { canonical: "https://reevesestates.com/neighborhoods/west-university" },
   openGraph: {
     title: "Estate Sales in West University Place | Reeves Estates",
     description:
-      "Reeves Estates handles estate sales, cash buyouts, and fine art appraisals in West University Place, Houston. Trusted by families in one of Houston's most desirable inner-loop neighborhoods.",
+      "Estate sales, cash buyouts, and appraisals in West University Place, Houston. Trusted by inner-loop families for three generations.",
     url: "https://reevesestates.com/neighborhoods/west-university",
     images: [{ url: "https://reevesestates.com/images/openGraph.webp", width: 1200, height: 630, alt: "Reeves Estates — Houston Estate Sales, Buyouts & Appraisals" }],
   },

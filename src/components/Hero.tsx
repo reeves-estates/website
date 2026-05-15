@@ -3,12 +3,12 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "/images/hero/hero-1.webp",
-  "/images/hero/hero-2.webp",
-  "/images/hero/hero-3.webp",
-  "/images/hero/hero-4.webp",
-  "/images/hero/hero-5.webp",
-  "/images/hero/hero-6.webp",
+  { src: "/images/hero/hero-1.webp", alt: "Estate sale interior with antiques, furniture, and collectibles" },
+  { src: "/images/hero/hero-2.webp", alt: "Fine art and decorative pieces from a Houston estate collection" },
+  { src: "/images/hero/hero-3.webp", alt: "Antique furniture and estate items at Reeves Estates gallery" },
+  { src: "/images/hero/hero-4.webp", alt: "Curated estate sale inventory featuring art, antiques, and collectibles" },
+  { src: "/images/hero/hero-5.webp", alt: "Interior view of estate items at Reeves Estates, Houston" },
+  { src: "/images/hero/hero-6.webp", alt: "Houston estate sale collection — furniture, fine art, and decorative arts" },
 ];
 
 export default function Hero() {
@@ -25,11 +25,11 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen md:min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Background image carousel */}
-      {images.map((src, i) => (
+      {images.map(({ src, alt }, i) => (
         <img
           key={src}
           src={src}
-          alt=""
+          alt={alt}
           loading={i === 0 ? "eager" : "lazy"}
           fetchPriority={i === 0 ? "high" : "low"}
           className="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out"

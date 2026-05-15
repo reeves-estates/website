@@ -4,7 +4,7 @@ import PhoneLink from "@/components/PhoneLink";
 export const metadata: Metadata = {
   title: "Houston Estate Sale Services",
   description:
-    "Full-service estate management in Houston — estate sales, cash buyouts, appraisals, fine art & antiques, executor support, and complete estate clearance. Serving River Oaks, Montrose, Memorial, and surrounding communities.",
+    "Full-service estate management in Houston — estate sales, cash buyouts, appraisals, fine art & antiques, and executor support. Call 832-474-9547.",
   alternates: { canonical: "https://reevesestates.com/services" },
   openGraph: {
     title: "Houston Estate Sale Services | Reeves Estates",

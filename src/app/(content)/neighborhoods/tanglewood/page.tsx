@@ -4,12 +4,12 @@ import PhoneLink from "@/components/PhoneLink";
 export const metadata: Metadata = {
   title: "Estate Sales in Tanglewood, Houston",
   description:
-    "Reeves Estates handles estate sales, cash buyouts, and fine art appraisals in Tanglewood, Houston. Expert handling for one of Houston's most storied neighborhoods. Call 832-474-9547.",
+    "Estate sales, cash buyouts, and appraisals in Tanglewood, Houston. Expert handling for one of Houston's most storied neighborhoods. Call 832-474-9547.",
   alternates: { canonical: "https://reevesestates.com/neighborhoods/tanglewood" },
   openGraph: {
     title: "Estate Sales in Tanglewood, Houston | Reeves Estates",
     description:
-      "Reeves Estates handles estate sales, cash buyouts, and fine art appraisals in Tanglewood, Houston. Expert handling for one of Houston's most storied neighborhoods.",
+      "Estate sales, cash buyouts, and appraisals in Tanglewood, Houston. Expert handling for one of Houston's most storied neighborhoods.",
     url: "https://reevesestates.com/neighborhoods/tanglewood",
     images: [{ url: "https://reevesestates.com/images/openGraph.webp", width: 1200, height: 630, alt: "Reeves Estates — Houston Estate Sales, Buyouts & Appraisals" }],
   },

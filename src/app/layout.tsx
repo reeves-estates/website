@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: "%s | Reeves Estates",
   },
   description:
-    "Reeves Estates — Houston's full-service estate handling specialists. Cash buyouts, estate sales, appraisals, and liquidations. Serving River Oaks and greater Houston for three generations.",
+    "Reeves Estates — Houston estate handling specialists. Cash buyouts, estate sales, appraisals, and liquidations. Three generations of expertise.",
   keywords:
     "Houston estate sales, estate liquidation Houston, cash estate buyout Houston, River Oaks estate sales, living estate Houston, estate executor Houston, antique estate sale Houston, Houston estate specialists",
   alternates: {

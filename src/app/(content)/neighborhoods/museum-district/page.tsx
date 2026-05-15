@@ -4,12 +4,12 @@ import PhoneLink from "@/components/PhoneLink";
 export const metadata: Metadata = {
   title: "Estate Sales in the Museum District, Houston",
   description:
-    "Reeves Estates handles estate sales, cash buyouts, and fine art appraisals in Houston's Museum District. Deep expertise in art, antiques, and significant collections. Call 832-474-9547.",
+    "Estate sales, cash buyouts, and appraisals in Houston's Museum District. Deep expertise in fine art, antiques, and significant collections. Call 832-474-9547.",
   alternates: { canonical: "https://reevesestates.com/neighborhoods/museum-district" },
   openGraph: {
     title: "Estate Sales in the Museum District, Houston | Reeves Estates",
     description:
-      "Reeves Estates handles estate sales, cash buyouts, and fine art appraisals in Houston's Museum District. Deep expertise in art, antiques, and significant collections.",
+      "Estate sales, cash buyouts, and appraisals in Houston's Museum District. Deep expertise in fine art, antiques, and significant collections.",
     url: "https://reevesestates.com/neighborhoods/museum-district",
     images: [{ url: "https://reevesestates.com/images/openGraph.webp", width: 1200, height: 630, alt: "Reeves Estates — Houston Estate Sales, Buyouts & Appraisals" }],
   },
