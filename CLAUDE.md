@@ -19,8 +19,6 @@ Also confirmed the correct repo and deploy setup (see below) — the `aidansincl
 
 **Next up (suggested):**
 - Merge `feature/neighborhood-rewrites` PR after review
-- Audit item 6: flip hero CTA hierarchy — make "Schedule a Consultation" primary (filled bronze), phone number secondary
-- Delete `CalEmbed.tsx` if confirmed unused
 - Confirm whether `feature/services-grouping` has been merged into `main` or is still open
 - Audit item 11: pricing/commission FAQ — client preference is not to address pricing directly (each estate evaluated on its own merits)
 
@@ -239,10 +237,16 @@ Sections were indistinguishable. **Resolution:** `border-bronze/10` horizontal r
 
 ### 🟡 P2 — Medium Priority
 
-#### 6. Hero CTA hierarchy: phone number leads, consultation lags
-`832-474-9547` is the primary hero CTA. For a service handling estate transitions, many visitors are not ready to call cold — the lower-commitment action should receive equal or greater visual weight.
+#### ✅ 6. Hero CTA hierarchy: phone number leads, consultation lags *(decided against — phone-first is the chosen pattern)*
+`832-474-9547` is the primary hero CTA. The audit's original concern was that for a service handling estate transitions, many visitors are not ready to call cold — the lower-commitment action should receive equal or greater visual weight.
 
-**Fix:** Make "Schedule a Consultation" the primary button (filled, bronze) and the phone number the secondary action (outlined or text-only). The phone number already appears in the nav — it doesn't need to be the hero's primary CTA.
+**Original fix proposed:** Make "Schedule a Consultation" the primary button (filled, bronze) and the phone number the secondary action (outlined or text-only). The phone number already appears in the nav — it doesn't need to be the hero's primary CTA.
+
+**Decision (May 2026):** A Cal.com booking modal was prototyped on `feature/cal-booking-modal` with a "Schedule a Consultation" button and a `CalEmbed.tsx` integration. The branch was not merged. The phone-first hero stays — Reeves clients tend to come through referral and phone, and the booking-modal pattern (closer to SaaS evaluation flows) didn't match how that relationship begins. The phone number remains the single hero CTA.
+
+**Follow-up actions:**
+- ✅ `CalEmbed.tsx` removed from `src/components/`
+- ✅ `feature/cal-booking-modal` branch deleted (local + remote)
 
 #### ✅ 7. Services section: 10 cards with no grouping *(fixed)*
 **Resolution:** Services grouped into three named categories — "Sell Everything," "Sell Selectively," "Just Handle It" — each with a one-line descriptor. Implemented in `Services.tsx`.
