@@ -20,7 +20,6 @@ Also confirmed the correct repo and deploy setup (see below) — the `aidansincl
 **Next up (suggested):**
 - Merge `feature/neighborhood-rewrites` PR after review
 - Confirm whether `feature/services-grouping` has been merged into `main` or is still open
-- Audit item 11: pricing/commission FAQ — client preference is not to address pricing directly (each estate evaluated on its own merits)
 
 ## Project Overview
 
@@ -268,12 +267,14 @@ Sections were indistinguishable. **Resolution:** `border-bronze/10` horizontal r
 
 **Resolution (May 2026):** The text label was removed and replaced with a small chevron inside a thin cream circle (`Hero.tsx`). The hero height was reduced to `min-h-[85vh]` on desktop as part of item 3, so the next section peeks above the fold. The chevron also carries a slow 4px vertical bounce (`scrollBounce` keyframe in `globals.css`, 2s ease-in-out, infinite) — closer to a breath than a twitch — and is disabled for users with `prefers-reduced-motion`. The affordance stays visually light while motion gives it the noticeability the audit asked for.
 
-#### 11. FAQ missing pricing/commission transparency
+#### ✅ 11. FAQ missing pricing/commission transparency *(decided against — client preference, no pricing on site)*
 Every visitor is silently wondering what Reeves costs. There is no FAQ entry addressing pricing, commission, or fee structure. This silence increases friction and drop-off.
 
-**Fix:** Add one FAQ entry under "Practical Questions":
+**Fix proposed:** Add one FAQ entry under "Practical Questions":
 > *"How does Reeves charge for its services?"*
 > Answer can be intentionally vague: "Our fee structure varies by service type — estate sales operate on commission, while buyouts involve a direct purchase offer. We'll walk you through the specifics on our first call."
+
+**Decision (May 2026):** The client prefers not to address pricing on the site at all. Each estate is evaluated on its own merits, and pricing is discussed only after the initial consultation. The audit's concern about silent friction is acknowledged — the trade-off is keeping the case-by-case framing intact, which is the client's preference. No FAQ entry added.
 
 #### 12. Testimonials lack specificity
 Current attributions: "M. Patterson, Houston" / "R. Caldwell, Estate Attorney" / "J. & S. Whitmore, River Oaks". No photos, no dates, no service type referenced.
