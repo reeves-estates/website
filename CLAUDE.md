@@ -261,10 +261,12 @@ Sections were indistinguishable. **Resolution:** `border-bronze/10` horizontal r
 
 ### 🟢 P3 — Lower Priority / Refinement
 
-#### 10. Hero scroll affordance is too low contrast
+#### ✅ 10. Hero scroll affordance is too low contrast *(closed — chevron pill with subtle bounce; trust bar peeks on desktop)*
 "LEARN HOW WE WORK TOGETHER ↓" is styled in small caps at near-white on the hero photo. Most visitors won't notice it. It is the only downward affordance on a hero that occupies 100vh.
 
-**Fix:** Increase contrast of the scroll prompt, or replace with an animated chevron on a semi-opaque pill/background. Alternatively, ensure the trust bar peeks above the fold (see P1 item 3) so the scroll invitation is implicit.
+**Fix proposed:** Increase contrast of the scroll prompt, or replace with an animated chevron on a semi-opaque pill/background. Alternatively, ensure the trust bar peeks above the fold (see P1 item 3) so the scroll invitation is implicit.
+
+**Resolution (May 2026):** The text label was removed and replaced with a small chevron inside a thin cream circle (`Hero.tsx`). The hero height was reduced to `min-h-[85vh]` on desktop as part of item 3, so the next section peeks above the fold. The chevron also carries a slow 4px vertical bounce (`scrollBounce` keyframe in `globals.css`, 2s ease-in-out, infinite) — closer to a breath than a twitch — and is disabled for users with `prefers-reduced-motion`. The affordance stays visually light while motion gives it the noticeability the audit asked for.
 
 #### 11. FAQ missing pricing/commission transparency
 Every visitor is silently wondering what Reeves costs. There is no FAQ entry addressing pricing, commission, or fee structure. This silence increases friction and drop-off.

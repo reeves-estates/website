@@ -77,7 +77,7 @@ export default function Hero() {
             className="mt-12 md:mt-16 cursor-pointer w-11 h-11 rounded-full border border-cream/40 flex items-center justify-center hover:border-cream/75 transition-colors"
           >
             <svg
-              className="w-4 h-4 text-cream/80"
+              className="w-4 h-4 text-cream/80 scroll-bounce"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
