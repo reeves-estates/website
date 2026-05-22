@@ -18,6 +18,37 @@ export const metadata: Metadata = {
 export default function UpperKirbyPage() {
   return (
     <div className="bg-cream min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://reevesestates.com" },
+                { "@type": "ListItem", "position": 2, "name": "Upper Kirby", "item": "https://reevesestates.com/neighborhoods/upper-kirby" }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Reeves Estates",
+              "url": "https://reevesestates.com",
+              "telephone": "+18324749547",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "2415 Taft St",
+                "addressLocality": "Houston",
+                "addressRegion": "TX",
+                "postalCode": "77006",
+                "addressCountry": "US"
+              },
+              "areaServed": { "@type": "AdministrativeArea", "name": "Upper Kirby, Houston, TX" }
+            }
+          ])
+        }}
+      />
       {/* Header */}
       <div className="bg-charcoal py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
