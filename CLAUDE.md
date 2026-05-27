@@ -4,22 +4,37 @@
 > It is the single source of truth for project conventions. Follow it precisely.
 
 ## Current State
-*Last updated: 2026-05-14*
+*Last updated: 2026-05-27*
 
-**Last session:** Rewrote all 8 neighborhood pages for content depth and distinctiveness — each page now has 4 sections with copy grounded in the specific character of that neighborhood. Museum District, Midtown, and Upper Kirby gained a 4th section each. Added OG image (`/images/openGraph.webp`) to root layout and all 8 neighborhood pages. Changes are on `feature/neighborhood-rewrites` branch, open as a PR on `reeves-estates/website` for review before merge.
+**Last session (2026-05-27):** SEO audit and technical fixes. Key findings and changes:
 
-Also confirmed the correct repo and deploy setup (see below) — the `aidansinclair/reeves-estates` repo is no longer the authoritative source. The project now lives entirely under the client's own account.
+- **Indexing status:** Homepage indexed by Google on 2026-05-15. All other pages (8 neighborhood pages, /services, /faq, /contact) submitted for manual indexing via GSC on 2026-05-27. Expect them to appear in the GSC Valid tab by ~2026-06-10.
+- **Schema fix:** `FAQPage` schema was incorrectly placed in the root layout, injecting it on every page. Moved to `/faq` page only. Root layout now carries `LocalBusiness` schema only.
+- **www redirect:** Added 301 redirect from `www.reevesestates.com` → `reevesestates.com` in `next.config.ts`. Previously relied on canonical tags alone.
+- **Sitemap dates:** Updated `lastModified` for all 8 neighborhood pages from April to `2026-05-14` (reflecting the content rewrites).
+- **next/image:** Replaced `<img>` with `<Image />` from `next/image` in Navigation, Footer, and Hero carousel. Improves LCP (Core Web Vitals ranking signal).
+- **next/link:** Replaced bare `<a href="/">` with `<Link>` in Navigation and Footer.
+- **ESLint:** Fixed `.claude/` worktrees being scanned by ESLint (build artifacts were causing false failures). Added to `globalIgnores` in `eslint.config.mjs`.
+- **PhoneLink:** Moved media query init from synchronous `setState` inside `useEffect` to lazy `useState` initializer.
+
+**External SEO signals confirmed:**
+- Google Business Profile: verified ✓
+- `reevesartgallery.com` links to `reevesestates.com` ✓
+- No manual actions in GSC ✓
+- No noindex headers on any page ✓
 
 **Current deploy setup:**
 - Repo: `git@github.com:reeves-estates/website.git` (under the `reeves-estates` GitHub account)
 - Vercel project: ReevesEstates team → connected to `reeves-estates/website`
 - Auto-deploys on push to `main`
-- SSH key authenticates as `reeves-estates` ✓
+- SSH key: `~/.ssh/reeves_estates` — must be loaded with `ssh-add` before pushing
 - `aidansinclair/reeves-estates` is a stale fork — no longer used
 
 **Next up (suggested):**
-- Merge `feature/neighborhood-rewrites` PR after review
-- Confirm whether `feature/services-grouping` has been merged into `main` or is still open
+- Check GSC around 2026-06-10 — confirm neighborhood pages have entered the Valid tab
+- If pages are "Crawled - currently not indexed" at that point, investigate content quality signal
+- Add a "Neighborhoods We Serve" section to the homepage body (currently only footer links to neighborhood pages — a homepage body link passes more PageRank)
+- UX audit item 12 (testimonials specificity), 14 (trust bar), and 15 (hero headline A/B) remain open
 
 ## Project Overview
 
