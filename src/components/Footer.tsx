@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import PhoneLink from "@/components/PhoneLink";
 
 const quickLinks = [
@@ -14,13 +16,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Left */}
           <div>
-            <a href="/">
-              <img
+            <Link href="/">
+              <Image
                 src="/images/RE-momo.svg"
                 alt="Reeves Estates"
+                width={120}
+                height={28}
                 className="h-5 sm:h-7 w-auto brightness-0 invert opacity-80 mb-4"
               />
-            </a>
+            </Link>
             <p className="font-body text-xs leading-relaxed text-cream/40 italic mb-2">
               From first call to final close.
             </p>

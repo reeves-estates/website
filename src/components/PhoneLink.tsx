@@ -13,13 +13,14 @@ export default function PhoneLink({
   onClick?: () => void;
   children?: React.ReactNode;
 }) {
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(
+    () => typeof window !== "undefined" && window.matchMedia("(hover: hover) and (pointer: fine)").matches
+  );
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     // hover: hover + pointer: fine = mouse device; touch devices get the tel: link
     const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
-    setIsDesktop(mq.matches);
     const onChange = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
     mq.addEventListener("change", onChange);
     return () => mq.removeEventListener("change", onChange);

@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
 
 const navLinks = [
@@ -21,9 +23,9 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center">
-            <img src="/images/RE-momo.svg" alt="Reeves Estates" className="h-5 sm:h-7 w-auto" />
-          </a>
+          <Link href="/" className="flex items-center">
+            <Image src="/images/RE-momo.svg" alt="Reeves Estates" width={120} height={28} className="h-5 sm:h-7 w-auto" />
+          </Link>
 
           {/* Desktop links */}
           <TooltipProvider>
@@ -110,13 +112,13 @@ export default function Navigation() {
               Text
             </a>
           </div>
-          <a
+          <Link
             href="/#about"
             onClick={() => setMobileOpen(false)}
             className="font-body text-sm tracking-wide text-charcoal/70 hover:text-bronze transition-colors"
           >
             About Reeves
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

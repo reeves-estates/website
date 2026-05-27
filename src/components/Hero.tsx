@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const images = [
   { src: "/images/hero/hero-1.webp", alt: "Estate sale interior with antiques, furniture, and collectibles" },
@@ -26,13 +27,13 @@ export default function Hero() {
     <section className="relative min-h-screen md:min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Background image carousel */}
       {images.map(({ src, alt }, i) => (
-        <img
+        <Image
           key={src}
           src={src}
           alt={alt}
-          loading={i === 0 ? "eager" : "lazy"}
-          fetchPriority={i === 0 ? "high" : "low"}
-          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out"
+          fill
+          priority={i === 0}
+          className="object-cover transition-opacity duration-[1500ms] ease-in-out"
           style={{ opacity: i === currentImage ? 1 : 0 }}
         />
       ))}
