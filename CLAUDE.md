@@ -3,6 +3,87 @@
 > Claude Code reads this file automatically at the start of every session.
 > It is the single source of truth for project conventions. Follow it precisely.
 
+## 90-Day SEO Sprint — Final 30 Days
+*Sprint: March 2026 → June 2026 · Updated: 2026-05-30*
+*Client: Matt (Reeves Estates) · Next meeting: ~June 10, 2026*
+
+### What this sprint set out to do
+Build reevesestates.com from a blank domain to a technically sound, content-complete site that ranks for Houston estate sale searches — specifically targeting high-net-worth neighbourhoods (River Oaks, Tanglewood, Memorial, etc.).
+
+---
+
+### What we've accomplished — evidence of momentum
+
+**Phase 1 — Foundation (March 2026)**
+- Site launched on Vercel with Next.js 16, App Router, custom domain
+- Google Business Profile created and verified
+- Google Search Console set up and verified via meta tag
+- Sitemap, robots.txt, and LocalBusiness structured data configured
+- Full homepage: hero, trust bar, credentials, services, how-it-works, testimonials, FAQ, contact
+
+**Phase 2 — Content expansion (April – May 14, 2026)**
+- 8 neighbourhood pages written with deep, specific content (4 sections each, ~800+ words per page): River Oaks, Tanglewood, Memorial, West University, Bellaire, Upper Kirby, Museum District, Montrose
+- Each page targets: estate sale + neighbourhood + Houston keyword cluster
+- BreadcrumbList + LocalBusiness schema added to all 8 neighbourhood pages
+- Dedicated `/services` page — services grouped into three named categories ("Sell Everything," "Sell Selectively," "Just Handle It")
+- Dedicated `/faq` page with full FAQPage schema and ARIA-accessible accordion
+- Dedicated `/contact` page
+- OG image added for social sharing
+- Credentials section added to homepage (surfaces 3-generation history earlier in scroll)
+- Hero UX improvements: height reduced to 85vh on desktop, animated scroll chevron added
+
+**Phase 3 — Technical polish & SEO fixes (May 27, 2026)**
+- FAQPage schema removed from root layout (was incorrectly injecting on every page — schema misuse that can affect Google trust signals). Now lives only on `/faq`.
+- 301 redirect added: `www.reevesestates.com` → `reevesestates.com` (previously relied on canonical tags alone)
+- Sitemap `lastModified` dates corrected to reflect May content rewrites
+- Hero carousel, navigation logo, and footer logo migrated to `next/image` — enables Vercel automatic image optimisation (WebP/AVIF, correct sizing, CDN caching), improving LCP score
+- `next/link` implemented in nav and footer (replaces bare `<a>` tags)
+- ESLint corrected — was silently scanning compiled build artefacts, masking real source errors
+- All 13 URLs submitted for manual indexing via Google Search Console
+
+**External signals — all confirmed active**
+- Google Business Profile: verified and live ✓
+- `reevesartgallery.com` → `reevesestates.com` backlink: active for several weeks ✓
+- No manual actions or penalties in GSC ✓
+- No noindex headers on any page ✓
+- Verification tag present and correct in live HTML ✓
+
+**Indexing milestone**
+- Homepage (`reevesestates.com`) confirmed indexed by Google: **May 15, 2026**
+- All 12 remaining pages submitted for manual indexing: **May 27, 2026**
+- Estimated appearance in GSC Valid tab: ~June 6–10, 2026
+
+---
+
+### Final 30 days — plan and expected outcomes
+
+**Week 1 (by June 6)** — nothing to do, let indexing queue process
+- Google crawls manually-submitted URLs within a few days to two weeks
+- GBP and gallery backlink continue building domain authority passively
+
+**~June 6–10 — GSC checkpoint (schedule before Matt meeting)**
+- Open GSC → Pages → Valid tab: expect 8–13 pages indexed
+- Open GSC → Performance → Search results: look for first impressions on neighbourhood queries (e.g. "estate sale river oaks houston") — impressions precede clicks by weeks
+- If pages show "Crawled — currently not indexed": content quality signal — investigate
+- If pages show "Discovered — currently not indexed": crawl budget — more internal links needed
+
+**Highest-leverage remaining action**
+- Add a **"Neighbourhoods We Serve" section to the homepage body** — footer links pass minimal PageRank; a homepage body section with named links to all 8 pages signals to Google these are core content, not supplemental
+
+**Open UX audit items (can be sequenced as polish for the final sprint)**
+- Item 12 — Testimonials: add service type + year to attributions (e.g. "Estate Sale, 2024")
+- Item 14 — Trust bar: split into two lines (credentials / differentiator)
+- Item 15 — Hero headline: consider A/B test of "The Provenance Continues" vs. more direct alt
+
+**What to tell Matt at the next meeting**
+- The full technical foundation is in place and Google has confirmed it is indexable (homepage indexed May 15)
+- 12 remaining pages are in Google's crawl queue as of May 27 — first results expected within 2 weeks
+- The site is competing for the right searches: 8 geo-targeted neighbourhood pages, structured data, GBP, and a quality backlink from the gallery are all active
+- No penalties, no blocks, no technical issues outstanding
+- The final month is about watching indexing arrive and making the homepage a stronger hub
+
+---
+
 ## Current State
 *Last updated: 2026-05-27*
 
