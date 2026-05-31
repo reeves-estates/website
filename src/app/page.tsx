@@ -8,6 +8,7 @@ import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
 import About from "@/components/About";
 import Credentials from "@/components/Credentials";
+import Neighbourhoods from "@/components/Neighbourhoods";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
@@ -50,6 +51,7 @@ export default function Home() {
       <HowItWorks />
       <Credentials />
 <Services />
+      <Neighbourhoods />
       <FAQ />
       <Testimonials />
       <About />
