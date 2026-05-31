@@ -43,10 +43,10 @@ export default function Hero() {
 
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-16 md:pt-20">
         <h1
-          className="hero-fade-in text-[15vw] md:text-[9vw] lg:text-[min(7vw,110px)] text-cream mb-4 text-center"
+          className="hero-fade-in text-[11vw] md:text-[7vw] lg:text-[min(5.5vw,88px)] text-cream mb-4 text-center"
           style={{ fontFamily: "var(--font-hatton)", fontWeight: 500, lineHeight: 0.95, letterSpacing: "-0.020em" }}
         >
-          The Provenance Continues.
+          Houston Estate Sales,<br />Handled With Care.
         </h1>
         <div className="hero-fade-in w-[60px] h-[1px] bg-bronze mx-auto mb-6" />
         <p
