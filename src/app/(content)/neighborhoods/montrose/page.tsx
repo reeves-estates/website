@@ -50,7 +50,7 @@ export default function MontrosePage() {
         }}
       />
       {/* Header */}
-      <div className="bg-charcoal py-14 lg:py-20">
+      <div className="bg-charcoal pt-24 pb-14 lg:pt-32 lg:pb-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
           <p className="font-compact text-xs tracking-widest uppercase text-bronze mb-4">
             Reeves Estates · Houston, TX
