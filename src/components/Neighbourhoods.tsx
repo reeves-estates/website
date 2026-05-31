@@ -15,25 +15,26 @@ export default function Neighbourhoods() {
   return (
     <section className="fade-in-section bg-cream border-y border-bronze/10 py-10 lg:py-14">
       <div className="max-w-5xl mx-auto px-6 lg:px-12">
+
+        {/* Eyebrow + heading — full width */}
+        <div className="mb-6">
+          <p className="font-compact text-xs tracking-widest uppercase text-bronze mb-4">
+            Houston, TX
+          </p>
+          <h2 className="font-heading text-3xl md:text-4xl text-charcoal">
+            The neighbourhoods we know best
+          </h2>
+        </div>
+
+        {/* Paragraph (left) + chips (right) — aligned at top */}
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-20">
+          <p className="font-body text-base text-charcoal/65 leading-relaxed lg:w-80 shrink-0 mb-8 lg:mb-0">
+            Every collection carries the character of the neighbourhood it came from.
+            We&rsquo;ve spent decades working inside Houston&rsquo;s most distinguished
+            homes &mdash; and that history shapes how we approach every estate we touch.
+          </p>
 
-          {/* Text */}
-          <div className="lg:w-80 shrink-0 mb-8 lg:mb-0">
-            <p className="font-compact text-xs tracking-widest uppercase text-bronze mb-4">
-              Houston, TX
-            </p>
-            <h2 className="font-heading text-3xl md:text-4xl text-charcoal mb-4">
-              The neighbourhoods<br />we know best
-            </h2>
-            <p className="font-body text-base text-charcoal/65 leading-relaxed">
-              Every collection carries the character of the neighbourhood it came from.
-              We&rsquo;ve spent decades working inside Houston&rsquo;s most distinguished
-              homes &mdash; and that history shapes how we approach every estate we touch.
-            </p>
-          </div>
-
-          {/* Links */}
-          <div className="flex flex-wrap gap-3 content-start pt-1 lg:pt-10">
+          <div className="flex flex-wrap gap-3 content-start">
             {neighbourhoods.map((n) => (
               <Link
                 key={n.href}
@@ -44,8 +45,8 @@ export default function Neighbourhoods() {
               </Link>
             ))}
           </div>
-
         </div>
+
       </div>
     </section>
   );
