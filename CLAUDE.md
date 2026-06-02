@@ -425,9 +425,50 @@ Photos optional but would significantly increase credibility.
 
 ---
 
-## Git Workflow
+## Development Workflow
+*Established June 2026 after a navigation bug chain caused several hours of production fixes. Follow this on every session.*
 
-- `main` is the production branch (auto-deploys to Vercel)
-- Feature branches for all new work
-- Small, isolated fixes (like breakpoint tweaks) can go directly to `main`
-- Rebase feature branches onto `main` after direct fixes: `git rebase main`
+### The One Rule
+**Never push directly to `main` for any change that touches Navigation.tsx, Footer.tsx, any layout file, globals.css, next.config.ts, or page.tsx (homepage).** These components appear on every page. Always branch, preview, and run the nav test before merging.
+
+### Before making any change — check the risk tier
+
+| Change type | Branch required? | Visual check? |
+|---|---|---|
+| Page copy, images, new page text | No | Optional |
+| SEO metadata, sitemap, schema, robots.txt | No | No |
+| New content page | Recommended | Quick scroll |
+| **Navigation.tsx** | **Yes — always** | **Full nav test** |
+| **Footer.tsx** | **Yes — always** | **Full nav test** |
+| **Any layout.tsx** | **Yes — always** | **Full nav test** |
+| **globals.css** | **Yes — always** | **Full site check** |
+| **next.config.ts** | **Yes — always** | **Full site check** |
+| **page.tsx (homepage)** | **Yes — always** | **Full nav test** |
+| **package.json / dependencies** | **Yes — always** | **Full site check** |
+
+### The 2-Minute Nav Test
+Run this on the Vercel preview URL before merging any change to a shared component:
+
+1. **Logo visible on homepage?** — wordmark should appear top-left
+2. **Logo links from a content page?** — go to /services, click logo → should go to homepage
+3. **Logo links from a hash section?** — on homepage click FAQs to scroll there, then click logo → should scroll back to top
+4. **Hash nav links scroll correctly?** — from /services, click How It Works / FAQs / Testimonials → each should navigate to homepage and scroll to the right section
+5. **Neighbourhood pages load cleanly?** — click River Oaks from footer → charcoal header should meet navbar with no cream gap
+6. **Mobile menu works?** — resize to mobile, hamburger opens, links work, menu closes on tap
+
+### Known gotchas — never repeat these
+
+- **SVG files and next/image** — `next/image` silently blocks SVG through its optimisation pipeline. Always use plain `<img>` with an `eslint-disable-next-line` comment for SVG logos/icons. next/image is correct for `.webp`, `.jpg`, `.png` files only.
+- **Radix UI Tooltip on nav links** — `TooltipTrigger asChild` intercepts clicks when the tooltip is open. Do not wrap navigation links in Tooltips.
+- **Next.js Link for the logo** — `<Link href="/">` does nothing when pathname is already `/` (e.g. at `/#faq`). The logo uses a plain `<a>` with `handleLogoClick` onClick for correct same-page behaviour.
+- **Hash navigation with "use client" pages** — React renders before the browser's native hash scroll fires. The homepage `page.tsx` has a `useEffect` that re-scrolls to `window.location.hash` after mount. Don't remove it.
+- **Turbopack** — disabled in dev (`next dev --no-turbopack` in package.json). Turbopack panics on `/_not-found` in Next.js 16. Do not re-enable it.
+
+### Branching
+- `main` auto-deploys to reevesestates.com on every push — treat it as live production
+- Feature branches get their own Vercel preview URL (branch alias always points to latest commit)
+- Merge to `main` only after the nav test passes on the preview URL
+- SSH key: `~/.ssh/reeves_estates` — load with `ssh-add` before pushing
+
+### Old rule (superseded)
+~~Small, isolated fixes (like breakpoint tweaks) can go directly to `main`~~ — No longer applies. Any change to a shared component, however small, goes to a branch first.
