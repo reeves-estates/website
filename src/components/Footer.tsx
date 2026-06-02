@@ -23,6 +23,7 @@ export default function Footer() {
                 width={120}
                 height={28}
                 className="h-5 sm:h-7 w-auto brightness-0 invert opacity-80 mb-4"
+                unoptimized
               />
             </Link>
             <p className="font-body text-xs leading-relaxed text-cream/40 italic mb-2">
