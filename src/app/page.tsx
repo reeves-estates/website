@@ -16,6 +16,21 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
+  // Handle hash navigation: browser tries to scroll before React renders,
+  // so we re-scroll after mount and listen for subsequent hash changes.
+  useEffect(() => {
+    const scrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const el = document.getElementById(hash.slice(1));
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+    setTimeout(scrollToHash, 100);
+    window.addEventListener("hashchange", scrollToHash);
+    return () => window.removeEventListener("hashchange", scrollToHash);
+  }, []);
+
   useEffect(() => {
     const sections = document.querySelectorAll(".fade-in-section");
 
