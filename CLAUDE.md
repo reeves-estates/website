@@ -36,8 +36,8 @@ Build reevesestates.com from a blank domain to a technically sound, content-comp
 - FAQPage schema removed from root layout (was incorrectly injecting on every page — schema misuse that can affect Google trust signals). Now lives only on `/faq`.
 - 301 redirect added: `www.reevesestates.com` → `reevesestates.com` (previously relied on canonical tags alone)
 - Sitemap `lastModified` dates corrected to reflect May content rewrites
-- Hero carousel, navigation logo, and footer logo migrated to `next/image` — enables Vercel automatic image optimisation (WebP/AVIF, correct sizing, CDN caching), improving LCP score
-- `next/link` implemented in nav and footer (replaces bare `<a>` tags)
+- Hero carousel migrated to `next/image` — enables Vercel automatic image optimisation (WebP/AVIF, correct sizing, CDN caching), improving LCP score. Nav/footer SVG logos remain as `<img>` (SVG files cannot be optimised by next/image and were broken by it — reverted 2026-06-02)
+- `next/link` implemented in nav and footer (replaces bare `<a>` tags); logo link uses `<a>` with onClick for correct same-page hash behaviour
 - ESLint corrected — was silently scanning compiled build artefacts, masking real source errors
 - All 13 URLs submitted for manual indexing via Google Search Console
 
@@ -85,18 +85,40 @@ Build reevesestates.com from a blank domain to a technically sound, content-comp
 ---
 
 ## Current State
-*Last updated: 2026-05-27*
+*Last updated: 2026-06-02*
 
-**Last session (2026-05-27):** SEO audit and technical fixes. Key findings and changes:
+**Last session (2026-06-02):** Navigation bug investigation and fixes. A chain of issues discovered and resolved:
 
-- **Indexing status:** Homepage indexed by Google on 2026-05-15. All other pages (8 neighborhood pages, /services, /faq, /contact) submitted for manual indexing via GSC on 2026-05-27. Expect them to appear in the GSC Valid tab by ~2026-06-10.
-- **Schema fix:** `FAQPage` schema was incorrectly placed in the root layout, injecting it on every page. Moved to `/faq` page only. Root layout now carries `LocalBusiness` schema only.
-- **www redirect:** Added 301 redirect from `www.reevesestates.com` → `reevesestates.com` in `next.config.ts`. Previously relied on canonical tags alone.
-- **Sitemap dates:** Updated `lastModified` for all 8 neighborhood pages from April to `2026-05-14` (reflecting the content rewrites).
-- **next/image:** Replaced `<img>` with `<Image />` from `next/image` in Navigation, Footer, and Hero carousel. Improves LCP (Core Web Vitals ranking signal).
-- **next/link:** Replaced bare `<a href="/">` with `<Link>` in Navigation and Footer.
-- **ESLint:** Fixed `.claude/` worktrees being scanned by ESLint (build artifacts were causing false failures). Added to `globalIgnores` in `eslint.config.mjs`.
-- **PhoneLink:** Moved media query init from synchronous `setState` inside `useEffect` to lazy `useState` initializer.
+**Root cause:** Switching `<img>` → `<Image />` (next/image) for the SVG logo in the May 27 session silently broke it. Next.js blocks SVG files through its image optimisation pipeline by default. The logo rendered as a zero-size invisible element — the link was in the DOM but had no visible click target.
+
+**Fixes applied:**
+
+- **SVG logo reverted to `<img>`** — `next/image` adds no value for SVG files (vector, no WebP conversion possible). Reverted Navigation.tsx and Footer.tsx to plain `<img>` tags with `eslint-disable-next-line` comments. Logo now renders reliably on all routes.
+
+- **Logo link dead on homepage hash sections** — When URL is `/#how-it-works` etc., Next.js `<Link href="/">` sees pathname as `/` already and does nothing. Fixed with `handleLogoClick`: on the homepage it smoothly scrolls to top and clears the hash via `history.replaceState`; on other pages lets native navigation proceed.
+
+- **Radix UI Tooltips were intercepting nav link clicks** — All desktop nav links were wrapped in `TooltipTrigger asChild`. When the tooltip was open on hover, the first click closed the tooltip instead of firing navigation. This was a latent bug (present since ~May 9) that became apparent during closer testing. Removed Tooltip wrappers entirely — they were redundant ("Go to FAQs" for a link already labelled "FAQs").
+
+- **Hash links not scrolling after cross-page navigation** — When navigating from `/services` to `/#faq`, React's client-side rendering means the browser's native hash scroll fires before the page is ready and finds nothing. Added `useEffect` in `page.tsx` that re-scrolls to hash after mount and listens for `hashchange` events. Also added `handleHashClick` to nav links: same-page scrolls directly via `scrollIntoView`; cross-page uses `window.location.href` for a clean full navigation.
+
+- **Testimonials missing `scroll-mt-20`** — Fixed. Without this, the fixed nav (80px) covers the section top when scrolled-to via hash.
+
+- **Neighbourhood page nav gap** — The `pt-20` on `<main>` created a visible cream gap above the charcoal header on neighbourhood pages. Fixed with a single `(content)/neighborhoods/layout.tsx` that inserts a charcoal spacer div (`-mt-20 h-20`) to fill the gap without touching any of the 8 page files.
+
+- **Neighbourhood header padding increased** — `pt-24 pb-14 lg:pt-32 lg:pb-20` on all 8 neighbourhood page headers (was `py-14 lg:py-20`) to give more visible charcoal above the eyebrow text.
+
+**Feature branch `feature/neighbourhoods-section` (not yet merged to main):**
+- New `Neighbourhoods` component on homepage between Services and FAQ — two-column layout, heading full-width, paragraph + 8 neighbourhood chip-links side by side. Passes homepage-body PageRank to all neighbourhood pages (replaces footer-only linking).
+- Hero headline A/B test: "Houston Estate Sales, Handled With Care." replacing "The Provenance Continues." — for review with Matt at June 10 meeting.
+- Neighbourhood page layout and padding fixes are also on this branch.
+
+**Previous session (2026-05-27):** SEO audit and technical fixes:
+- **Indexing status:** Homepage indexed by Google on 2026-05-15. All other pages submitted for manual indexing via GSC on 2026-05-27. Expect them in GSC Valid tab by ~2026-06-10.
+- **Schema fix:** `FAQPage` schema moved from root layout to `/faq` only.
+- **www redirect:** 301 redirect added in `next.config.ts`.
+- **Sitemap dates:** Updated `lastModified` for all 8 neighborhood pages to `2026-05-14`.
+- **ESLint:** Fixed `.claude/` worktrees being scanned. Added to `globalIgnores`.
+- **PhoneLink:** Moved media query init to lazy `useState` initializer.
 
 **External SEO signals confirmed:**
 - Google Business Profile: verified ✓
