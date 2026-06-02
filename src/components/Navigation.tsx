@@ -22,6 +22,16 @@ function handleHashClick(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
   }
 }
 
+function handleLogoClick(e: React.MouseEvent<HTMLAnchorElement>) {
+  if (window.location.pathname === "/") {
+    // Already on homepage — scroll to top and clear the hash
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    history.replaceState(null, "", "/");
+  }
+  // On other pages, let the Link navigate normally
+}
+
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -32,10 +42,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+          <a href="/" onClick={handleLogoClick} className="flex items-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/RE-momo.svg" alt="Reeves Estates" className="h-5 sm:h-7 w-auto" />
-          </Link>
+          </a>
 
           {/* Desktop links */}
           <div className="hidden lg:flex items-baseline gap-4">
