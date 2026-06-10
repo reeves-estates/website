@@ -1,5 +1,14 @@
-import Link from "next/link";
+"use client";
+
 import PhoneLink from "@/components/PhoneLink";
+
+function handleLogoClick(e: React.MouseEvent<HTMLAnchorElement>) {
+  if (window.location.pathname === "/") {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    history.replaceState(null, "", "/");
+  }
+}
 
 const quickLinks = [
   { label: "Our Services", href: "/services" },
@@ -15,10 +24,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Left */}
           <div>
-            <Link href="/">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <a href="/" onClick={handleLogoClick}>
               <img src="/images/RE-momo.svg" alt="Reeves Estates" className="h-5 sm:h-7 w-auto brightness-0 invert opacity-80 mb-4" />
-            </Link>
+            </a>
             <p className="font-body text-xs leading-relaxed text-cream/40 italic mb-2">
               From first call to final close.
             </p>
