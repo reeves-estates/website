@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { trackEvent, elementLocation } from "./Analytics";
 
 export default function PhoneLink({
   className,
@@ -17,6 +18,7 @@ export default function PhoneLink({
     () => typeof window !== "undefined" && window.matchMedia("(hover: hover) and (pointer: fine)").matches
   );
   const [copied, setCopied] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     // hover: hover + pointer: fine = mouse device; touch devices get the tel: link
@@ -37,7 +39,18 @@ export default function PhoneLink({
   }
 
   const handleClick = async () => {
-    await navigator.clipboard.writeText(phone);
+    try {
+      await navigator.clipboard.writeText(phone);
+    } catch {
+      // Clipboard can reject (insecure context, denied permission). The number
+      // is on screen regardless, so confirm and record intent either way rather
+      // than leaving the button looking dead.
+    }
+    trackEvent("phone_click", {
+      method: "copy",
+      link_location: elementLocation(buttonRef.current),
+      page_path: window.location.pathname,
+    });
     setCopied(true);
     onClick?.();
     setTimeout(() => setCopied(false), 2000);
@@ -45,7 +58,7 @@ export default function PhoneLink({
 
   return (
     <span className="relative group inline-block">
-      <button onClick={handleClick} className={className} style={style}>
+      <button ref={buttonRef} onClick={handleClick} className={className} style={style}>
         {copied ? "Copied" : (children ?? phone)}
       </button>
       {!copied && (
