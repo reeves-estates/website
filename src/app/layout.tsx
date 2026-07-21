@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Analytics from "@/components/Analytics";
 
 const hatton = localFont({
   src: "../../public/fonts/PPHatton-Medium.otf",
@@ -118,7 +119,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased relative z-10">{children}</body>
+      <body className="antialiased relative z-10">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
