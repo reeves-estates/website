@@ -71,7 +71,7 @@ export default function Footer() {
                 <span className="font-body text-xs text-bronze mt-1">Get Directions →</span>
               </a>
               <PhoneLink className="font-body text-sm text-cream/50 hover:text-bronze transition-colors mt-2" />
-              <a href="mailto:midtownmodern@gmail.com" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">
+              <a href="mailto:midtownmodern@gmail.com?subject=Estate%20sales%20website%20inquiry" className="font-body text-sm text-cream/50 hover:text-bronze transition-colors">
                 midtownmodern@gmail.com
               </a>
             </address>
