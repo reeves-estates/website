@@ -119,14 +119,40 @@ report, every month, verbatim.*
 > dials from their mobile is invisible here entirely. Treat these numbers as a
 > measure of intent and of which pages produce it — not as a count of calls.
 
-### The row that closes the loop
+### The row that closes the loop — and who can actually close it
 
 The `mailto:` links carry per-page subject lines — "River Oaks estate inquiry",
 "Tanglewood estate inquiry", and so on. Those arrive in Matt's inbox already
-labelled with the page that produced them. Searching the inbox for a month's
-worth of those subjects gives a **real inquiry count with real page
-attribution** — not a proxy. It is the most trustworthy number in the report and
-costs nothing but the search.
+labelled with the page that produced them, and the same string is recorded in GA4
+as `inquiry_subject`. The identical label in both systems makes it a **join key**:
+if GA4 shows 4 River Oaks clicks and Matt received 3 "River Oaks estate inquiry"
+emails, those numbers are directly comparable, and the difference is the
+click-to-send drop-off.
+
+**But the inbox is `midtownmodern@gmail.com`, which is Matt's and is not shared.**
+Aidan has no access. This splits the row in two, and the report should say so:
+
+| Measure | Who can see it | What it proves |
+|---|---|---|
+| `email_click` by `inquiry_subject` | Aidan, in GA4 | Someone opened their mail client from a given page |
+| Emails actually received | **Matt only** | An inquiry genuinely arrived |
+
+So **clicks are the ceiling of what can be independently verified.** Arrival data
+depends entirely on Matt reporting it. The ask is small — search his inbox for
+"estate inquiry" once a month and give a count; the subject lines do the
+attribution for him — but if he doesn't, that row simply has no arrival figure,
+and the report should show it as unavailable rather than implying the click count
+is an inquiry count.
+
+**Known gap:** the footer `mailto:` (`Footer.tsx:74`) carries no subject. Footer
+clicks log as `inquiry_subject: "none"` and reach Matt with a blank subject,
+so they fall outside any inbox count. Adding a generic subject would fix it.
+
+**Not done without Matt's agreement:** adding `cc=`/`bcc=` to the mailto links to
+copy inquiries elsewhere. `cc` is visible and would read oddly to someone writing
+about a parent's estate, `bcc` in a mailto is unreliable across clients, and
+either way it changes who reads private correspondence. That is Matt's call about
+his clients, not a reporting convenience.
 
 ---
 
@@ -144,7 +170,10 @@ costs nothing but the search.
   toward under-reporting, which is the safer direction.
 - **No forms.** There is no contact form on the site, so there is no
   server-side event that can be counted with certainty. Every conversion signal
-  here is a client-side click that hands off to another application.
+  here is a client-side click that hands off to another application. A form
+  posting server-side would give definitive counts independent of anyone's
+  inbox — the real structural fix, and worth raising with Matt eventually, but
+  it needs his agreement on where submissions land.
 - **Cookies.** GA4 sets first-party cookies where the site previously set none.
   Texas TDPSA does not require consent for analytics, so no banner is needed,
   but it is a change in data posture worth mentioning to Matt once.
