@@ -3,13 +3,15 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
+// Shot at the July 2026 Memorial sale. The previous hero-*.webp files remain in
+// public/images/hero/ unreferenced, so the earlier set can be restored by
+// swapping this array back.
 const images = [
-  { src: "/images/hero/hero-1.webp", alt: "Estate sale interior with antiques, furniture, and collectibles" },
-  { src: "/images/hero/hero-2.webp", alt: "Fine art and decorative pieces from a Houston estate collection" },
-  { src: "/images/hero/hero-3.webp", alt: "Antique furniture and estate items at Reeves Estates gallery" },
-  { src: "/images/hero/hero-4.webp", alt: "Curated estate sale inventory featuring art, antiques, and collectibles" },
-  { src: "/images/hero/hero-5.webp", alt: "Interior view of estate items at Reeves Estates, Houston" },
-  { src: "/images/hero/hero-6.webp", alt: "Houston estate sale collection — furniture, fine art, and decorative arts" },
+  { src: "/images/hero/memorial-3.webp", alt: "Bronze sculptures on pedestals beneath a wall of framed paintings at a Reeves Estates sale" },
+  { src: "/images/hero/memorial-2.webp", alt: "Estate sale floor in Houston — stacked china, silver holloware, framed art, and racks of clothing" },
+  { src: "/images/hero/memorial-1.webp", alt: "Green transferware china — tureens, teapot, and gravy boat — laid out at a Houston estate sale" },
+  { src: "/images/hero/memorial-5.webp", alt: "White porcelain figurines arranged on a polished mahogany dining table" },
+  { src: "/images/hero/memorial-4.webp", alt: "Display case of carved stone fetish figures and Pueblo pottery at a Houston estate sale" },
 ];
 
 export default function Hero() {
@@ -40,6 +42,13 @@ export default function Hero() {
 
       {/* Dark overlay */}
       <div className="absolute inset-0" style={{ backgroundColor: "rgba(17, 17, 17, 0.45)" }} />
+
+      {/* Provenance note. Dated rather than "current" so it stays true once the
+          sale closes — the images can sit here for months without contradicting
+          themselves. Update the date when the hero set is next replaced. */}
+      <p className="absolute z-10 bottom-5 md:bottom-7 left-1/2 -translate-x-1/2 md:left-8 lg:left-12 md:translate-x-0 font-compact text-[10px] md:text-xs tracking-widest uppercase text-cream/45 whitespace-nowrap">
+        From our Memorial sale, July 2026
+      </p>
 
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-16 md:pt-20">
         <h1

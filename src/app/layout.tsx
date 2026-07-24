@@ -71,7 +71,6 @@ export default function RootLayout({
             font-display: swap;
           }
         `}} />
-        <link rel="preload" href="/images/hero/hero-1.webp" as="image" type="image/webp" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -84,7 +83,7 @@ export default function RootLayout({
               "telephone": "+18324749547",
               "email": "midtownmodern@gmail.com",
               "priceRange": "$$",
-              "image": "https://reevesestates.com/images/hero/hero-1.webp",
+              "image": "https://reevesestates.com/images/hero/memorial-2.webp",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "2415 Taft St",
