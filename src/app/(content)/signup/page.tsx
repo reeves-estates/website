@@ -3,12 +3,13 @@ import Link from "next/link";
 import SaleSignupForm from "@/components/SaleSignupForm";
 
 export const metadata: Metadata = {
-  title: "Hear About Our Next Sale | Reeves Estates",
+  // Root layout applies the "%s | Reeves Estates" template — no suffix here.
+  title: "Hear About Our Next Sale",
   description:
     "Be told when the next Reeves Estates sale opens in Houston — the address and the opening time, a few days ahead. Three generations of estate sales, buyouts, and appraisals.",
   alternates: { canonical: "https://reevesestates.com/signup" },
   openGraph: {
-    title: "Hear About Our Next Sale | Reeves Estates",
+    title: "Hear About Our Next Sale | Reeves Estates", // openGraph has no template — keep the brand here
     description:
       "Be told when the next Reeves Estates sale opens in Houston — a few days ahead.",
     url: "https://reevesestates.com/signup",

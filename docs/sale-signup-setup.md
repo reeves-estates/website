@@ -49,6 +49,20 @@ Until `GOOGLE_FORM_ID` and `EMAIL_FIELD` are both set, the page renders the form
 disabled with a visible fallback pointing at the email address, so it degrades
 politely rather than appearing to work.
 
+### The setting that is easy to miss
+
+Google Forms has a **publish state and responder-access control that is separate
+from everything in the Settings panel.** A newly created form defaults to
+restricted, which sends anonymous visitors to a Google sign-in page — the form
+looks fine to you, because you are signed in, and is unusable for everyone else.
+
+Fix it from the form editor: **Publish** (top right) → **Manage responders** →
+**Anyone with the link**. This bit the first attempt on 2026-07-24 and cost a
+round of debugging; the Settings → Responses options were all already correct.
+
+Verify by opening the form's `/viewform` URL in a private window. If it shows a
+Google sign-in page, it is still restricted.
+
 ## 4. Test with a real submission before trusting it
 
 **Do not skip this.** Submit the live form once and confirm the row appears in

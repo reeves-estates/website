@@ -9,9 +9,9 @@ import { trackEvent } from "./Analytics";
 // them), so they live in source rather than env vars: fewer moving parts, and
 // no way for the form to silently break because a variable went missing.
 // To fill them in, see docs/sale-signup-setup.md.
-const GOOGLE_FORM_ID = "";
-const EMAIL_FIELD = ""; // e.g. "entry.1234567890"
-const NAME_FIELD = ""; // optional; leave "" to hide the name field
+const GOOGLE_FORM_ID = "1FAIpQLSdFT8BsbUrfYpcUj3lZG9aLu9NUhrGsPDQR6dfLMjNmgCSi9g";
+const EMAIL_FIELD = "entry.1517748847";
+const NAME_FIELD = "entry.1841896937";
 
 type Status = "idle" | "sending" | "done" | "error";
 
