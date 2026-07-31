@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
+import Neighbourhoods from "@/components/Neighbourhoods";
 import About from "@/components/About";
 import Credentials from "@/components/Credentials";
 import Testimonials from "@/components/Testimonials";
@@ -63,6 +64,7 @@ export default function Home() {
       <Hero />
       <div className="hidden md:block"><TrustBar /></div>
       <HowItWorks />
+      <Neighbourhoods />
       <Credentials />
 <Services />
       <FAQ />
