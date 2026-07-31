@@ -93,7 +93,7 @@ export default function Services() {
         <div className="space-y-14 md:space-y-20">
           {categories.map((category) => (
             <div key={category.name} className="fade-in-section">
-              <div className="mb-6 md:mb-8">
+              <div className="mb-6 md:mb-8 text-center">
                 <h3 className="font-compact text-xs tracking-widest uppercase text-charcoal/50 mb-1">
                   {category.name}
                 </h3>
