@@ -26,19 +26,19 @@ export default function Neighbourhoods() {
           </h2>
         </div>
 
-        {/* Paragraph (left) + links (right) — aligned at top.
+        {/* Paragraph + links, centered as a single column.
             "estate sales" is stated near the links on purpose: the query that
             actually earns clicks is "river oaks estate sales", so the anchor
             context should carry that phrase, not just the place name. */}
-        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-20">
-          <p className="font-body text-base text-charcoal/65 leading-relaxed lg:w-80 shrink-0 mb-8 lg:mb-0">
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="font-body text-base text-charcoal/65 leading-relaxed mb-8">
             We run estate sales across Houston&rsquo;s most established
             neighbourhoods. Every collection carries the character of the home it
             came from, and decades spent working inside these communities shapes
             how we handle each estate we take on.
           </p>
 
-          <div className="flex flex-wrap gap-3 content-start">
+          <div className="flex flex-wrap gap-3 justify-center">
             {neighbourhoods.map((n) => (
               <Link
                 key={n.href}
