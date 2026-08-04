@@ -1,7 +1,23 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef, useSyncExternalStore } from "react";
 import { trackEvent, elementLocation } from "./Analytics";
+
+// hover: hover + pointer: fine = a mouse device. Touch devices get the tel: link;
+// mouse devices get click-to-copy (dialing a number on a laptop is pointless).
+const DESKTOP_QUERY = "(hover: hover) and (pointer: fine)";
+
+function subscribe(callback: () => void) {
+  const mq = window.matchMedia(DESKTOP_QUERY);
+  mq.addEventListener("change", callback);
+  return () => mq.removeEventListener("change", callback);
+}
+// Client value once running in the browser.
+const getSnapshot = () => window.matchMedia(DESKTOP_QUERY).matches;
+// Value used during SSR and the first hydration render. Returning false here means
+// the server and the first client render agree (both emit the tel: link), so there
+// is no hydration mismatch; React then updates to the real value after mount.
+const getServerSnapshot = () => false;
 
 export default function PhoneLink({
   className,
@@ -14,19 +30,9 @@ export default function PhoneLink({
   onClick?: () => void;
   children?: React.ReactNode;
 }) {
-  const [isDesktop, setIsDesktop] = useState(
-    () => typeof window !== "undefined" && window.matchMedia("(hover: hover) and (pointer: fine)").matches
-  );
+  const isDesktop = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
   const [copied, setCopied] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    // hover: hover + pointer: fine = mouse device; touch devices get the tel: link
-    const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
-    const onChange = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
-    mq.addEventListener("change", onChange);
-    return () => mq.removeEventListener("change", onChange);
-  }, []);
 
   const phone = "832-474-9547";
 
