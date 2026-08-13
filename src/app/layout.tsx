@@ -112,8 +112,35 @@ export default function RootLayout({
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Executor Support" } }
               ],
               "sameAs": [
-                "https://reevesartgallery.com"
-              ]
+                "https://reevesartgallery.com",
+                "https://reevesartgallery.com/estate-sales"
+              ],
+              "parentOrganization": {
+                "@type": "Organization",
+                "name": "Reeves Antiques",
+                "description": "The founding Reeves business in Houston, from which Reeves Estates and Reeves Art + Design both operate.",
+                "subOrganization": {
+                  "@type": "Organization",
+                  "name": "Reeves Art + Design",
+                  "alternateName": "Reeves Art Gallery",
+                  "url": "https://reevesartgallery.com",
+                  "telephone": "+17135235577",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "2415 Taft St",
+                    "addressLocality": "Houston",
+                    "addressRegion": "TX",
+                    "postalCode": "77006",
+                    "addressCountry": "US"
+                  },
+                  "sameAs": [
+                    "https://www.yelp.com/biz/reeves-art-and-design-houston",
+                    "https://glasstire.com/venues/reeves-art-design/",
+                    "https://www.facebook.com/reevesartdesignhouston/",
+                    "https://www.tripadvisor.com/Attraction_Review-g56003-d17370753-Reviews-Reeves_Art_and_Design-Houston_Texas.html"
+                  ]
+                }
+              }
             })
           }}
         />
