@@ -78,6 +78,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Reeves Estates",
+              "alternateName": "Reeves Estates Sales",
               "description": "Reeves Estates — Houston's full-service estate handling specialists. Cash buyouts, estate sales, appraisals, and liquidations. Serving River Oaks and greater Houston for three generations.",
               "url": "https://reevesestates.com",
               "telephone": "+18324749547",
@@ -112,6 +113,7 @@ export default function RootLayout({
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Executor Support" } }
               ],
               "sameAs": [
+                "https://www.google.com/maps?cid=17726742802547222203",
                 "https://reevesartgallery.com",
                 "https://reevesartgallery.com/estate-sales"
               ],
