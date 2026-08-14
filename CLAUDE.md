@@ -85,9 +85,74 @@ Build reevesestates.com from a blank domain to a technically sound, content-comp
 ---
 
 ## Current State
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-14*
 
-**Last session (2026-08-11 → 08-13):** AEO (answer engine optimisation) assessment and a full audit of the GA4 data. No code changed. Open items live in `reeves-todo-august-2026.md`.
+### Last session (2026-08-14) — Session A of `reeves-todo-august-2026.md`
+
+**Shipped to production, verified live on reevesestates.com:** the LocalBusiness schema in
+`layout.tsx` now connects the Reeves entities. Two merges, both nav-tested on preview.
+
+```
+LocalBusiness — Reeves Estates
+  alternateName: "Reeves Estates Sales"        ← the GBP's name
+  sameAs: google.com/maps?cid=17726742802547222203   ← the Google Business Profile
+          reevesartgallery.com
+          reevesartgallery.com/estate-sales
+  parentOrganization: Reeves Antiques
+    subOrganization: Reeves Art + Design
+      sameAs: Yelp, Glasstire, Facebook, TripAdvisor
+```
+
+**Why it is shaped that way.** The todo asked to put the gallery's Yelp/Maps/CultureMap/
+Glasstire profiles into `sameAs`. That would have been wrong — `sameAs` asserts *identity*,
+and those profiles describe Reeves Art + Design, a different business. The risk is
+asymmetric: in an entity merge the established business wins, so five-month-old Reeves
+Estates would have been absorbed into a fourteen-year-old entity categorised "Art
+Galleries". Same class of error as the `FAQPage`-in-root-layout misuse fixed in May.
+Reeves Antiques — the founding entity — is what makes the true *sibling* relationship
+expressible. CultureMap is deliberately absent: articles are citation sources, not
+identity URLs.
+
+**Verified findings from this session (all checked directly, not assumed):**
+- **The gallery backlink exists but is weak.** It is on `reevesartgallery.com/estate-sales`
+  (not the homepage), has no `rel` attribute so it genuinely passes signal, points at
+  `https://www.reevesestates.com` (301s to apex), and its anchor text is
+  **"FIND OUT MORE HERE"** — descriptively worthless. Changing the anchor text is the
+  single highest-value edit available on the whole off-site surface.
+- **The GBP is named "Reeves Estates Sales".** Address, phone, website and category
+  ("Estate liquidator") all match the site exactly, so it is unambiguously the same entity.
+  It has **no reviews**. Directory listings should use the GBP name for NAP consistency.
+- **A fifth Reeves domain is live.** `reevesgalleryhouston.com` returns 200 and points at
+  radhouston.com (which 301s to reevesartgallery.com). `reevesartgalleryhouston.com`
+  already redirects correctly.
+- **Source landscape for the AEO work**, in priority order: estatesales.net → Yelp →
+  the HomeLight listicle → CultureMap. Two better findings than the ranking: "who buys
+  entire estates for cash" is an intent collision owned by we-buy-*houses* companies; and
+  the Native American / Southwestern art appraisal query has **no Houston incumbent**,
+  which connects the Memorial carvings directly to an unowned query.
+
+**Also done:** SSH remote switched to the `github-reeves` host alias (no more `ssh-add`);
+CLAUDE.md and `analytics-measurement-2026.md` committed after drifting uncommitted for
+weeks; `Reeves-Gallery-Conversation-Reference-2026-08-14.docx` prepared for the gallery.
+
+**Still open — needs a person, not code.** Full detail in `session-a-2026-08-13.md`
+(local, untracked), which carries a "Carry forward" block at the top:
+1. Confirm the entity structure and the registered business name with Matt — the schema
+   now asserts Reeves Antiques is the parent
+2. The AEO baseline: `aeo-baseline-2026-08.csv`, 32 rows, uncollected and time-sensitive
+3. EstateSales.net / .org listings — copy drafted, submit as "Reeves Estates Sales"
+4. Bing sitemap, Apple Business Connect (claim the existing gallery place), and the
+   `NEXT_PUBLIC_GA_ID` scoping — all need Aidan's logins
+5. The one message to Matt about the gallery link's anchor text
+
+**Perspective to keep.** Nothing shipped on 2026-08-14 will move a ranking. The schema is
+*correct* rather than powerful — it stops Google guessing wrong about which Reeves is
+which. The 32 email addresses from a printed QR poster remain, by a wide margin, the most
+effective thing this project has produced. Report it in those terms.
+
+### Previous session (2026-08-11 → 08-13)
+
+AEO (answer engine optimisation) assessment and a full audit of the GA4 data. No code changed. Open items live in `reeves-todo-august-2026.md`.
 
 **The strategic finding.** The site is strong at *being useful once retrieved* and effectively absent from *getting into the retrieval set*. Verified directly: content is server-rendered (9,574 chars of text with no JS), robots.txt blocks no AI crawler, schema is valid, and when an assistant does retrieve the site it describes Reeves accurately. But Reeves does not appear for "best estate sale companies Houston" — those results are Yelp, a HomeLight listicle and EstateSales.net, which lists 130+ Houston companies and not Reeves. Roughly 136 genuine reviews sit on three *other* Reeves entities (gallery, antiques, Art + Design). In AEO, third-party pages about you matter more than your own site.
 
