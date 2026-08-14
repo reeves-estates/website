@@ -85,9 +85,23 @@ Build reevesestates.com from a blank domain to a technically sound, content-comp
 ---
 
 ## Current State
-*Last updated: 2026-06-02*
+*Last updated: 2026-08-13*
 
-**Last session (2026-06-02):** Navigation bug investigation and fixes. A chain of issues discovered and resolved:
+**Last session (2026-08-11 → 08-13):** AEO (answer engine optimisation) assessment and a full audit of the GA4 data. No code changed. Open items live in `reeves-todo-august-2026.md`.
+
+**The strategic finding.** The site is strong at *being useful once retrieved* and effectively absent from *getting into the retrieval set*. Verified directly: content is server-rendered (9,574 chars of text with no JS), robots.txt blocks no AI crawler, schema is valid, and when an assistant does retrieve the site it describes Reeves accurately. But Reeves does not appear for "best estate sale companies Houston" — those results are Yelp, a HomeLight listicle and EstateSales.net, which lists 130+ Houston companies and not Reeves. Roughly 136 genuine reviews sit on three *other* Reeves entities (gallery, antiques, Art + Design). In AEO, third-party pages about you matter more than your own site.
+
+**GA4 — four findings, all verified:**
+- **"AI Assistant" is now a standard GA4 channel.** A custom channel group was built and deleted the same day once the native one was confirmed. First baseline 16 Jul–12 Aug: **4 sessions, 100% engagement, 32s, 5.25 events/session** — the best-performing traffic on the site, better than organic on every measure. Report as an early signal, never as a rate.
+- **The 118 "Unassigned" sessions were the QR posters, not spam.** `docs/sale-signup-setup.md` documents `utm_source=qr` with no `utm_medium`, which is the exact definition of Unassigned. ~118 QR sessions produced **32 email addresses — a 27% signup rate**, the best-performing thing in the project's history.
+- **Preview traffic was never the problem.** Hostname filtering (`reevesestates.com` only) removed just 5 of 477 sessions. A "Production Only" comparison is saved in GA4 and should be used for all reporting.
+- **The site now has a calibration factor.** 32 rows in the signup Sheet vs 28 GA4 `sale_signup` events = **87.5% capture**. The Sheet is ground truth; every GA4 number here is a floor. See `analytics-measurement-2026.md` §1a.
+
+**Documents produced:** `Reeves-AEO-Strategy-2026-08-12.docx` (assessment, measurement, priorities) and `Matt-Conversation-Brief-2026-08-13.docx` (anticipated client questions). `analytics-measurement-2026.md` substantially updated — new §1a (calibration), an AI Assistant row in §3, the stale "no forms" limitation struck, and a new §6 with the per-sale routine.
+
+**Editorial constraint established.** Aidan will not approve changes to existing approved copy without seeing the exact diff and the reasoning. Additive changes (new entries/pages) must be presented separately from edits to existing text. The agreed way to widen search vocabulary without touching brand voice: put plain language on *matching surfaces* (titles, meta descriptions, FAQ question text, alt text) and leave *persuading surfaces* (hero, body copy, section headings) untouched.
+
+**Previous session (2026-06-02):** Navigation bug investigation and fixes. A chain of issues discovered and resolved:
 
 **Root cause:** Switching `<img>` → `<Image />` (next/image) for the SVG logo in the May 27 session silently broke it. Next.js blocks SVG files through its image optimisation pipeline by default. The logo rendered as a zero-size invisible element — the link was in the DOM but had no visible click target.
 
@@ -127,17 +141,27 @@ Build reevesestates.com from a blank domain to a technically sound, content-comp
 - No noindex headers on any page ✓
 
 **Current deploy setup:**
-- Repo: `git@github.com:reeves-estates/website.git` (under the `reeves-estates` GitHub account)
+- Repo: `git@github-reeves:reeves-estates/website.git` (under the `reeves-estates` GitHub account)
 - Vercel project: ReevesEstates team → connected to `reeves-estates/website`
 - Auto-deploys on push to `main`
-- SSH key: `~/.ssh/reeves_estates` — must be loaded with `ssh-add` before pushing
-- `aidansinclair/reeves-estates` is a stale fork — no longer used
+- SSH key: `~/.ssh/reeves_estates`, wired up via the `github-reeves` host alias in
+  `~/.ssh/config`. No `ssh-add` needed — the alias selects the key automatically.
+  Always use the `github-reeves` remote form, never plain `github.com`: there is a second
+  GitHub key on this machine (`stepsoftly`), and a plain `github.com` remote authenticates
+  as whichever key answers first. Verify with `ssh -T git@github-reeves` — it should say
+  `Hi reeves-estates!`
+- `aidansinclair/reeves-estates` is a stale fork — no longer used. Note the Claude Code
+  mobile app still lists cloud sessions against that fork, last active 1 May 2026; those
+  are not current work.
 
-**Next up (suggested):**
-- Check GSC around 2026-06-10 — confirm neighborhood pages have entered the Valid tab
-- If pages are "Crawled - currently not indexed" at that point, investigate content quality signal
-- Add a "Neighborhoods We Serve" section to the homepage body (currently only footer links to neighborhood pages — a homepage body link passes more PageRank)
+**Next up:** see `reeves-todo-august-2026.md` for the full list. Headlines:
+- **Off-site presence is the priority, not more on-site work.** EstateSales.net and .org listings, review requests, and connecting the four Reeves entities. Mostly free.
+- **`NEXT_PUBLIC_GA_ID` is scoped to all environments in Vercel** — should be Production only. Immaterial to the data (5 sessions) but wrong. Note `NEXT_PUBLIC_*` is inlined at build time, so existing previews keep reporting until rebuilt.
+- Editorial vocabulary proposal — plain language on matching surfaces only (see constraint above)
+- "Selected Estates" archive — content shape drafted, needs Matt's input on how much of his recommendation to reveal, and whether it absorbs Testimonials
 - UX audit item 12 (testimonials specificity), 14 (trust bar), and 15 (hero headline A/B) remain open
+
+**Resolved since June:** the homepage "Neighbourhoods We Serve" section is live (visible as "Where We Work"), and all 13 pages are indexed — the June GSC question is answered.
 
 ## Project Overview
 
@@ -468,7 +492,8 @@ Run this on the Vercel preview URL before merging any change to a shared compone
 - `main` auto-deploys to reevesestates.com on every push — treat it as live production
 - Feature branches get their own Vercel preview URL (branch alias always points to latest commit)
 - Merge to `main` only after the nav test passes on the preview URL
-- SSH key: `~/.ssh/reeves_estates` — load with `ssh-add` before pushing
+- SSH key: `~/.ssh/reeves_estates` — selected automatically by the `github-reeves` host
+  alias. No `ssh-add` step. See "Current deploy setup" above.
 
 ### Old rule (superseded)
 ~~Small, isolated fixes (like breakpoint tweaks) can go directly to `main`~~ — No longer applies. Any change to a shared component, however small, goes to a branch first.
