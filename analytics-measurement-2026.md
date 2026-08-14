@@ -39,6 +39,54 @@ picked up automatically with no extra wiring.
 **The listener never calls `preventDefault`** and runs in the capture phase. It
 observes clicks; it cannot intercept navigation.
 
+### `sale_signup`
+
+*Added 2026-07-24 with the `/signup` page, after this document was first written.*
+
+| Param | Values | Meaning |
+|---|---|---|
+| `method` | `google_form` | Submission POSTed to the Google Form backend. |
+| `page_path` | `/signup` | Fixed — the form lives on one page. |
+
+Fired by `SaleSignupForm.tsx` on a completed submission. **This is the only true
+conversion event on the site.** Unlike `phone_click` and `email_click`, which are
+intent proxies that hand off to another application, a signup is a completed
+action with an independent record: the row that lands in the Google Sheet.
+
+---
+
+## 1a. The calibration factor — what makes this site unusually measurable
+
+The Sheet sits entirely outside GA4, which makes it ground truth. Comparing the
+two gives something most small properties never get: a **measured GA4 capture
+rate** rather than an assumed one.
+
+**First measurement, 2026-08-13, covering the July Memorial sale:**
+
+| Source | Count |
+|---|---|
+| Rows in the Google Sheet (ground truth) | **32** |
+| GA4 `sale_signup` events | **28** |
+| **Capture rate** | **87.5%** |
+
+The 12.5% shortfall sits inside the 10–20% ad-blocker band predicted in §4, and
+one or two of the four are likely the 24 July test submissions made while the tag
+was still being debugged (see `docs/sale-signup-setup.md`).
+
+**How to use this:**
+
+- **The Sheet is the source of truth for conversions.** Report 32, never 28. GA4
+  tells you where they came from; the Sheet tells you how many there were.
+- **Every other GA4 number here is understated by roughly an eighth.** Session
+  counts, event counts, and `phone_click` totals should all be read as a floor.
+  The `phone_click` row is understated twice over — blocked collection on top of
+  the intent-proxy problem in §3.
+- The gap runs in the safe direction. GA4 reporting *more* than the Sheet would
+  mean phantom events and a real fault; reporting fewer means some clients are
+  silent, which is expected and unfixable.
+- Treat it as a rough correction, not a constant. It is one comparison at n=32.
+  Re-measure it after each sale; the number will firm up.
+
 ---
 
 ## 2. Setup — steps that must be done in the Google UI
@@ -91,6 +139,32 @@ confidence level, which the report should state rather than imply.
 - Neighbourhood pages: impressions per page
 
 *Confidence: high. This is measured, not inferred.*
+
+> **Search Console does not see AI traffic.** It reports Google Search only.
+> Every AI-assistant referral and every AI crawler visit is invisible in it. Use
+> the row below, not GSC, for anything about answer engines.
+
+### Surfaced in AI — source: GA4, "AI Assistant" channel
+
+- Sessions via the **AI Assistant** channel, and which assistant sent them
+  (expand by Session source)
+- Engagement rate and average engagement time, against the site average
+- Landing pages — which page the assistant pointed at
+
+**No configuration is required.** GA4 now ships "AI Assistant" as a standard
+channel in its default channel group. A custom channel group was built for this
+on 2026-08-12 and deleted the same day once the native one was confirmed.
+
+*First baseline, 16 Jul – 12 Aug 2026: 4 sessions, 100% engagement rate, 32s
+average engagement time, 5.25 events per session — the highest quality traffic on
+the site by every available measure, and better than organic search on all three.
+Confirmed as production traffic via the hostname filter.*
+
+*Confidence: existence, high. Rates, none — four sessions is far too few to be
+significant. Report it as an early signal, never as a rate. Note also that some
+assistants strip the referrer entirely, so this channel systematically
+undercounts: a reading of zero is not evidence of no AI traffic, only of no
+attributable AI traffic.*
 
 ### Engaged — source: GA4
 
@@ -168,12 +242,14 @@ his clients, not a reporting convenience.
   before the event sends. gtag uses `sendBeacon`, which mostly survives this —
   but expect the true number to be slightly higher than reported. The bias runs
   toward under-reporting, which is the safer direction.
-- **No forms.** There is no contact form on the site, so there is no
-  server-side event that can be counted with certainty. Every conversion signal
-  here is a client-side click that hands off to another application. A form
-  posting server-side would give definitive counts independent of anyone's
-  inbox — the real structural fix, and worth raising with Matt eventually, but
-  it needs his agreement on where submissions land.
+- **~~No forms.~~** *Superseded 2026-08-13.* The `/signup` page, added 24 July,
+  posts to a Google Form whose responses land in a Sheet the Reeves account owns.
+  That Sheet is an independent record, which closes the loop this section
+  originally said could not be closed — see §1a. It captures *buyers* wanting
+  notice of the next sale, not sellers with an estate to handle, so it does not
+  replace the inquiry problem below; it solves a different one. A seller-side
+  form posting server-side is still the structural fix for inquiries, and still
+  needs Matt's agreement on where submissions land.
 - **Cookies.** GA4 sets first-party cookies where the site previously set none.
   Texas TDPSA does not require consent for analytics, so no banner is needed,
   but it is a change in data posture worth mentioning to Matt once.
@@ -193,3 +269,81 @@ be threaded — dynamic insertion that swaps the number only for organic session
 while schema and GBP stay canonical — but that is real complexity and a monthly
 cost for a business at single-digit call volume. Revisit when volume justifies
 it, not before.
+
+---
+
+## 6. Sale events — the per-sale routine
+
+*Added 2026-08-13, after working out what the July Memorial sale actually did.*
+
+**A sale is the highest-performing marketing event this business has.** The July
+sale produced a traffic spike peaking around 140 sessions in a day against a
+baseline of 10–20, and converted roughly 118 QR sessions into 32 email addresses
+— about a **27% signup rate**, which is exceptional for an email capture. It
+outperformed every digital channel on the site by a wide margin: thirty-two
+addresses from a printed sign, against four sessions from AI assistants.
+
+That is worth internalising before optimising anything else. Physical presence at
+the sale, converted to digital, is currently the strongest lever available.
+
+### What went wrong with the measurement, and the fix
+
+The printed QR codes carried `utm_source=qr` **with no `utm_medium`**. A source
+with no medium matches no channel rule, so GA4 filed all of it as **Unassigned** —
+which read as a data-quality problem for weeks before anyone worked out it was
+the most successful campaign in the site's history.
+
+**The counterintuitive part:** adding `utm_medium=print` does *not* fix the
+classification. GA4's default channel grouping only recognises a fixed set of
+medium values — organic, cpc, referral, email, social, affiliate, display. There
+is no channel for print media, so print traffic lands in Unassigned regardless.
+
+The fix is a **custom channel group** with an "Offline / QR" channel matching
+`source = qr`. This is a genuinely correct use of a custom group, unlike the AI
+Assistant one, which Google now provides natively and which was rightly deleted.
+
+### Checklist — run this for every sale
+
+1. **Tag the QR URL fully** before anything goes to print:
+
+   ```
+   https://reevesestates.com/signup
+     ?utm_source=qr
+     &utm_medium=print
+     &utm_campaign=<estate>-<month>-<year>     e.g. memorial-july-2026
+     &utm_content=<placement>                  e.g. front-door, checkout-table
+   ```
+
+   `utm_campaign` makes sales comparable to each other. `utm_content` per
+   placement tells you *which locations* actually got scanned — information lost
+   entirely for the July sale, where posters went to several spots and nobody can
+   now say which worked.
+
+2. **Confirm the "Offline / QR" channel group exists** so traffic classifies on
+   arrival rather than being diagnosed weeks later.
+
+3. **Re-test the form end to end** before the sale — one real submission,
+   confirmed in the Sheet. See `docs/sale-signup-setup.md`. A failed submission
+   still shows the visitor a thank-you, so this test is the only proof.
+
+4. **After the sale, record four numbers:** sessions in the sale window, QR
+   sessions, Sheet rows, and GA4 `sale_signup` events. The last two give a fresh
+   calibration reading (§1a); the first two give the conversion rate.
+
+5. **Photograph the estate properly while it is staged** — close, specific shots
+   of the pieces a generalist would have mispriced, not only wide room views. This
+   is the raw material for the Selected Estates archive, and it can only be
+   captured once.
+
+### What the July result means beyond analytics
+
+The list is a **buyer** audience — shoppers wanting notice of the next sale — not
+sellers with an estate to handle, which is where the revenue is. The two connect
+indirectly but genuinely: a well-attended sale with a warm mailing list is what
+makes Reeves attractive to the next family choosing who to trust. The `/signup`
+page already works both sides, with its second section addressed to people who
+have an estate of their own.
+
+It is also the first hard evidence for the Selected Estates argument. Each sale is
+a demand event that currently evaporates when the sale ends. One of them generated
+roughly 300 sessions and a 32-person list from a sheet of paper.
