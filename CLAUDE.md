@@ -85,7 +85,47 @@ Build reevesestates.com from a blank domain to a technically sound, content-comp
 ---
 
 ## Current State
-*Last updated: 2026-08-14*
+*Last updated: 2026-08-17*
+
+### 2026-08-15 — the first attributed organic inquiry
+
+**Not a work session. A field observation, and the most important single data point the
+project has produced since the July QR posters.**
+
+An inbound SMS arrived on the Reeves Estates phone on Saturday 15 August: a homeowner in
+77007 asking whether Reeves does cash buyouts of house contents. Aidan was covering the
+gallery that day and holding the phone, so he asked directly how the sender had found the
+number. The answer: **Google, the query "estate buy-outs Houston", clicked the first
+result.** The sender was complimentary about the site unprompted. Aidan passed the lead to
+Matt, who called the same day and is scheduling a walkthrough.
+
+**Why this matters more than one lead.** §"Contacted" of `analytics-measurement-2026.md`
+documents the inquiry half of the funnel as structurally invisible — it lands on Matt's
+phone and in `midtownmodern@gmail.com`, which is not shared. This is the first time one
+person has seen **both halves of the loop at once**: search → click → call → attribution →
+booked walkthrough. The mechanism is now *observed* rather than assumed. That is a
+different kind of fact from an indexed page.
+
+**The query finding — it refines an earlier one.** On 2026-08-14 a search for *"who buys
+entire estates for cash Houston"* returned we-buy-**houses** companies: an intent collision
+with residential real estate. This inquiry used *"estate buy-outs Houston"* and did not
+collide. So the collision is **phrasing-specific**: "estate buyout" reads as contents,
+"cash for estates" reads as property. Favour buyout phrasing on the matching surfaces.
+
+Note also that this arrived on a **service** query, not a geographic one. All eight
+neighbourhood pages target geography; "Cash Estate Buyouts" is a named service and sits in
+the schema's `makesOffer`.
+
+**Open question, and it is worth chasing.** "Listed first" is self-reported and Google
+personalises heavily. It is unknown whether the click came from the organic result, the
+Google Business Profile, or the local map pack — and the implications differ sharply. If
+the GBP carried it, that listing has **zero reviews**, which would move reviews from
+housekeeping to priority. Aidan still has the contact: one question — *"did you click a map
+listing or a regular blue link?"* — settles it.
+
+**Discretion:** the sender's name and street address are deliberately not recorded here.
+Neighbourhood and period only, per the Selected Estates rule. If this becomes a sale, the
+walkthrough is the moment for the five intake questions.
 
 ### Last session (2026-08-14) — Session A of `reeves-todo-august-2026.md`
 
